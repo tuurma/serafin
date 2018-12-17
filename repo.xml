@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</description>
+    <repo:author xmlns:repo="http://exist-db.org/xquery/repo"/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <prepare>pre-install.xql</prepare>
+    <finish>post-install.xql</finish>
+    <target>serafin</target>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" password="serafin" user="serafin" group="tei" mode="rw-rw-r--"/>
+
+</meta>

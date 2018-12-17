@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="persons">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <particDesc>
+           <listPerson>
+              <person xml:id="MS">
+                 <persName>Mikołaj Serafin</persName>
+                 <note>foo bar</note>
+              </person>
+              <person xml:id="JanParawicini">
+                 <persName>Jan (Giovanni) Parawicini (de Parawasinis)</persName>
+                 <note>syn Jana z Mediolanu, brat Jakuba posła do Włoch i dyplomaty króla
+                    Władysława Jagiełły. Początkowo w służbie żupnika Antoniego z Florencji
+                    1431, następnie Mikołaja Serafina jako jego podżupek przemyski w Soli
+                    1436–1443. Był właścicielem wójtostwa w Tyrawie koło Sanoka 1436 i
+                    Krzywczy w ziemi przemyskiej 1437 oraz dziedzicem Kaczkowic w powiecie
+                    proszowskim 1440–1443, zm. przed 1450 (Ptaśnik, <title>Kultura</title>,
+                    s. 85, 186–187; <title>SHGK</title>r. II, s. 353–354; <title>PSB</title>
+                    XXV, s. 197: biogram Jakuba).</note>
+              </person>
+              <person xml:id="PiotrCikowski">
+                 <persName>Piotr Cikowski</persName>
+                 <note>h. Radwan, podstarości krak. 1438, podżupek bocheński 1440–1442,
+                    podsędek krak. 1442–1454, sędzia krak. 1454, zm. 1454. W 1446 r.
+                    posiadał warzelnię soli w Bochni (<title>PSB</title> XXVI, s. 393–394;
+                    <title>SHGK</title>r. I, s. 412–413, 599, 670; <title>Crac. art.
+                       Suppl.</title> 1441–1450, nr 479).</note>
+              </person>
+              <person xml:id="MichałWarcaba">
+                 <persName>Michał Warcaba</persName>
+                 <note>Rokszycki z Rokszyc w powiecie przemyskim, występuje w latach 1436–
+                    –1450, sędzia grodzki przemyski 1442–1450 (<title>AGZ</title> XIII, nr
+                    39, 1607–4202).</note>
+              </person>
+              <person xml:id="SienkozSiennowa">
+                 <persName>Sienko z Siennowa</persName>
+                 <note>h. Korczak, podkomorzy przemyski 1434–1439, opiekadlnik (tutor) ziemi
+                    przemyskiej 1436–1437, kasztelan lwowski 1439–1448, zm. przed 4 maja
+                    1449. Siennów, wieś w ziemi przemyskiej, 10 km na pd. od Przeworska
+                    (<title>CE</title> II, nr 222; Z. Spieralski, <title>Z dziejów
+                       Archiwum Koronnego Krakowskiego. Kopiariusz Jana Łaskiego (ok.
+                       1505)</title>, Studia Źródł. 24, 1979, s. 137, nr 35–36;
+                    <title>AGZ</title> XIII, nr 1, 537, 1060, 3866, 3959;
+                    <title>U</title> III/1: tu błędne daty i identyfikacje).</note>
+              </person>
+              <person xml:id="PiotrOdrowąż">
+                 <persName>Piotr Odrowąż ze Sprowy</persName>
+                 <note>h. Odrowąż, starosta samborski 1429–1436, wojewoda podolski 1434–1437,
+                    starosta halicki 1436–1442, lwowski (ruski) 1440, 1442–1450, wojewoda
+                    lwowski (ruski) 1437–1450, zginął 8 września 1450 w bitwie pod Krasnym
+                    Polem (<title>PSB</title> XXIII, s. 551–555; <title>U</title> III/1;
+                    <title>U</title> III/3).</note>
+              </person>
+              <person xml:id="MikołajOrlik">
+                 <persName>Mikołaj Orlik</persName>
+                 <note>oficjalista Mikołaja Serafina w żupach ruskich. Najpewniej tożsamy ze
+                    szlachetnym Orlikiem, który w 1438 r. pożyczył 75 grz. Janowi Parawiciniemu,
+                    ówczesnemu podżupkowi przemyskiemu w Soli, ten zaś Orlik może z Mikołajem
+                    Orlikiem h. Nieczuja (lub Nowina), dziedzicem Łazisk w powiecie radomskim
+                    1441–1449. Z tej właśnie rodziny pochodził Stanisław Orlik pisarz polny koronny
+                    i żupnik ruski w 1550 r. (<title>AGZ</title> XIII, nr 896; <title>DLb</title>.
+                    2, s. 532; 3, s. 420; ZK 150, s. 316; 257, s. 367; GK 10, s. 675, Rutkowski,
+                    <title>Żupy ruskie</title>, s.57).</note>
+              </person>
+              <person xml:id="Kazimierz2">
+                 <persName>Kazimierz II</persName>
+                 <note>(1396/1407 - zm. 1442) książę bełski, syn Siemowita IV księcia mazowieckiego
+                    i Aleksandry siostry króla Władysława Jagiełły, brat Siemowita, Trojdena i
+                    Władysława I (Dworzaczek, <title>Genealogia</title>, tabl. 4;
+                    <title>PSB</title> XII, s. 283-284).</note>
+              </person>
+              <person xml:id="JanOdrowąż">
+                 <persName>Jan Odrowąż</persName>
+                 <note>ze Sprowy h. Odrowąż, sekretarz królewski i arcybiskup lwowski od 1436, zm.
+                    1450 (<title>PSB</title> XXIII, s. 547–549).</note>
+              </person>
+              <person xml:id="AndruszkoOstrogski">
+                 <persName>Andruszko Ostrogski</persName>
+                 <note>syn księcia Fedora Daniłowicza Ostrogskiego. W 1431 r. Andruszko poręczył
+                    królowi Władysławowi Jagielle za jeńców litewskich; w 1436 r. otrzymał od króla
+                    Władysława Warneńczyka zapis 100 grz. na żupach w Drohobyczu. W liście mowa
+                    zatem o realizacji tego zapisu (<title>Archiwum XX. Lubartowiczów Sanguszków w
+                       Sławucie</title>, t. I, wyd. Z.L. Rdzimiński, P. Skobielski, B. Gorczak,
+                    Lwów 18887, nr 32; <title>AGZ</title> V, nr 81–82; J. Wolff, <title>Kniaziowie
+                       litewsko-ruscy od końca XIV w.</title>, Warszawa 1895, s. 337).</note>
+              </person>
+              <person xml:id="WincentyŚwidwa">
+                 <persName>Wincenty Świdwa</persName>
+                 <note>z Szamotuł h. Nałęcz, podczaszy kaliski 1414–1423, kasztelan międzyrzecki
+                    1423–1444, starosta wschowski 1424–1427, ruski (lwowski) 1431–1439, zm. w 1444
+                    podczas wyprawy warneńskiej (<title>U</title> I/1; <title>U</title> III/1;
+                    <title>WSB</title>, s. 728-729).</note>
+              </person>
+              <person xml:id="MichałZBuczacza">
+                 <persName>Michał z Buczacza</persName>
+                 <note>h. Awdaniec, starosta halicki 1414–1436, kamieniecki 1430, 1438, przemyski
+                    1437–1438 , wojewoda podolski 22 września 1437 – 7 kwietnia 1438, zginął ok. 1
+                    czerwca 1438 w bitwie z Tatarami pod Krasnym Polem (<title>U</title> III/3;
+                    <title>PSB</title> III, s. 84–85).</note>
+              </person>
+              
+           </listPerson>
+           <listOrg>
+              <org>
+                 <orgName xml:id="BraciaMichałaZBuczacza">Bracia Michała</orgName>
+                 <desc>Teodoryk przodek Buczackich, starosta kamieniecki i podolski 1431–1434,
+                    1442–1454, starosta (tenutariusz) czerwonogrodzki od 1436, kasztelan
+                    kamieniecki 1442–1455, zm. 1455; Michał Mużyło starosta (tenutariusz)
+                    śniatyński i kołomyjski 1436–1470, kasztelan kamieniecki 1460–1466, wojewoda
+                    podolski 1466–1470, zm. 1470 (<hi rend="i">U</hi> III/3; <hi rend="i">PS</hi>B
+                    III, s. 85). </desc>
+              </org>
+           </listOrg>
+        </particDesc>
+        <settingDesc>
+           <listPlace>
+              <place xml:id="Przemyśl">
+                 <placeName>Przemyśl</placeName>
+                 <note>miasto król. i zamek nad Sanem w województwie ruskim, stolica ziemi i
+                    powiatu (<title>Miasta polskie</title> II, s. 376–379).</note>
+              </place>
+              <place xml:id="Sandomierz">
+                 <placeName>Sandomierz</placeName>
+                 <note>miasto na krawędzi Wyżyny Sandomierskiej, na lewym brzegu Wisły w
+                    pobliżu ujścia Sanu, 15 km na pn.-wsch. od Tarnobrzega, wówczas stolica
+                    ziemi i województwa (<title>Miasta polskie</title> I, s. 536–538)</note>
+              </place>
+              <place xml:id="Jasienica">
+                 <placeName>Jasienica</placeName>
+                 <note> od XVI w. Jasienica Solna (dzisiaj Jasenyc’a Sil’na w Republice
+                    Ukrainy), wieś nad rzeką Jasienicą w ziemi przemyskiej, 12 km na zach.
+                    od Drohobycza. Wieś ta posiadała okno solne oraz cło solne połączone z
+                    tzw. koszowym, tj. opłatą pobieraną przez żupnika od samodzielnych
+                    producentów soli, poświadczone dla XVI w. Żupa jasienicka należała do
+                    starostwa samborskiego, od 1434 r. była w składzie żupy przemyskiej, a w
+                    drugiej połowie XV w. ponownie, jako samodzielna jednostka ekonomiczna,
+                    znalazła się w rękach starostów samborskich. W 1570 r. włączona została
+                    do żupy drohobyckiej (Rutkowski, <title>Żupy ruskie</title>, s. 120;
+                    Bukowski, <title>Objęcie w dzierżawę</title>, s. 111).</note>
+              </place>
+              <place xml:id="Baszowa">
+                 <placeName>Baszowa</placeName>
+                 <note>nieistniejąca dziś wieś w pobliżu Jasienicy, posiadająca okno solne,
+                    12 km na zach. od Drohobycza, wraz z Jasienicą stanowiła część żupy
+                    przemyskiej (Bukowski, <title>Objęcie w dzierżawę</title>, s.
+                    111).</note>
+                 <place xml:id="Mościska">
+                    <placeName>Mościska</placeName>
+                    <note>(dzisiaj Mostys’ka w Republice Ukrainy), miasto w ziemi
+                       przemyskiej, 27 km na wsch. od Przemyśla, miejsce obrad wielu
+                       sejmików partykularnych ruskich.</note>
+                 </place>
+              </place>
+              <place xml:id="Gródek">
+                 <placeName>Gródek</placeName>
+                 <note>Gródek, później Gródek Jagielloński (dzisiaj Gorodok w Republice Ukrainy),
+                    miasto powiatowe w ziemi lwowskiej, 26 km na zachód od Lwowa</note>
+              </place>
+           </listPlace>
+        </settingDesc>
+     </profileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
