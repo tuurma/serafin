@@ -97,7 +97,8 @@
                                     <unclear quantity="3" unit="chars"/>
                                 </del> aquam 
                                 diluuii ordinauerit, infrafluitare non negligam et
-                                eciam N<expan>obilitatem</expan> Vestram auisare non obmittam.</seg>
+                                eciam <expan>N<ex>obilitatem</ex>
+                                </expan> Vestram auisare non obmittam.</seg>
                             <seg xml:id="s.1.2.7">Eciam de sale cupitis, ut plus cumularem ad
                                 rippam.</seg>
                             <seg xml:id="s.1.2.8">Sciatis, quia istud sal recens est, non valet
