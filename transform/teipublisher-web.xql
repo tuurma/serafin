@@ -46,8 +46,6 @@ declare function model:transform($options as map(*), $input as node()*) {
 declare function model:apply($config as map(*), $input as node()*) {
         let $parameters := 
         if (exists($config?parameters)) then $config?parameters else map {}
-        let $get := 
-        model:source($parameters, ?)
     return
     $input !         (
             let $node := 
@@ -550,15 +548,5 @@ declare function model:apply-children($config as map(*), $node as element(), $co
                 default return
                     html:escapeChars(.)
         )
-};
-
-declare function model:source($parameters as map(*), $elem as element()) {
-        
-    let $id := $elem/@exist:id
-    return
-        if ($id and $parameters?root) then
-            util:node-by-id($parameters?root, $id)
-        else
-            $elem
 };
 

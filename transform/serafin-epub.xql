@@ -50,8 +50,6 @@ declare function model:transform($options as map(*), $input as node()*) {
 declare function model:apply($config as map(*), $input as node()*) {
         let $parameters := 
         if (exists($config?parameters)) then $config?parameters else map {}
-        let $get := 
-        model:source($parameters, ?)
     return
     $input !         (
             let $node := 
@@ -114,13 +112,13 @@ declare function model:apply($config as map(*), $input as node()*) {
                             html:inline($config, ., ("tei-formula2"), .)
                     case element(choice) return
                         if (sic and corr) then
-                            epub:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1])
+                            html:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1])
                         else
                             if (abbr and expan) then
-                                epub:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1])
+                                html:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1])
                             else
                                 if (orig and reg) then
-                                    epub:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1])
+                                    html:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1])
                                 else
                                     $config?apply($config, ./node())
                     case element(hi) return
@@ -158,7 +156,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(am) return
                         html:inline($config, ., ("tei-am"), .)
                     case element(subst) return
-                        epub:alternate($config, ., ("tei-subst"), ., add, ('substitution: ', del, ' ', del/@type))
+                        html:alternate($config, ., ("tei-subst"), ., add, ('substitution: ', del, ' ', del/@type))
                     case element(roleDesc) return
                         epub:block($config, ., ("tei-roleDesc"), .)
                     case element(orig) return
@@ -395,7 +393,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         epub:block($config, ., ("tei-argument"), .)
                     case element(date) return
                         if (@when) then
-                            epub:alternate($config, ., ("tei-date3"), ., ., format-date(xs:date(@when), '[D1o] [MNn] [Y]', (session:get-attribute('lang'), 'en')[1], (), ()))
+                            html:alternate($config, ., ("tei-date3"), ., ., format-date(xs:date(@when), '[D1o] [MNn] [Y]', (session:get-attribute('lang'), 'en')[1], (), ()))
                         else
                             if (text()) then
                                 html:inline($config, ., ("tei-date4"), .)
@@ -506,7 +504,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                                 html:inline($config, ., ("tei-gap2"), @extent)
                             else
                                 if (@quantity) then
-                                    epub:alternate($config, ., ("tei-gap3"), ., ., (@quantity, ' ', @unit))
+                                    html:alternate($config, ., ("tei-gap3"), ., ., (@quantity, ' ', @unit))
                                 else
                                     html:inline($config, ., ("tei-gap4"), .)
                     case element(quote) return
@@ -530,7 +528,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (parent::person) then
                             html:inline($config, ., ("tei-persName3"), .)
                         else
-                            epub:alternate($config, ., ("tei-persName4"), ., ., id(substring-after(@ref, '#'), collection($parameters?auxiliary)))
+                            html:alternate($config, ., ("tei-persName4"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
                     case element(person) return
                         if (parent::listPerson) then
                             html:inline($config, ., ("tei-person2"), .)
@@ -540,12 +538,12 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (parent::place) then
                             html:inline($config, ., ("tei-placeName3"), .)
                         else
-                            epub:alternate($config, ., ("tei-placeName4"), ., ., id(substring-after(@ref, '#'), collection($parameters?auxiliary)))
+                            html:alternate($config, ., ("tei-placeName4"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
                     case element(orgName) return
                         if (parent::org) then
                             html:inline($config, ., ("tei-orgName2"), .)
                         else
-                            epub:alternate($config, ., ("tei-orgName3"), ., ., id(substring-after(@ref, '#'), collection($parameters?auxiliary)))
+                            html:alternate($config, ., ("tei-orgName3"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
                     case element(correspAction) return
                         if (@type='sent') then
                             html:inline($config, ., ("tei-correspAction"), (placeName, ', ', date))
@@ -584,15 +582,5 @@ declare function model:apply-children($config as map(*), $node as element(), $co
                 default return
                     html:escapeChars(.)
         )
-};
-
-declare function model:source($parameters as map(*), $elem as element()) {
-        
-    let $id := $elem/@exist:id
-    return
-        if ($id and $parameters?root) then
-            util:node-by-id($parameters?root, $id)
-        else
-            $elem
 };
 

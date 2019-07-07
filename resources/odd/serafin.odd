@@ -148,7 +148,7 @@
         </model>
                     <model behaviour="alternate">
             <param name="default" value="."/>
-            <param name="alternate" value="id(substring-after(@ref, '#'), collection($parameters?auxiliary))"/>
+            <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
             <outputRendition>
             color: #1565c0;
             </outputRendition>
@@ -188,7 +188,7 @@
         </model>
                     <model behaviour="alternate">
             <param name="default" value="."/>
-            <param name="alternate" value="id(substring-after(@ref, '#'), collection($parameters?auxiliary))"/>
+            <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
             <outputRendition>
             color: #ef6c00;
             </outputRendition>
@@ -210,7 +210,7 @@
         </model>
                     <model behaviour="alternate">
             <param name="default" value="."/>
-            <param name="alternate" value="id(substring-after(@ref, '#'), collection($parameters?auxiliary))"/>
+            <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
             <outputRendition>
             color: #2e7d32;
             </outputRendition>

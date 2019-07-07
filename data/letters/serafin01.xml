@@ -92,11 +92,9 @@
                                 et sic stat in vno miliari a <placeName ref="#Przemyśl">Premislia</placeName> in bono loco circa fratrem domini
                                     decani<anchor xml:id="a2"/>, vbi non est timendum de aliquo
                                 dampno.</seg>
-                            <seg xml:id="s.1.2.6">Sed quam nisi Dominus Deus 
-                                <del>
+                            <seg xml:id="s.1.2.6">Sed quam nisi Dominus Deus <del>
                                     <unclear quantity="3" unit="chars"/>
-                                </del> aquam 
-                                diluuii ordinauerit, infrafluitare non negligam et
+                                </del> aquam diluuii ordinauerit, infrafluitare non negligam et
                                 eciam <expan>N<ex>obilitatem</ex>
                                 </expan> Vestram auisare non obmittam.</seg>
                             <seg xml:id="s.1.2.7">Eciam de sale cupitis, ut plus cumularem ad
@@ -119,8 +117,7 @@
                                     repos<supplied>uerun</supplied>t per <date when="1437-04-15" when-custom="15 IV">octo dies ad aliam feriam secundam</date>,
                                 in quo eciam idem dominus <persName ref="#SienkozSiennowa">Senko</persName> non fuit, sed iterum remisit ad convencionem
                                 ad <date when="1437-04-23" when-custom="23 IV">fesstum
-                                    Georgii</date> in <placeName ref="#Mościska">Moscziska</placeName> causa istius cause et aliis, que
-                                    <subst>
+                                    Georgii</date> in <placeName ref="#Mościska">Moscziska</placeName> causa istius cause et aliis, que <subst>
                                     <del type="overwritten">a</del>
                                     <add>h</add>
                                 </subst>ic aguntur.</seg>
@@ -135,8 +132,7 @@
                                     <sic>informatis</sic> cum domino <persName ref="#PiotrCikowski">Czikowsky</persName>; sed se oponit iuxta literam regalem, ut
                                 est terminus asignatus in crastino <date when="1437-05-10" when-custom="10 V">Ascenssionis Domini</date>.</seg>
                             <seg xml:id="s.1.2.13">Nam si tamen volueritis circa <date when="1437-05-09" when-custom="9 V">festum sancti
-                                    Michaelis</date>, volo ordinare ad minus duo milia 
-                                <del>
+                                    Michaelis</date>, volo ordinare ad minus duo milia <del>
                                     <expan>S<ex>ed</ex>
                                     </expan>
                                 </del> ad rypam.</seg>
@@ -158,15 +154,19 @@
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
-                                <persName ref="#JanParawicini">Iohannes de Parawasinis</persName>
+                                <lb/>
+                                <persName ref="#JanParawicini">Iohannes de
+                                    Parawasinis</persName>
                                 <lb/> seruitor vester in omnibus </seg>
                         </signed>
                         <postscript xml:id="s.1.4">
                             <p xml:id="s.1.4.1">
-                                <seg xml:id="s.1.4.1.1">Eciam sciatis, quia a medio
+                                <seg xml:id="s.1.4.1.1">
+                                    <lb/>Eciam sciatis, quia a medio
                                         Quadr<unclear>ag</unclear>esime <gap/> non habemus <lb/>
-                                    usque et nu<unclear>n</unclear>c, sed
-                                        <unclear>dicatis</unclear> domino de s<gap quantity="2" unit="words"/> habemus nisi <lb/> essent hospites.</seg>
+                                    usque et nu<unclear>n</unclear>c, sed <unclear>dicatis</unclear>
+                                    domino de s<gap quantity="2" unit="words"/> habemus nisi <lb/>
+                                    essent hospites.</seg>
                             </p>
                         </postscript>
                     </div>
@@ -175,7 +175,8 @@
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">skreślone v i początek innej
                             litery</note>
-                        <note n="c" type="transcription" target="#ac">1½: znak konwencjonalny.</note>
+                        <note n="c" type="transcription" target="#ac">1½: znak
+                            konwencjonalny.</note>
                         <note n="1" target="#a1">W Sandomierzu funkcjonował od co najmniej XIV w.
                             skład soli pochodzącej z żup krakowskich, a potem także z żup ruskich,
                             służącej do zaopatrywania najbliższej okolicy lub ekspediowanej w dół
@@ -282,11 +283,9 @@
                                 mili od <placeName ref="#Przemyśl">Przemyśla</placeName>. I tak
                                 każdego roku.</seg>
                             <seg xml:id="t.1.2.10">O rozprawie wiedzcie, że mieli pozew od pana
-                                podkomorzego 
-                                <supplied>
+                                podkomorzego <supplied>
                                     <persName ref="#SienkozSiennowa">Sienki</persName>
-                                </supplied> 
-                                na <date when="1437-04-08" when-custom="8 IV">poniedziałek po niedzieli przewodniej</date>, lecz on się nie
+                                </supplied> na <date when="1437-04-08" when-custom="8 IV">poniedziałek po niedzieli przewodniej</date>, lecz on się nie
                                 stawił, więc odłożyli na kolejny <date when="1437-04-15" when-custom="15 IV">poniedziałek za osiem dni</date>, ale znowu
                                 tenże pan <persName ref="#SienkozSiennowa">Sienk</persName>o był
                                 nieobecny, i znów przełożył tę i inne sprawy, które są tu

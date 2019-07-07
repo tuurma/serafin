@@ -29,21 +29,21 @@
                     1436–1443. Był właścicielem wójtostwa w Tyrawie koło Sanoka 1436 i
                     Krzywczy w ziemi przemyskiej 1437 oraz dziedzicem Kaczkowic w powiecie
                     proszowskim 1440–1443, zm. przed 1450 (Ptaśnik, <title>Kultura</title>,
-                    s. 85, 186–187; <title>SHGK</title>r. II, s. 353–354; <title>PSB</title>
+                    s. 85, 186–187; <hi rend="i">SHGK</hi>r. II, s. 353–354; <hi rend="i">PSB</hi>
                     XXV, s. 197: biogram Jakuba).</note>
               </person>
               <person xml:id="PiotrCikowski">
                  <persName>Piotr Cikowski</persName>
                  <note>h. Radwan, podstarości krak. 1438, podżupek bocheński 1440–1442,
                     podsędek krak. 1442–1454, sędzia krak. 1454, zm. 1454. W 1446 r.
-                    posiadał warzelnię soli w Bochni (<title>PSB</title> XXVI, s. 393–394;
-                    <title>SHGK</title>r. I, s. 412–413, 599, 670; <title>Crac. art.
+                    posiadał warzelnię soli w Bochni (<hi rend="i">PSB</hi> XXVI, s. 393–394;
+                    <hi rend="i">SHGKr.</hi> I, s. 412–413, 599, 670; <title>Crac. art.
                        Suppl.</title> 1441–1450, nr 479).</note>
               </person>
               <person xml:id="MichałWarcaba">
                  <persName>Michał Warcaba</persName>
                  <note>Rokszycki z Rokszyc w powiecie przemyskim, występuje w latach 1436–
-                    –1450, sędzia grodzki przemyski 1442–1450 (<title>AGZ</title> XIII, nr
+                    –1450, sędzia grodzki przemyski 1442–1450 (<hi rend="i">AGZ</hi> XIII, nr
                     39, 1607–4202).</note>
               </person>
               <person xml:id="SienkozSiennowa">
@@ -54,16 +54,16 @@
                     (<title>CE</title> II, nr 222; Z. Spieralski, <title>Z dziejów
                        Archiwum Koronnego Krakowskiego. Kopiariusz Jana Łaskiego (ok.
                        1505)</title>, Studia Źródł. 24, 1979, s. 137, nr 35–36;
-                    <title>AGZ</title> XIII, nr 1, 537, 1060, 3866, 3959;
-                    <title>U</title> III/1: tu błędne daty i identyfikacje).</note>
+                    <hi rend="i">AGZ</hi> XIII, nr 1, 537, 1060, 3866, 3959;
+                    <hi rend="i">U</hi> III/1: tu błędne daty i identyfikacje).</note>
               </person>
               <person xml:id="PiotrOdrowąż">
                  <persName>Piotr Odrowąż ze Sprowy</persName>
                  <note>h. Odrowąż, starosta samborski 1429–1436, wojewoda podolski 1434–1437,
                     starosta halicki 1436–1442, lwowski (ruski) 1440, 1442–1450, wojewoda
                     lwowski (ruski) 1437–1450, zginął 8 września 1450 w bitwie pod Krasnym
-                    Polem (<title>PSB</title> XXIII, s. 551–555; <title>U</title> III/1;
-                    <title>U</title> III/3).</note>
+                    Polem (<hi rend="i">PSB</hi> XXIII, s. 551–555; <hi rend="i">U</hi> III/1;
+                    <hi rend="i">U</hi> III/3).</note>
               </person>
               <person xml:id="MikołajOrlik">
                  <persName>Mikołaj Orlik</persName>
@@ -72,7 +72,7 @@
                     ówczesnemu podżupkowi przemyskiemu w Soli, ten zaś Orlik może z Mikołajem
                     Orlikiem h. Nieczuja (lub Nowina), dziedzicem Łazisk w powiecie radomskim
                     1441–1449. Z tej właśnie rodziny pochodził Stanisław Orlik pisarz polny koronny
-                    i żupnik ruski w 1550 r. (<title>AGZ</title> XIII, nr 896; <title>DLb</title>.
+                    i żupnik ruski w 1550 r. (<hi rend="i">AGZ</hi> XIII, nr 896; <hi rend="i">DLb.</hi>
                     2, s. 532; 3, s. 420; ZK 150, s. 316; 257, s. 367; GK 10, s. 675, Rutkowski,
                     <title>Żupy ruskie</title>, s.57).</note>
               </person>
@@ -81,12 +81,12 @@
                  <note>(1396/1407 - zm. 1442) książę bełski, syn Siemowita IV księcia mazowieckiego
                     i Aleksandry siostry króla Władysława Jagiełły, brat Siemowita, Trojdena i
                     Władysława I (Dworzaczek, <title>Genealogia</title>, tabl. 4;
-                    <title>PSB</title> XII, s. 283-284).</note>
+                    <hi rend="i">PSB</hi> XII, s. 283-284).</note>
               </person>
               <person xml:id="JanOdrowąż">
                  <persName>Jan Odrowąż</persName>
                  <note>ze Sprowy h. Odrowąż, sekretarz królewski i arcybiskup lwowski od 1436, zm.
-                    1450 (<title>PSB</title> XXIII, s. 547–549).</note>
+                    1450 (<hi rend="i">PSB</hi> XXIII, s. 547–549).</note>
               </person>
               <person xml:id="AndruszkoOstrogski">
                  <persName>Andruszko Ostrogski</persName>
@@ -95,39 +95,963 @@
                     Władysława Warneńczyka zapis 100 grz. na żupach w Drohobyczu. W liście mowa
                     zatem o realizacji tego zapisu (<title>Archiwum XX. Lubartowiczów Sanguszków w
                        Sławucie</title>, t. I, wyd. Z.L. Rdzimiński, P. Skobielski, B. Gorczak,
-                    Lwów 18887, nr 32; <title>AGZ</title> V, nr 81–82; J. Wolff, <title>Kniaziowie
+                    Lwów 18887, nr 32; <hi rend="i">AGZ</hi> V, nr 81–82; J. Wolff, <title>Kniaziowie
                        litewsko-ruscy od końca XIV w.</title>, Warszawa 1895, s. 337).</note>
               </person>
               <person xml:id="WincentyŚwidwa">
                  <persName>Wincenty Świdwa</persName>
                  <note>z Szamotuł h. Nałęcz, podczaszy kaliski 1414–1423, kasztelan międzyrzecki
                     1423–1444, starosta wschowski 1424–1427, ruski (lwowski) 1431–1439, zm. w 1444
-                    podczas wyprawy warneńskiej (<title>U</title> I/1; <title>U</title> III/1;
-                    <title>WSB</title>, s. 728-729).</note>
+                    podczas wyprawy warneńskiej (<hi rend="i">U</hi> I/1; <hi rend="i">U</hi> III/1;
+                    <hi rend="i">WSB</hi>, s. 728-729).</note>
               </person>
               <person xml:id="MichałZBuczacza">
                  <persName>Michał z Buczacza</persName>
                  <note>h. Awdaniec, starosta halicki 1414–1436, kamieniecki 1430, 1438, przemyski
                     1437–1438 , wojewoda podolski 22 września 1437 – 7 kwietnia 1438, zginął ok. 1
-                    czerwca 1438 w bitwie z Tatarami pod Krasnym Polem (<title>U</title> III/3;
-                    <title>PSB</title> III, s. 84–85).</note>
+                    czerwca 1438 w bitwie z Tatarami pod Krasnym Polem (<hi rend="i">U</hi> III/3;
+                    <hi rend="i">PSB</hi> III, s. 84–85).</note>
               </person>
-              
+               <person xml:id="WładysławIIIWarneńczyk">
+                   <persName>Władysław III Warneńczyk</persName>
+                   <note>syn Władysława Jagiełły i Zoﬁi Holszańskiej,ur.1424,królPolski od 1434,
+                       koronowany w Białogrodzie przez prymasa Mikołaja Újlakiego na króla Węgier 17 lipca 1440,
+                       co zapoczątkowało tam długoletnią wojnę domową ze stronnictwem habsburskim 
+                       reprezentowanym przez królową Elżbietę; zginął w bitwie pod Warną 10 października 1444 
+                       (J. Tęgowski, <title>Pierwsze pokolenia Giedyminowiczów</title>, Poznań–Wrocław 1999, s. 136–138; Dąbrowski, 
+                       <title>Władysław I Jagiellończyk</title>; K. Olejnik, <title>Władysław III Warneńczyk</title>,
+                       Szczecin 1996).</note>
+               </person>
+               <person xml:id="MikołajÚjlaki">
+                   <persName>Mikołaj Újlaki z Újlak</persName>
+                   <note>(dziś Ilok, wieś w Chorwacji), zwany też Frysztackim, syn bana Władysława, 
+                       ban Macvy (Macsó, serb. Macva) 1438–1458, żupan wielu komitatów, wojewoda
+                       Transylwanii 1441–1458, ban Slawonii 1457–1458, zm. 1477 (Engel II, s. 250).</note>
+               </person>
+               <person xml:id="WładysławGara">
+                   <persName>Władysław Gara z Gary</persName>
+                   <note>dziś Gorjani w Slawonii, 30 km na pd.-zach. od Osijeku), 
+                       syn palatyna Węgier Mikołaja, stronnik królowej Elżbiety, 
+                       ban Macvy 1431–1441, 1445–1447, żupan
+                       kilku komitatów, starosta Wyszogrodu (Visegrádu) 1439–1440, 
+                       palatyn Królestwa Węgier
+                       1447–1458, starosta Budy 1456–1457, mąż Aleksandry córki księcia cieszyńskiego Bolesława,
+                       zm. 1459 (Engel II, s. 81; S.A. Sroka, 
+                       <title>Polacy na Węgrzech za panowania Zygmunta Luksemburskiego</title>1387–1437, Kraków 2003,
+                       s. 23–24).</note>
+               </person>
+               <person xml:id="Elżbieta">
+                   <persName>Elżbieta</persName>
+                   <note>Elżbieta córka cesarza Zygmunta Luksemburskiego i Barbary Cylejskiej, 
+                       ur. 1409, żona Albrechta V Habsburga księcia Austrii, 
+                       króla Czech i Węgier 1437–1439, matka Anny, ur. 1432, Elżbiety, ur. 1436/1437 i 
+                       Władysława zwanego Pogrobowcem, ur. 22 lutego 1440 r., 
+                       bezskutecznie koronowanego w maju t.r. na króla Węgier, 
+                       późniejszego króla Węgier 1450 i Czech 1453 (Dworzaczek, <title>Genealogia</title>, tabl. 47).</note>
+               </person>
+               <person xml:id="MatthiasTallóci">
+                   <persName>Matthias (Matko) Tallóci</persName>
+                   <note>żupan kilku komitatów, zarządca miasta Zagrzebia i biskupstwa zagrzebskiego 1433–1438, 
+                       sędzia Kumanów i gubernator biskupstwa waradyńskiego 1434, ban Slawonii, Dalmacji i Chorwacji 
+                       1435–1445, zm. 1445. Tallóci w marcu 1440 r. był jednym z posłów wysłanych do Polski przez stany
+                       węgierskie, które ofiarowały koronę Węgier królowi Władysławowi Jagiellończykowi. 
+                       2 kwietnia t.r. w trakcie poselstwa do królowej Elżbiety został uwięziony przez Ulryka 
+                       hrabiego Cylii i osadzony w Sopron, skąd zbiegł pod koniec maja, przybywając do Budy już 
+                       po wkroczeniu tam króla Władysława 21 czerwca t.r. W lipu 1440 r. dostarczył królowi cennych 
+                       jeńców schwytanych podczas oblężenia Győr — Ulryka Cylejskiego i biskupa Győr Benedykta 
+                       (Engel I–II, wg indeksu; Dąbrowski,<title>Władysław I Jagiellończyk</title>, s. 19–27, 37).</note>
+               </person>
+               <person xml:id="PawełzSienna">
+                   <persName>Paweł z Sienna</persName>
+                   <note>zwany Wojnickim h. Dębno, syn Dobiesława z Oleśnicy kasztelana wojnickiego i 
+                       wojewody sandomierskiego, kanonik krak. 1432, sekretarz 1439 i pokojowiec król. 1442–
+                       –1444, zginął w bitwie pod Warną 10 listopada 1444 (<hi rend="i">PSB</hi> XXIII, s. 763: biogram Dobiesława;
+                       Kwiatkowski, <title>Urzędnicy</title>, s. 163–164; Sułkowska-Kurasiowa,
+                       <title>Dokumenty</title>, s. 243–244).</note>
+               </person>
+               <person xml:id="ElżbietaRakuska">
+                   <persName>Elżbieta Rakuska</persName>
+                   <note>ur. 1436/1437, młodsza córka królowej węgierskiej Elżbiety i Albrechta
+                       Habsburga miała wówczas 4 lata. W 1450 r. planowano, że poślubi Fryderyka syna elektora
+                       saskiego Fryderyka II Klemensa (1412–1464), ostatecznie jednak w 1454 r. została żoną króla
+                       Polski Kazimierza Jagiellończyka brata Władysława Warneńczyka; zm. 1505 (<hi rend="i">PSB</hi> VI,
+                       s. 250–254; Wdowiszewski, <title>Genealogia</title>, s. 58–60).</note>
+               </person>
+               <person xml:id="Anna">
+                   <persName>Anna</persName>
+                   <note>starsza córka królowej węgierskiej Elżbiety i Albrechta, jak wynika z przytoczonej w 
+                       liście relacji Pawła Wojnickiego, planowano wydać za mąż najpewniej za Fryderyka elektora
+                       saskiego, nazwanego tutaj Miśnieńczykiem (w 1423 r. Marchia Miśnieńska weszła w skład
+                       posiadłości elektorów saskich). Jednak 14 grudnia 1442 r. królowa Elżbieta zawarła ugodę
+                       z królem Władysławem, a jednym z jej punktów było małżeństwo Władysława z Anną. Elżbieta
+                       zmarła kilka dni później i Anna ostatecznie poślubiła w 1446 r. landgrafa Turyngii Wilhelma III
+                       (Wdowiszewski, <title>Genealogia</title>, s. 55).</note>
+               </person>
+               <person xml:id="MikołajZeifried">
+                   <persName>Mikołaj Zeifried</persName>
+                   <note>Najpewniej Mikołaj Zeifried (Seyfried, Zewridus, Zewrzyd) rajca krak. 1427–1458. Może
+                       tożsamy z Zewrzydem dworzaninem król. 1415–1421. Wielokrotnie poręczał w latach 1424–
+                       –1454 przyjęcia do prawa miejskiego w Krakowie. W latach 1429–1448 przetrzymywał zdeponowane na polecenie króla Władysława Warneńczyka w ratuszu krak. klejnoty i srebro
+                       kościelne, które wziął w zastaw od urzędnika króla Zygmunta Luksemburskiego. Posiadał
+                       kamienicę w Rynku i ogród za Bramą Mikołajską (<hi rend="i">KmK</hi> I–II, s. XXXIII–XXXV i 
+                       wg indeksu; <title>Crac. art. Pt.</title>, wg indeksu; <hi rend="i">ZDM</hi> VIII, nr 2279; Scab. 
+                       Crac. 6, s. 327, 334; Cons. Crac. 428, s. 493; 
+                       <title>Podwody kazimierskie</title>, wg indeksu; 
+                       <title>Rachunki dworu króla Władysława Jagiełły i królowej Jadwigi z lat 1388 do 1420</title>, 
+                       wyd. F. Piekosiński, Kraków 1896, wg indeksu; Pietrusiński, <title>Złotnicy</title> 1, s. 573).</note>
+               </person>
+               <person xml:id="MikołajzZapolic">
+                   <persName>Mikołaj z Zapolic h. Pobóg</persName>
+                   <note>Zapewne Mikołaj z Zapolic h. Pobóg, spowiednik królów Władysława Warneńczyka i 
+                       Kazimierza Jagiellończyka. Jako pleban w Proszowicach poświadczony jest dopiero w latach 1450–
+                       –1468, ale może objął probostwo po Janie Wątróbce ze Strzelec, 
+                       który w 1439 r. otrzymał kanonię krak. i ustąpił z tego beneficjum, potem kanonik krak. 
+                       1456–1469. Z tego okresu nie jest nany żaden pleban. 
+                       Proszowice, miasto król. 22 km na pn.-wsch. od Krakowa, stolica powiatu (<title>Wypisy</title> 1440–1500, s. 11; <title>Bullarium</title> V, nr 816, 902).</note>
+               </person>
+               <person xml:id="JerzySzworc">
+                   <persName>Jerzy Szworc (Sworcz, Szwarc) h. Boże Zdarz</persName>
+                   <note>mieszczanin i rajca krak. 1419–1450, fundator kaplicy w kościele NMP w Krakowie 1438, patron i kolator ołtarza w kościele Wszystkich
+                       Świętych 1442, wielokrotny poręczyciel długów żupnika Serafina, nobilitowany przez króla
+                       w Budzie w 1442 r., ojciec: Jerzego dziekana sandomierskiego 1447, archiprezbitera i plebana
+                       kościoła NMP w Krakowie 1450, fundatora Ogrojca przy kościele Św. Barbary i przyjaciela
+                       Serafina; Stanisława kupca; Hieronima oraz Urszuli i Agnieszki 
+                       (<title>Album armorum nobilium Regni Poloniae XV–XVIII saec.</title>, 
+                       wstęp, oprac. i ed. B. Trelińska, Lublin 2001, nr 8; <title>Bullarium</title> IV,
+                       nr 1728; V, nr 759, 1302; <title>Crac. art. Suppl. 1441–1450; toż 1451–1460</title>, 
+                       wg indeksu; <hi rend="i">KmK</hi> I, s. XXXII; Off. Crac. 6, s. 349; B. Przybyszewski, 
+                       <title>Krakowskie duchowieństwo parafialne przy końcu średniowiecza</title>, 
+                       Folia Historica Cracoviensia 2, 1994, s. 32).</note>
+               </person>
+               <person xml:id="PiotrKrawiec">
+                   <persName>Piotr Krawiec (Sartor)</persName>
+                   <note>zwany też Peiser, czyli z Pyzdr, krawiec królowej Elżbiety Granowskiej, 
+                       mieszczanin i rajca krak. 1441–1442. W 1441 r. kupił od Serafina czynsz w szybie Seraf
+                       w Wieliczce, a w 1442 r. wziął w zastaw całe wójtostwo krak. W 1442 r. spisał testament i 
+                       wkrótce potem zmarł, pozostawiając wdowę Katarzynę, synów Jakuba i Piotra oraz córki Barbarę,
+                       zamężną z Jakubem Szwejdnicerem mieszczaninem krak., która przejęła po ojcu wójtostwo,
+                       i Petronelę, może niewymienioną nigdy z imienia żonę Piotra Putka z Krakowa 
+                       (<title>Crac. art. Suppl. 1441–1450</title>, wg indeksu; <hi rend="i">KmK</hi> I, 
+                       s. XXXIV, XL–XLII; <hi rend="i">SPPP</hi> II, nr 2945, 3059; 
+                       <title>Zbiór dokumentów katedry i diecezji krakowskiej</title>, cz. II, wyd. S. Kuraś, 
+                       Lublin 1973, nr 430; <title>Księga wójt. krak.</title>, wg indeksu; Off. Crac. 6, s. 457, 465; 
+                       Kwiatkowski, <title>Urzędnicy</title>, s. 90; M. Niwiński,
+                       <title>Wójtostwo krakowskie w wiekach średnich</title>, Kraków 1938, s. 81, 83–84).</note>
+               </person>
+               <person xml:id="JanGruszczyński">
+                   <persName>Jan Gruszczyński h. Poraj</persName>
+                   <note>syn Jana i Małgorzaty z Naramowic, student Uniwersytetu Krakowskiego. W 1440 r. jako 
+                       jeden z sekretarzy król. wyjechał na Węgry, gdzie osiągnął godności archidiakona i kanonika Eger;
+                       od 1442 archidiakon poznański i prebendarz Św. Idziego, kustosz krak. i kanonik gnieźnieński 1444,
+                       biskup włocławski 1451, podkanclerzy koronny od 1455, biskup krak. 1463 i arcybiskup gnieźnieński 1464, 
+                       zm. 1473 (<hi rend="i">PSB</hi> IX, s. 55–57; <title>Crac. art. Suppl. 1441–1450</title>, nr 303; 
+                       Sułkowska-Kurasiowa, <title>Dokumenty</title>, s. 212–213).</note>
+               </person>
+               <person xml:id="SpytekJarosławski">
+                   <persName>Spytek Jarosławski z Jarosławia</persName>
+                   <note>najmłodszy z synów Spytka z Jarosławia wojewody sandomierskiego, dworzanin król. 
+                       W 1440 r. wyjechał na Węgry, gdzie w zamian za pożyczki otrzymał od króla zapisy na tenucie 
+                       leżajskiej. Wiosną lub w początkach lata 1441 r. przybył do kraju, gdzie po śmierci brata Rafała 
+                       objął starostwo lwowskie (zrezygnował z niego w 1442 r.) i przejął połowę dóbr jarosławskich. 
+                       Dwukrotnie jeszcze wracał na Węgry i 10 listopada 1444 r. wziął udział w bitwie warneńskiej, 
+                       w której zginął lub dostał się do niewoli (P. Hrabyk, <title>Spytko z Jarosławia</title>, 
+                       Rocznik Towarzystwa Przyjaci Nauk w Przemyślu 2, 1912, s. 3–8; W. Dworzaczek, 
+                       <title>Leliwici Tarnowscy. Z dziejów możnowładztwa małopolskiego</title>, wiek XIV–XV, Warszawa 1971, s. 235–237).</note>
+               </person>
+               <person xml:id="Ulryk">
+                   <persName>Ulryk hrabia Cylii</persName>
+                   <note>syn Fryderyka, wuj królowej Elżbiety, komes komitatu Trencin 1439–1454,
+                       starosta Sopron 1440–1441, ban Slawonii 1445–1456, Chorwacji 1452–1455, komes komitatu
+                       Pozsony (Bratysława) 1455–1456, zm. 1456. Hrabiowie Cylii stworzyli w czasach panowania
+                       Zygmunta Luksemburczyka państewko w dorzeczu Drawy i Sawy w krajach habsburskich,
+                       które rozszerzyło się następnie na terytorium Węgier z ok. 20 zamkami i objęło m.in. hrabstwo Zagorji i Zagrzeb. Byli zagorzałymi przeciwnikami obioru Jagiellończyka na tron węgierski. Ulryk został pojmany przez wojska polsko-węgierskie 21 czerwca 1440 r., podczas
+                       ucieczki z oblężonego biskupiego zamku Győr (Jan Długosz w <hi rend="i">DHn.</hi>, lib. XI et XII, s. 132,
+                       relacjonując to wydarzenie, myli Ulryka z jego ojcem Fryderykiem). Jesienią, po pozostawieniu
+                       24 zakładników, został czasowo wypuszczony z niewoli w celu nawiązania rozmów z królową
+                       Elżbietą, w określonym czasie miał jednak wrócić do króla. List opisuje tę sytuację i ujawnia
+                       informacje nieznane z innych źródeł (Dąbrowski, <title>Władysław I Jagiellończyk</title>, s. 37, 49–50, 57;
+                       Engel II, s. 45).</note>
+               </person>
+               <person xml:id="JakubZawrzykraj">
+                   <persName>Jakub Zawrzykraj z Dąbrówki</persName>
+                   <note>h. Nieczuja, brat Mikołaja Serafina żupnika krak., mieszczanin krak. od 1435, tytułowany na przemian podżupkiem wielickim 1441–1456 i podżupkiem
+                       obojga salin lub generalnym (principalis) 1442–1455, wójt sądu najwyższego prawa niemieckiego
+                       na zamku krak. 1453–1456. Posiadał w Krakowie dwa domy i połowę trzeciego. Był żonaty
+                       z mieszczką krak. Barbarą Hoze, z którą miał syna Piotra studenta Uniwersytetu Krakowskiego w 1453 r., a następnie bakałarza i altarystę kościoła NMP w Krakowie. Zm. 1456/1457
+                       (<hi rend="i">PSB</hi> XXXVI, s. 289: biogram Mikołaja Serafina; L. Łysiak, <title>Ius supremum Maydeburgense castri Cracoviensis</title> 1356–1794. Organisation, Tätigkeit und Stellung des Krakauer Oberhofs in der Rechtsprechung Altpolens, Frankfurt a. Main 1990, s. 184).</note>
+               </person>
+               <person xml:id="MichałDybacz">
+                   <persName>Michał Dybacz z Wygnanowic</persName>
+                   <note>h. Radwan, brat Piotra, dworzanin króla Władysława Warneńczyka, starosta (tenutariusz) niepołomicki 1438–1447, tenutariusz Rakowic przed 1441, uczestnik wyprawy warneńskiej, po powrocie do Polski tenutariusz Siedlca, zm. ok. 1479 (F. Sikora,
+                       <title>Dybacze-Czuryłowie herbu Radwan w XV–XVI w.</title>, [w:] <title>Patientia et tempus. Księga dedykowana
+                       doktorowi Marianowi Korneckiemu</title>, Kraków 1999, s. 173–178).</note>
+               </person>
+               <person xml:id="Złocki">
+                   <persName>Złocki</persName>
+                   <note>Złocki, niezidentyfikowany przedstawiciel rodziny Złockich h. Półkoza ze Złotej Wielkiej
+                       i Małej, zob. też <persName ref="#StanisławzeZłotej">Stanisław ze Złotej</persName>.</note>
+               </person>
+               <person xml:id="StanisławzeZłotej">
+                   <persName>Stanisław ze Złotej</persName>
+                   <note>(6,5 km na pn.-zach. od Wiślicy), zapewne syn zmarłego przed 1440 r.
+                       Stanisława ze Złotej h. Półkozic, sędzia grodzki krak. 1441–1444, mąż nieznanej z imienia
+                       córki Serafina, zm. po 1 kwietnia 1449 a przed 19 maja 1450. Z powodu poręk niespłaconych
+                       Mikołajowi Cikowskiemu z Wojsławic i Janowi Rokoszowi z Koszyc utracił Złotą, którą jego
+                       nieletnie dzieci odzyskały dopiero w 1455 r. w wyniku ugody Serafina z Cikowskim (Fedorowicz, <title>Dostojnicy</title>, s. 139; <hi rend="i">SPPP</hi> II, nr 2942, 3072, 3098, 3214; <hi rend="i">ZDM</hi> II, nr 585; III, nr 750, 778;
+                       <title>Crac. art. Suppl. 1441–1450</title>, wg indeksu; Archiwum Państwowe w Krakowie, Księgi ziemskie
+                       pilzneńskie 18, s. 28, 57; 22, s. 367, 414; 23, s. 295).</note>
+               </person>
+               <person xml:id="JanRokosz">
+                   <persName>Jan Rokosz z Koszyc</persName>
+                   <note>h. Ostoja, podstarości krak. 1440–1447, starosta zatorski 1440, burgrabia
+                       krak. 1445–1457, sędzia ziemski krak. 1455–1464, zm. 1464 (<hi rend="i">PSB</hi> XXXI, s. 540–541).</note>
+               </person>
+               <person xml:id="Paweł">
+                   <persName>Paweł</persName>
+                   <note>ważnik wielicki 1430–1459, kupił dom w Krakowie w 1437 r., przyjmując jednocześnie
+                       zobowiązanie, że nie sprzeda go szlachcicowi. W 1441 r. kupił za 170 grz. wieś Brzączowice
+                       koło Dobczyc. Wielokrotnie poręczał pożyczki Serafina, w wyniku czego w latach 1450–1451
+                       jego dwór w Brzączowicach i całą wieś zajął Franczek Stosz z Kounic z tytułu niespłaconych
+                       długów żupnika. Miał żonę Apolonię i córkę Dorotę wdowę już w 1457 r. Zm. przed 1470
+                       (<hi rend="i">SHGKr.</hi> I, s. 227).</note>
+               </person>
+               <person xml:id="KunczaReych">
+                   <persName>Kuncza Reych</persName>
+                   <note>kuśnierz, mieszczanin i wielokrotny rajca krak. 1429–1461. Jako wierzyciel
+                       króla Władysława Warneńczyka posiadał czynsz tygodniowy z prawem odkupu na żupie wielickiej w wysokości 1350 grz. (w 1464 r. od spadkobierców Kunczy czynsz ten nabył Hincza
+                       z Rogowa i uposażył nim altarystę ołtarza Św. Innocentego w kaplicy Hinczów). Posiadał ponadto bachmistrzostwo w Bochni kupione przed 1430 r. od żupnika Antoniego z Florencji,
+                       które odstąpił w 1444 r. Janowi z Czyżowa, kupując jednocześnie od Serafina dom w Rynku
+                       krakowskim. W testamencie ufundował msze dla 2 księży w kościele NMP, zm. 1463/1464
+                       (<hi rend="i">KmK</hi> I, s. XXXIII; II, wg indeksu; Ptaśnik, <title>Studia 2</title>, s. 18–19).</note>
+               </person>
+               <person xml:id="Jadwiga">
+                   <persName>Jadwiga</persName>
+                   <note>córka Jana Głowacza z Lężenic wojewody mazowieckiego, od 1432 pierwsza żona
+                       Jana z Czyżowa kasztelana i starosty krak.; zachowała się o niej tylko jedna wzmianka. Zm.
+                       przed 1445, ponieważ wtedy Czyżowski ożenił się z Barbarą córką Piotra Odrowąża ze Sprowy
+                       (Sochacka, <title>Jan z Czyżowa</title>, s. 24, 148 i Aneks I).</note>
+               </person>
+               <person xml:id="JanTeszner">
+                   <persName>Jan Teszner</persName>
+                   <note>(Tesznar, Teschner), zapewne syn Mikołaja Tesznera z Cieszyna ławnika i rajcy
+                       krak. 1409–1424, ławnik 1431–1437 i rajca krak. od 1439, złotnik. W latach 1439–1443 był
+                       właścicielem wsi Dąbie i Grzegórzki pod Krakowem, które nabył z prawem wykupu od rady
+                       miejskiej. Już w 1440 r. za pozwoleniem króla rozpoczął inwestycje w król. Łobzowie (dziś
+                       część Krakowa), a w 1443 r. otrzymał od króla zapisy na nieokreślone sumy i wziął w zastaw
+                       zamek król. w Łobzowie z wsiami, gdzie od 1444 r. posiadał wraz żoną Małgorzatą folwark
+                       z 2 sadzawkami. W zamian za inną pożyczkę 2200 dukatów, udzieloną królowi na wyprawę węgierską, trzymał w dzierżawie żupy olkuskie 1443–1447. Ponadto był właścicielem domu z ogrodem i 3 stawami koło Dąbia (dziś część Krakowa), otrzymanego od rady miejskiej w 1446 r.
+                       W 1452 r. został wraz z kilku mieszczanami krak. oskarżony przez proboszcza kościoła parafialnego w Proboszczewicach w diecezji płockiej o zrabowanie paramentów kościelnych. Jego syn
+                       Stanisław wpisał się w 1446 r. na Uniwersytet Krakakowski, o drugim Mikołaju wiadomo, że
+                       żył jeszcze w 1496 r. Być może trzecim synem Tesznera był Jan Tesznar szwagier Jana Turzona
+                       z Lewoczy, z którym w latach 1463–1469 miał do spółki hutę miedzianą pod Mogiłą, rajca krak.
+                       do 1495 (<title>KmK</title> I, s. XXXIV: tu jako rajca do 1495; II, wg indeksu; <hi rend="i">KMp.</hi> 4, wg indeksu; <title>Codex
+                       diplomaticus Universitatis Studii Generalis Cracoviensis,</title> p. 1, Cracoviae 1870, nr 102; p. 2, Cracoviae 1873, nr 124, 162, 219; <hi rend="i">ZDM</hi> III, nr 655; GK 19, s. 792; <title>Crac. art. Suppl. 1441–1450</title>; toż
+                       1451–1460; toż 1462–1475, wg indeksów; <hi rend="i">SPPP</hi> II, nr 3662, 3775; <title>Księgi przyjęć</title>, wg indeksu;
+                       <title>Metryka Uniw. Krak.</title> I, s. 210; Ptaśnik, <title>Studia 2</title>, s. 14, 27; Pietrusiński, <title>Złotnicy 2</title>, s. 319).</note>
+               </person>
+               <person xml:id="JanŚwidniczar">
+                   <persName>Jan Świdniczar</persName>
+                   <note>(Szwydniczar, Sweydniczar), być może syn (lub krewny) Jana Świdniczara
+                       łucznika i starszego tego cechu w latach 1410 i 1417. W 1417 r. przyjął prawo miejskie w Krakowie, gdzie był rajcą 1425–1457, a w 1454 r. sprawował urząd magistra civium (=zirkelmagister), czyli dowódcy policji targowej. W 1435 r. kupił dom w Rynku od spadkobierców ławnika Tilmana von Bruche. Był kupcem i przedsiębiorcą, handlował m.in. metalami, dzierżawił
+                       olborę i wójtostwo olkuskie przed 1434–1456 i być może z tego powodu zrezygnował z prawa
+                       miejskiego 1433–1449. Wtedy też kupił wieś Olelin (dziś Olewin), którą w 1460 r. sprzedali jego spadkobiercy. W 1444 r. Jan Wojnicki złożył w depozycie u Świdniczara zastawione dwa
+                       klejnoty ozdobione diamentami i rubinami oraz złoty naszyjnik, które przeznaczone były dla
+                       królowej Węgier. W 1457 r. Świdniczar sporządził testament, a w 1458 r. już nie żył. Jego synowie Jerzy i Jan uzyskali sądownie należne ojcu prawo patronatu ołtarza ŚŚ. Szymona i Judy
+                       w kościele NMP, uposażonego za jego pieniądze (<hi rend="i">KmK</hi> I, s. XXXII; II, nr 307, 312, 412, 432,
+                       439, 452, 556; <title>Crac. art. Suppl. 1441–1450</title>; toż 1451–1460; <title>Księgi przyjęć</title>, nr 2982, 4499;
+                       <hi rend="i">SPPP</hi> II, nr 2460, 2612, 3423; <hi rend="i">CDPol.</hi> IV, nr 44; <title>Dzieje Olkusza i regionu olkuskiego</title>, t. 1, pod
+                       red. F. Kiryka i R. Kołodziejczyka, Warszawa–Kraków 1978; Pietrusiński, <title>Złotnicy 1</title>, s. 597).</note>
+               </person>
+               <person xml:id="MikołajKoźbiał">
+                   <persName>Mikołaj Koźbiał</persName>
+                   <note>(Koćbiał), mieszczanin krak., zajmował się głównie udzielaniem kredytów
+                       pieniężnych pod zastaw nieruchomości i drogocennych przedmiotów. Przed 1440 r. wziął w zastaw od wójta zwierzynieckiego Mikołaja Grzymały dobra klasztoru zwierzynieckiego, Krzęcin
+                       i Grodzisko, w powiecie śląskim, a w 1471 r. otrzymał je w dożywotnie posiadanie. W 1444 r.
+                       sprzedał Piotrowi Sołtysowi dom z ogrodem penes ortum ferrarum. Posiadał też inny dom przy
+                       ul. Szewskiej, który w 1446 r. kupił od Katarzyny Jedleckiej. Zm. przed 1477 (<hi rend="i">SPPP</hi> II, nr 3085,
+                       3160; <title>Księga wójt. krak.</title>, wg indeksu; <title>Acta rectoralia Almae Universitatis Studii Cracoviensis
+                       inde ab anno MCCCLXIX</title>, ed. W. Wisłocki, t. I, Kraków 1893, nr 5; <title>Scab. Crac.</title> 6, s. 361;
+                       <hi rend="i">SHGKr.</hi> III, s. 231–232).</note>
+               </person>
+               <person xml:id="JanZyndram">
+                   <persName>Jan Zyndram</persName>
+                   <note>Zapewne Jan Zyndram (Sindram), mieszczanin i ławnik kazimierski 1408–1424. W 1413 r.
+                       wraz z żoną Agnieszką kupił tam dwa domy, w tym jeden przy ul. Krakowskiej. Posiadał też co
+                       najmniej dwie jatki mięsne i kram sukienny. W 1427 r. przed pielgrzymką do Rzymu zapisał
+                       40 grz. klasztorowi Bożego Ciała w Kazimierzu. W 1430 r. przyjął prawo miejskie w Krakowie.
+                       W 1442 r. jeden z mieszczan był mu winien 4 postawy sukna po 9 grz. każdy. W tym samym
+                       roku poręczał za zięcia Jana Polaka z Brzeźnicy, który przyjął prawo miejskie w Krakowie (<title>Acta
+                       scab. Casim. 1407–1427</title>; <title>Księga wójt. krak.</title>, obie wg indeksu; <title>Księgi przyjęć</title>, nr 4311, 5338; <title>Kodeks dyplomatyczny katedry krakowskiej św. Wacława</title>, wyd. F. Piekosiński, t. II, Kraków 1882,
+                       nr 515, 610; <hi rend="i">KmK</hi> I, nr 121).</note>
+               </person>
+               <person xml:id="StanisławGiedka">
+                   <persName>Stanisław Giedka</persName>
+                   <note>syn Giedki z Bobowej, występuje w latach 1414–1451. W 1441 r. pożyczył
+                       Serafinowi 667 fl. węg., których spłatę poręczył Piotr Cikowski, natomiast w 1445 r. pozywał
+                       podżupka Jakuba z Dąbrówki o jakieś niespłacone należności i wyrokiem sądu otrzymał prawo
+                       ciążenia jego dóbr (<hi rend="i">SHGKr.</hi> I, s. 141; GK 9, s. 159, 277).</note>
+               </person>
+               <person xml:id="MikołajV">
+                   <persName>Mikołaj V</persName>
+                   <note>Chodzi najpewniej o Mikołaja V księcia karniowskiego i rybnickiego (1409 – zm. 22 grudnia
+                       1452), syna Jana II Żelaznego księcia raciborskiego i Heleny córki Korybuta księcia litewskiego,
+                       a nie o jego brata Wacława księcia opawsko-raciborskiego, zm. 1456. W 1437 r. bracia podzielili
+                       księstwo. Mikołaj otrzymał Karniów, Bruntal, Pszczynę, Rybnik i Wodzisław, Wacław zaś część
+                       Raciborszczyzny z Raciborzem. Mimo to Mikołaj tytułował się księciem opawskim i raciborskim, on też miał najżywsze kontakty z Królestwem Polskim. W 1444 r. zajął zbrojnie księstwo
+                       siewierskie, nie chcąc dopuścić do jego zakupu przez biskupa krak. Pierwszą żoną Mikołaja V
+                       była Małgorzata Clema von Elguth (z Lgoty). Po 1445/1449 a przed 10 marca 1451 r. ożenił się ponownie z mieszczką krak. Barbarą siostrą Kaspra i Hieronima Rokembergów, dwukrotną
+                       wdową po Wilhelmie Obulcu i Jerzym Oriencie z Krakowa, zm. po 12 czerwca 1452 (Dworzaczek, <title>Genealogia</title>, tabl. 11; <title>Crac. art. Suppl. 1451–1460</title>, wg indeksu; <title>Książęta i księżne Górnego
+                       Śląska</title>, praca zbior. pod red. A. Barciaka, Katowice 1995, s. 95, 111–112).</note>
+               </person>
+               <person xml:id="PiotrSzafraniec">
+                   <persName>Piotr Szafraniec z Pieskowej Skały i Łuczyc</persName>
+                   <note>h. Stary Koń, syn Piotra Szafrańca wojewody
+                       krak., starosta żarnowiecki 1431 i sieradzki 1434–1441, podkomorzy krak. 1431–1441, zm.
+                       przed 7 kwietnia 1441 (<hi rend="i">U</hi> IV/1; <hi rend="i">U</hi> IV/5; Sperka, <title>Szafrańcowie</title>, wg indeksu i tabl. genealogiczna).</note>
+               </person>
+               <person xml:id="PiotrGrazer">
+                   <persName>PiotrGrazer</persName>
+                   <note>mieszczanin i kupiec krak., brat Urszuli żony Mikołaja Serafina. W 1407 r. przyjął prawo miejskie w Krakowie, ławnik 1417, następnie rajca krak. 1424–1450, a także starosta kwartału rzeźniczego 1430. W 1428 r. został oskarżony o zabranie Żydom 5000 fl., które
+                       należały do króla. Posiadał m.in. domy przy ul. Wiślnej, Floriańskiej, Grodzkiej i Szpitalnej,
+                       dom i ogród przy dzisiejszej ul. Kórniki, łączącej wówczas Prądnik (koło dzisiejszego Ronda
+                       Mogilskiego) z Krakowem, ogród i spichlerz koło młyna na Piasku, jatki. W 1449 r. kupił od
+                       Kunczy dom narożny w Rynku, który należał niegdyś do Serafina. Wielokrotnie poręczał przyjęcia do prawa miejskiego różnych osób. Był zapewne fundatorem ołtarza ŚŚ. Piotra i Leonarda
+                       w kościele NMP. Zm. przed 1455, pozostawił wdowę Agnieszkę, synów Jerzego i Mikołaja oraz
+                       drugą córkę, w 1441 r. wdowę po Piotrze Fetterze (<hi rend="i">KmK</hi> I, s. XXXII–XXXIV, LIII, nr 125–126,
+                       137; II, nr 397, 312, 412, 434, 511, 526; <title>Księgi przyjęć</title>, nr 1841, 3785, 4001, 4329, 4398, 4825,
+                       5397, 6280; <title>Księga wójt. krak.</title>, nr 1287, 1308; <hi rend="i">SPPP</hi> II, nr 2218–2219; <hi rend="i">KMp.</hi> IV, nr 1439; <title>Crac.
+                       art. Suppl. 1441–1450</title>, nr 199; GK 10, s. 897–898; <title>Scab. Crac. 6</title>, s. 40, 85, 115, 119, 133, 152,
+                       169, 182, 194, 241; 7, s. 26, 52, 70; <title>Cons. Crac.</title> 428, s. 272; A. Grabowski, <title>Starożytnicze wiadomości o Krakowie</title>, Kraków 1852, s. 289; Pietrusiński, <title>Złotnicy</title> 1, s. 168).</note>
+               </person>
+               <person xml:id="AnnaGoldbergowa">
+                   <persName>Anna Goldbergowa</persName>
+                   <note>(Goldbergyne, z domu Wyschegradyne), mieszczka toruńska 1430–1445.
+                       Była żoną Johanna Goldberga kupca toruńskiego 1394–1435, syna Johana ławnika Starego
+                       Miasta 1374–1378, zmarłego w 1438 r. W 1398 r. Goldberg miał dom przy ul. Żeglarskiej,
+                       a w 1428 r. mieszkał w kamienicy na Rynku Staromiejskim pod nr 156 (<title>Księga ławn. Torunia</title>,
+                       wg indeksu; <title>Księgi szosu Torunia</title>, wg indeksu).</note>
+               </person>
+               <person xml:id="HieronimRokenberg">
+                   <persName>Hieronim Rokenberg</persName>
+                   <note>(Rokemberk), kupiec krak. z bogatej rodziny patrycjuszowskiej, występujący w latach 1445–1470, brat Kaspra scholastyka krak., dwukrotnego rektora Uniwersytetu
+                       Krakowskiego i Barbary żony księcia opawsko-raciborskiego Mikołaja V (<title>Crac. art. Pt.</title>, nr 1385,
+                       1500; <title>Crac. art. Suppl. 1451–1460</title>, wg indeksu; <hi rend="i">SPPP</hi> II, nr 3996, 3998).</note>
+               </person>
+               <person xml:id="MikołajZyszno">
+                   <persName>Mikołaj Zyszno</persName>
+                   <note>(Żyzno), szlachcic, mieszczanin krak., pisarz Mikołaja Serafina 1442, w późniejszych latach ważnik żupy 1458. Razem z bratem posiadał w Krakowie połowę domu przy
+                       ul. Floriańskiej w pobliżu bramy miejskiej (<title>Crac. art. Suppl. 1441–1450</title>, nr 206; toż 1451–1460,
+                       nr 15, 285; Off. Crac. 6, s. 442; 9, s. 199–203, 618; 10, s. 276; GK 11, s. 178, 306, 690–691;
+                       ZK 12, s. 112, 332–336; Scab. Crac. 6, s. 213, 290, 323, 327, 358).</note>
+               </person>
+               <person xml:id="MikołajSzczytnicki">
+                   <persName>Mikołaj Szczytnicki</persName>
+                   <note>szlachcic, mieszczanin i podżupek wielicki 1449. W 1443 r. odsprzedał
+                       za 70 grz. Janowi proboszczowi szpitalnego kościoła Św. Krzyża w Wieliczce i jednocześnie podżupkowi wielickiemu dom koło ratusza, który kupił od Mikołaja Serafina. W 1450 r. ręczył za
+                       Serafina całym majątkiem ruchomym i nieruchomym Janowi z Czyżowa kasztelanowi i staroście
+                       krak. pożyczkę 100 grz. Posiadał z pewnością przywilej na działo stolnicze w kopalni wielickiej,
+                       gdzie jego otrocy eksploatowali sól, o czym świadczy zachowana nazwa działa i komory w tejże
+                       kopalni w 1518 r.; zm. 1452, zaś jego żona Dorota żyła jeszcze w 1463 r. i mieszkała we wspomnianym domu koło ratusza w Wieliczce (GK 10, s. 759, 837; 11, s. 168–169; Off. Crac. 9,
+                       s. 151; <hi rend="i">KWiel.</hi>, s. 26–27; <title>Opis żup</title> 1518, s. 67, 70, 75, 85).</note>
+               </person>
+               <person xml:id="WładysławI">
+                   <persName>Władysław I</persName>
+                   <note>ur. 1398/1411, brat Kazimierza II, po śmierci ojca Siemowita IV w 1434 r. objął
+                       ziemię płocką, wiską i zawkrzeńską, zaś w 1442 r. odziedziczył dzielnice braci: bełską, rawską,
+                       sochaczewską i gostynińską, zm. 11/12 grudnia 1455 (Dworzaczek, <title>Genealogia</title>, tabl. 4).</note>
+               </person>
+               <person xml:id="KazimierzII">
+                   <persName>KazimierzII</persName>
+                   <note>ur. 1397/1407, książę mazowiecki i bełski, syn Siemowita IV i Aleksandry siostry Władysława Jagiełły, zm. 15 września 1442 (Dworzaczek, <title>Genealogia</title>, tabl. 4; <hi rend="i">PSB</hi> XII,
+                       s. 283–284).</note>
+               </person>
+               <person xml:id="TomaszWarzymowski">
+                   <persName>Tomasz Warzymowski z Warzymowa</persName>
+                   <note>h. Pomian, syn Mikołaja, bohater walk Władysława
+                       Warneńczyka z Turkami, którego herb Pomian — wg relacji Długosza — król kazał namalować obok 11 innych godeł polskich i 12 węgierskich w kościele NMP w Budzie; potem podstoli
+                       brzeski 1447–1453 (Szybkowski, <title>Kujawska szlachta urzędnicza</title>, s. 694–695).</note>
+               </person>
+               <person xml:id="MikołajWarzymowski">
+                   <persName>Mikołaj Warzymowski z Warzymowa, Lasek i Dąbrowy</persName>
+                   <note>h. Pomian, kasztelan kowalski 1418–
+                       –1430, kruszwicki 1430–1435, brzeski kujawski 1435–1455, starosta inowrocławski i nieszawski
+                       1438, zm. 1455 (<hi rend="i">PSB</hi> XXI, s. 145–146; Szybkowski, <title>Kujawska szlachta urzędnicza</title>, s. 650).</note>
+               </person>
+               <person xml:id="Barbara">
+                   <persName>Barbara</persName>
+                   <note>księżniczka ruska Barbara żona (przed 1446) Bolesława IV księcia mazowieckiego 1429–
+                       –1454, późniejszego pretendenta do korony polskiej po śmierci Władysława Warneńczyka.(Dworzaczek, <title>Genealogia</title>, tabl. 4; <hi rend="i">PSB</hi> II, s. 277, 281).</note>
+               </person>
+               <person xml:id="HermanGebing">
+                   <persName>Herman Gebing</persName>
+                   <note>(Jebbing), kupiec toruński 1441–1455, posiadał dom na Starym Mieście
+                       przy ul. Żeglarskiej. W 1444 r. prowadził interesy handlowe z Piotrem Grazerem z Krakowa, szwagrem Serafina. Był jednym z uczestników spisku prokrzyżackiego w mieście w 1455 r., a po
+                       jego wykryciu został wraz z innymi rajcami stracony (<title>Księga ławn. Torunia</title>, wg indeksu; <title>Księgi
+                       szosu Torunia</title>, s. 169, przypis 2327; <title>Historia Torunia 2</title>, cz. 1, s. 21).</note>
+               </person>
+               <person xml:id="MikołajWierzynek">
+                   <persName>Mikołaj Wierzynek ze Śledziejowic, Garlicy Średniej i Dalszej</persName>
+                   <note>Zapewne Mikołaj Wierzynek ze Śledziejowic, Garlicy Średniej i Dalszej h. Wierzynkowa
+                       (Łagoda), podstarości krak. 1439, burgrabia krak. 1427, 1432–1451. W marcu 1441 r. procesował się z żupnikiem i jego urzędnikami o czynsz z żupy dla ubogich i klasztoru Św. Jadwigi,
+                       a później wielokrotnie prowadził interesy z Serafinem. Zm. po 28 grudnia 1451 a przed 19 maja 1453 (<hi rend="i">U</hi> IV/5; <title>Crac. art. Suppl. 1441–1450</title>; toż 1451–1460, wg indeksu: tu na s. 179 błędny
+                       biogram Wierzynka; <hi rend="i">SHGKr.</hi> I, s. 711–712).</note>
+               </person>
+               <person xml:id="PiotrSzczerba">
+                   <persName>Piotr Szczerba</persName>
+                   <note>mieszczanin 1420–1443 i rajca bocheński 1431, witryk kościoła parafialnego
+                       Św. Mikołaja i klasztoru dominikanów w Bochni 1429–1432, podżupek bocheński 1442–1443.
+                       Możliwe, że był synem Katarzyny i Jana Szczerby z Bochni (1373–1403), zięcia wójta bieckiego
+                       Stanisława Rodaka. Rodzina Szczerbów związana była z żupą bocheńską. W 1397 r. Piotrowi
+                       siostrzeńcowi Jana Szczerby powierzono stróżę szybu Szewczego w Starych Górach bocheńskich.
+                       Piotr Szczerba zaś w 1420 r. zaopatrywał żupę w słoninę, groch, świeże i solone ryby oraz piwo
+                       lipnickie i wiślickie, kupował zaś bałwany z szybów Findera i Bochnera (<title>Monografia opactwa
+                       cystersów we wsi Mogile</title>, cz. 2: <title>Zbiór dyplomów klasztoru mogilskiego</title>, oprac. E. Janota, Kraków
+                       1867, nr 87;<hi rend="i"> AKP</hi> X, wg indeksu; <title>Rach. boch.</title>, s. 146–148, 199, 200, 202, 209; <title>SPPP</title> II, nr 2376;
+                       GK 3, s. 261, 275, 287, 293–294, 361; 4, s. 627–628; <title>Cons. Crac.</title> 428, s. 419; <title>Off. Crac.</title> 6,
+                       s. 496). Błędnie odczytał podpis Szczerby na tym liście — Skuba zamiast Scirba — Ptaśnik,
+                       <title>Studia</title> 2, s. 19.</note>
+               </person>
+               <person xml:id="Mikułowski">
+                   <persName>Mikułowski</persName>
+                   <note>niezidentyfikowany bliżej oficjalista żupny, zm. przed 23 października 1454.
+                       W testamencie zapisał kościołowi w Bochni 20 grz., których jednak tamtejszy pleban Świętosław
+                       nie otrzymał, gdyż przejął je Serafin (<title>Off. Crac.</title> 7, s. 159).</note>
+               </person>
+               <person xml:id="Marcinek">
+                   <persName>Marcinek</persName>
+                   <note>niezidentyfikowany oficjalista żupny</note>
+               </person>
+               <person xml:id="PawełJarand">
+                   <persName>Paweł Jarand</persName>
+                   <note>(Paszek Jerand), mieszczanin bocheński 1431–1450, syn Mikołaja rajcy bocheńskiego 1415, brat Stanisława (<hi rend="i">AKP</hi> X, nr 3729; ZK 9, s. 288, 290; 13, s. 374–375; GK 2,
+                       s. 1039; 3, s. 644).</note>
+               </person>
+               <person xml:id="MikołajSkawiński">
+                   <persName>Mikołaj Skawiński</persName>
+                   <note>Może Mikołaj Skawiński świadek Serafina przed sądem oficjała krak. w 1443 r., gdy żupnik
+                       zobowiązał się zwrócić 66 grz. kanonikowi krak. Adamowi z Będkowa, lub Piotr Skawiński,
+                       także mieszczanin bocheński, który w 1431 r. wraz z innym mieszczaninem Janem Bonafide
+                       w imieniu miasta Bochni zobowiązał się wobec klasztoru klarysek złożyć w Krakowie 42 beczki
+                       śledzi (<title>Off. Crac.</title> 8, s. 440; <hi rend="i">SPPP</hi> II, nr 2350).</note>
+               </person>
+               <person xml:id="AndrzejzPomorzan">
+                   <persName>Andrzej z Pomorzan</persName>
+                   <note>Najpewniej Andrzej z Pomorzan w powiecie opoczyńskim h. Nieczuja 1420, brat Piotra z Pilchowic (dziś Pilichowice) w powiecie opoczyńskim, pisarza ziemi halickiej, dzierżawca Mężykowic (dzisiaj Maćkowice) w ziemi przemyskiej 1443–1464, pisarz ziemski przemyski 1436–1463,
+                       pisarz król. 1442–1463, poborca łanowego ziemi ruskiej 1442–1464, zm. przed 2 sierpnia 1465. Posiadał dom w Przemyślu. W marcu 1440 r. pożyczył podżupkowi przemyskiemu Janowi
+                       Parawiciniemu 36 grz. (<hi rend="i">AGZ</hi> XIII, wg indeksu; <hi rend="i">AKH</hi> IV, s. 18; <hi rend="i">AKP</hi> VIII/1, nr 867; ZK 152,
+                       s. 76; Kwiatkowski, <title>Urzędnicy</title>, s. 45–46; Sułkowska-Kurasiowa, <title>Dokumenty</title>, s. 248; U III/1,
+                       nr 1807: tu błędnie utożsamiony z Kierdejami z Pomorzan w ziemi lwowskiej).</note>
+               </person>
+               <person xml:id="Wojtek">
+                   <persName>Wojtek</persName>
+                   <note>alias Wojtusik wozak z Bochni związany z tamtejszą żupą. W 1434 r. procesował się
+                       z hutmanem wielickim Pawłem, któremu nie zezwolił na zajęcie z wyroku sądu ruchomości,
+                       a z Czasławem z Czasławic o konia wartości 1½ grz., ten zaś oskarżał go o pobicie (GK 5, s. 76,
+                       138).</note>
+               </person>
+               <person xml:id="MikołajSuchorabski">
+                   <persName>Mikołaj Suchorabski z Suchoraby</persName>
+                   <note>występuje w latach 1437–1451, justycjariusz krak. 1441,
+                       pisarz żupy wielickiej i osobisty Serafina 1441–1446, potem pomocnik pisarza żupy wielickiej
+                       Macieja bakałarza ze Lwowa i plebana w Gorzkowie 1451 (ZK 150, s. 35; <hi rend="i">SPPP</hi> VII/3, nr 834,
+                       840–841; <title>Crac. art. Suppl. 1451–1460</title>, s. 16).</note>
+               </person>
+               <person xml:id="GrotekzJankowic">
+                   <persName>Grotek z Jankowic i Świdnika</persName>
+                   <note>h. Rawa, dworzanin król. 1442, burgrabia krak. 1451, zm. po
+                       1455 (U IV/5; Wroniszewski, <title>Rawicze</title> 1, 2, wg indeksu).</note>
+               </person>
+               <person xml:id="PiotrItalik">
+                   <persName>Piotr Italik</persName>
+                   <note>(Gallicus, Włoch) z Florencji, pisarz żupy wielickiej 1439–1444, podżupek wielicki
+                       1445–1451 i osobisty sekretarz Serafina 1451 (<hi rend="i">AKH</hi> VIII, s. 159; GK 6, s. 245, 250; 8, s. 960,
+                       962; 9, s. 411–412; 11, s. 370, 400, 624, 690–691; Off. Crac. 6, s. 186).</note>
+               </person>
+               <person xml:id="Jan">
+                   <persName>Jan</persName>
+                   <note>Zapewne Jan prepozyt szpitala Św. Ducha w Wieliczce, podżupek 1444–1445 i karbarz wielicki 1444–1446, jednocześnie pisarz podżupka wielickiego 1446–1447, może tożsamy z późniejszym pisarzem Serafina o imieniu Jan 1452 (Off. Crac. 6, s. 754, 767, 772, 779, 996, 1073;
+                       8, s. 698; GK 8, s. 960, 962; 9, s. 809; <title>Crac. art. Suppl. 1441–1450</title>, nr 342).</note>
+               </person>
+               <person xml:id="JanGałka">
+                   <persName>Jan Gałka</persName>
+                   <note>Najpewniej Jan Gałka z Niedźwiedzia h. Odrowąż, burgrabia lubelski 1442, wielkorządca
+                       1442–1444 i burgrabia krak. 1434/1436–1462, zm. 1462/1463. W latach 1442–1445 wielokrotnie poręczał pożyczki Serafina i procesował się z nim o zwrot pieniędzy, otrzymał nawet
+                       wwiązanie w jego dom (<hi rend="i">PSB</hi> VII, s. 258; <hi rend="i">U</hi> IV/5; GK 7, s. 833–834; 8, s. 327, 363, 1082; 9,
+                       s. 269).</note>
+               </person>
+               <person xml:id="StanisławRusek">
+                   <persName>Stanisław Rusek</persName>
+                   <note>mieszczanin krak. 1430–1453, starszy cechu tandeciarzy krak. Posiadał dom
+                       przy ul. Sławkowskiej. Pożyczał wielokrotnie pieniądze Mikołajowi Serafinowi i jego bratu Jakubowi. Obaj w 1448 r. byli mu już winni aż 719 fl. Przez kilka lat Rusek procesował się z nimi
+                       o zwrot długu (Crac. art. Pt., nr 270; GK 10, s. 543, 993, 1014; 11, s. 14–15, 535, 538–539,
+                       543, 580). Zob. też listy nr 35 i 36.</note>
+               </person>
+               <person xml:id="Świeczka">
+                   <persName>Świeczka</persName>
+                   <note>niezidentyfikowany oficjalista żupny.</note>
+               </person>
+               <person xml:id="Dąbrowski">
+                   <persName>Dąbrowski</persName>
+                   <note>niezidentyfikowany.</note>
+               </person>
+               <person xml:id="JanZagórzański">
+                   <persName>Jan Zagórzański z Zagórzan</persName>
+                   <note>h. Ostoja, starosta biecki 1437–1439, podstoli królowej Zofii
+                       1437–1452, kuchmistrz 1442–1448 i ochmistrz dworu tejże królowej 1442–1452, kasztelan
+                       zawichojski 1452–1457. 15 kwietnia 1443 r. ręczył za Serafina Markowi z Minogi zwrot 300 fl.,
+                       w wyniku czego utracił w roku następnym wieś Kalinę. O zwrot pieniędzy procesował się z Serafinem do 1450 r. (<hi rend="i">PSB</hi> X, s. 491; <hi rend="i">U</hi> IV/1; GK 8, s. 276; 9, s. 259, 277; 10, s. 122, 523, 555,
+                       723, 806; 11, s. 27, 61).</note>
+               </person>
+               <person xml:id="JanTęczyński">
+                   <persName>Jan Tęczyński</persName>
+                   <note>h. Topór, kasztelan biecki 1433–1435, starosta lubelski 1434–1438, kasztelan
+                       wojnicki 1435–1437, wojewoda sandomierski 1437–1438, krak. 1438–1459, kasztelan krak.
+                       1459–1470, zm. 1470 (U IV/1; Kurtyka, <title>Tęczyńscy</title>, wg indeksu).</note>
+               </person>
+               <person xml:id="Ambroży">
+                   <persName>Ambroży</persName>
+                   <note>niezidentyfikowany.</note>
+               </person>
+               <person xml:id="Siestrzeniec">
+                   <persName>Siestrzeniec</persName>
+                   <note>niezidentyfikowany oficjalista żupny.</note>
+               </person>
+               <person xml:id="JerzyOrient">
+                   <persName>Jerzy (Jorge) Orient</persName>
+                   <note>kupiec i wielokrotny rajca krak. 1427–1445, siostrzeniec księdza Teodora
+                       Weinricha z Krakowa, patron ołtarza Wniebowzięcia NMP w kościele Św. Barbary, dwukrotnie
+                       żonaty: z Katarzyną 1435, a pod koniec życia z Barbarą Rokembergową, późniejszą żoną księcia
+                       karniowskiego i rybnickiego Mikołaja. W 1443 r. oblatował w księgach ławniczych testament.Zm. po 16 września 1445, a przed 24 maja 1448 (<title>KmK</title> I, s. XXXIII, nr 137; II, s. 568, nr 307,
+                       412, 432, 513; <hi rend="i">SPPP</hi> II, nr 3223, 4003; Scab. Crac. 6, s. 105, 296, 330; 7, s. 59).</note>
+               </person>
+               <person xml:id="MichałLasocki">
+                   <persName>Michał Lasocki z Lasotek</persName>
+                   <note>h. Dołęga, dworzanin król. W 1432 r. pobił i zniesławił pisarza żupnego Mikołaja Serafina, późniejszego żupnika. W latach 1440–1444 przebywał na Węgrzech, od
+                       1445 r. starosta łęczycki, który to urząd utracił na przełomie 1447 i 1448 r. w związku z oskarżeniem o zabójstwo. Później podkomorzy dobrzyński 1450–1454, ponownie starosta łęczycki
+                       1452–1472, podkomorzy łęczycki 1454–1472 i marszałek nadworny 1464–1471. Kilkakrotnie
+                       poręczał pożyczki Serafina. 15 kwietnia 1443 r. wraz z Janem z Zagórzan ręczył Markowi
+                       z Minogi zwrot przez Serafina 300 fl. węg. wwiązaniem w trzymane w tenucie wsie Rudnik
+                       i Rodaki. Pieniędzy tych żupnik nie oddał, obciążając zwrotem długu poręczycieli (<hi rend="i">PSB</hi> XVI,
+                       s. 541–542; <hi rend="i">U</hi> II/1; GK 8, s. 276–277).</note>
+               </person>
+               <person xml:id="JanCzyżowski">
+                   <persName>Jan Czyżowski z Czyżowa</persName>
+                   <note>h. Półkozic, starosta sandomierski 1431-1437, kasztelan 1433-1435 i wojewoda sandomierski 1435-1437, wojewoda 1437-1438, kasztelan 1438-1458 i starosta krak. 1440-1457, namiestnik króla w Małopolsce i na Rusi 1440-1447 (Sochacka, <title>Jan z Czyżowa</title>).</note>
+               </person>
+               <person xml:id="MikołajLasocki">
+                   <persName>Mikołaj Lasocki syn Michała z Lasotek</persName>
+                   <note>h. Dołęga, może brat <persName ref="#MichałLasocki">Michała</persName>,
+                       sekretarz 1424–1436 i dyplomata królów Władysława Jagiełły i Władysława III Warneńczyka,
+                       kustosz gnieźnieński 1429–1436, kanonik od 1429, kantor 1430–1432 i dziekan krak. od 1438,
+                       biskup nominat włocławski 1449. W latach 1440–1444 przebywał na Węgrzech, pełniąc funkcję
+                       doradcy króla i zarządcy skarbu król. (<hi rend="i">PSB</hi> XVI, s. 543–545: z licznymi błędami; K. Grodziska,
+                       <title>Mikołaj Lasocki. Życie i twórczość</title>, Kraków 1988: mps w Bibliotece Jagiellońskiej).</note>
+               </person>
+               <person xml:id="MikołajWadzi">
+                   <persName>Mikołaj Wadzi</persName>
+                   <note>Zapewne Mikołaj Wadzi (de Vagiis, Italicus), florentyńczyk, faktor żupnika Antoniego z Florencji 1430, potem podżupek wielicki 1432–1434 w służbie żupnika Mikołaja z Tarnawy, z którym zerwał kontrakt bez dokonania rozliczeń finansowych (Ptaśnik, <title>Studia 2</title>, s. 16; Ptaśnik,
+                       <title>Kultura</title>, s. 85, 150; <title>Crac. art. Suppl. 1433–1440</title>, nr 3, 39; <title>Off. Crac.</title> 5, s. 107).</note>
+               </person>
+               <person xml:id="Przedbor">
+                   <persName>Przedbor z Koniecpola</persName>
+                   <note>h. Pobóg, starosta (tenutariusz) lelowski 1428–1460, kasztelan rozpierski 1434–1442, sandomierski 1442/1443–1460, starosta przemyski 1440–1460, zm. 1460
+                       (F. Sikora, <title>Testament Przedbora z Koniecpola z roku 1460</title>, <title>Studia Hist.</title> 26, 1983, s. 297–314;
+                       <title>U</title> IV/1).</note>
+               </person>
+               <person xml:id="Magdalena">
+                   <persName>Magdalena</persName>
+                   <note>ochrzczona Żydówka, kramarka krak. handlująca m.in. rodzynkami, migdałami
+                       i figami. Udzielała także licznych pożyczek pod zastaw ruchomości, zarówno duchowieństwu
+                       krak., jak i mieszkającej w stolicy szlachcie. W 1440 r. uzyskała unieważnienie małżeństwa
+                       z bakałarzem Piotrem, który — jak zeznała — uwięził ją i przemocą zmusił do małżeństwa.
+                       W 1443 r. Serafin wraz z bratem Jakubem i Mikołajem Zawrzykrajem pożyczyli od Magdaleny
+                       600 fl. węg. pod zastaw kosztownych szat, postawów sukna, precjozów i innych przedmiotów. Rzeczy te 18 listopada t.r. wierzycielka prezentowała przed sądem, gdzie dokonano ich dokładnego spisu. Rok później pożyczyła Jakubowi 321 grz. na opłacenie pracowników w żupie
+                       wielickiej, biorąc w zastaw kolejne ruchomości, które wkrótce zaczęła sprzedawać, nie mogąc
+                       doczekać się zwrotu długu (<hi rend="i">SPPP</hi> II, nr 2577; <title>Crac. art. Suppl. 1441–1450</title>, nr 182, 198, 259,
+                       415, 498; ZK 12, s. 163; GK 8, s. 723; <title>Off. Crac.</title> 6, s. 66–67).</note>
+               </person>
+               <person xml:id="JadwigaCzyżowska">
+                   <persName>Jadwiga</persName>
+                   <note>Zapewne Jadwiga córka Jana Głowacza z Lężenic wojewody mazowieckiego, znana jako żona
+                       Jana z Czyżowa późniejszego kasztelana krak. jedynie z dokumentu oprawy, datowanego na lata
+                       1410–1432. Byłaby to druga o niej wiadomość poświadczająca ją jako żywą jeszcze w połowie
+                       1444 r. Drugą żoną Czyżowskiego była bowiem Barbara córka Piotra Odrowąża ze Sprowy
+                       wojewody lwowskiego, poślubiona najpewniej w lutym 1445 r. (por. Sochacka, <title>Jan z Czyżowa</title>,
+                       s. 24, 83, 148).</note>
+               </person>
+               <person xml:id="PiotrSzafraniecjr">
+                   <persName>Piotr Szafraniec z Pieskowej Skały</persName>
+                   <note>h. Stary Koń, syn podkomorzego krak. <persName ref="#PiotrSzafraniec">Piotra Szafrańca</persName>, starosta sieradzki 1441–1442, podkomorzy krak. 1441 i 1443–1456
+                       (<hi rend="i">U</hi> II/1; <hi rend="i">U</hi> IV/1; <hi rend="i">U</hi> IV/5; Sperka, <title>Szafrańcowie</title>, wg indeksu).</note>
+               </person>
+               <person xml:id="ZaklikaTarło">
+                   <persName>Zaklika Tarło ze Szczekarzowic</persName>
+                   <note>h. Topór, dworzanin król. 1420, podczaszy królowej Zofii
+                       1424, starosta stryjski 1431, łożny i krajczy król. 1439–1441, 1444–1466, zm. 1466 (J. Fijałek,
+                       <title>Tarłowie, znamienitego rodu początki i świetność</title>, Przegląd Hist. 8, 1909, s. 63–88 n.).</note>
+               </person>
+               <person xml:id="Żernicki">
+                   <persName>Żernicki</persName>
+                   <note>niezidentyfikowany dworzanin Jana Czyżowskiego.</note>
+               </person>
+               <person xml:id="JanLigęza">
+                   <persName>Jan Ligęza z Bobrka i Niegowici</persName>
+                   <note>h. Półkozic, podczaszy 1415–1431 i ochmistrz królowej 1421–
+                       –1423, kasztelan biecki 1444–1458, zm. 1458 (<hi rend="i">PSB</hi> XVII, s. 317–318; <hi rend="i">U</hi> IV/1; <hi rend="i">SHGKr.</hi> I, s. 87,
+                       146–147).</note>
+               </person>
+               <person xml:id="PiotrzPilchowic">
+                   <persName>Piotr zwany Keltitą z Pilchowic</persName>
+                   <note>Zapewne Piotr zwany Keltitą z Pilchowic (dzisiaj Pilichowice) w powiecie opoczyńskim
+                       h. Nieczuja 1419, brat Andrzeja z Pomorzan (zob. list nr 9, przypis 1), pisarz ziemski halicki 1442–1449 (<hi rend="i">AKH</hi> III, s. 132, nr 49; IV, s. 16; <hi rend="i">U</hi> III/1, s. 159: tu błędnie h. Jastrzębiec;
+                       <hi rend="i">AGZ</hi> XIII, wg indeksu).</note>
+               </person>
+               <person xml:id="JanDoliński">
+                   <persName>Jan Doliński</persName>
+                   <note>h. Sas, komornik sądu ziemskiego przemyskiego 1430, wojewoda (zamkowy, czyli
+                       burgrabia) i podstarości przemyski 1440, chorąży 1454–1467 i sędzia przemyski 1468–1472;
+                       dziedzic Doliny w ziemi sanockiej 1424–1441 i kilku wsi po obu brzegach Sanu: Ruszelczyce,
+                       Iskań i Ruskie Dubiecko (dzisiaj Ruska Wieś), które w 1441 r. kupił od Mikołaja Kmity z Wiśnicza, oraz Trześniowa z sołectwem od 1441 r. (<hi rend="i">SHGSan.</hi> I, s. 91–92, 165–166; III, s. 84–86;
+                       <hi rend="i">U</hi> III/1; Boniecki IV, s. 349).</note>
+               </person>
+               <person xml:id="MikołajKmita">
+                   <persName>Mikołaj Kmita z Wiśnicza, Sobienia i Bachórza</persName>
+                   <note>Może Mikołaj Kmita z Wiśnicza, Sobienia i Bachórza h. Szreniawa, kasztelan przemyski
+                       1433–1447, zm. 1448 lub jego syn Jan Kmita zwany Noskiem z Wiśnicza i Sobienia, kasztelan
+                       przemyski 1448–1449 i lwowski (ruski) 1449–1458, zm. 1460 (<hi rend="i">PSB</hi> XIII, s. 91; <hi rend="i">U</hi> III/1).</note>
+               </person>
+               <person xml:id="Grad">
+                   <persName>Grad</persName>
+                   <note>niezidentyfikowany</note>
+               </person>
+               <person xml:id="JanGłowacz">
+                   <persName>Jan Głowacz z Oleśnicy</persName>
+                   <note>h. Dębno, kasztelan żarnowski 1425–1430, marszałek Królestwa
+                       1430–1440, wielkorządca 1439 i starosta krak. 1439–1440, kasztelan 1440–1442 i wojewoda
+                       sandomierski 1442–1460, zm. 1460 (<hi rend="i">PSB</hi> XXIII, s. 764–766; <hi rend="i">U</hi> IV/1; <hi rend="i">U</hi> X).</note>
+               </person>
+               <person xml:id="JanRogala">
+                   <persName>Jan Rogala z Węgrzynowa</persName>
+                   <note>h. Rogala, brat Rogali kasztelana zakroczymskiego, chorąży wyszogrodzki 1432–1439, marszałek dworu księcia mazowieckiego Bolesława IV od 1439, wojewoda czerski 1445–1461, zm. 1461/1462 (<hi rend="i">PSB</hi> XXXI, s. 389–391; Piętka, <title>Mazowiecka elita</title>,
+                       s. 117–118).</note>
+               </person>
+               <person xml:id="JakubSienieński">
+                   <persName>Jakub Sienieński (Wojnicki) z Sienna</persName>
+                   <note>h. Dębno, syn Dobiesława z Oleśnicy kasztelana wojnickiego, kanonik krak. od 1434, kustosz wiślicki 1441–1443, prepozyt krak. od 1444, pisarz król. 1444, biskup nominat krak. 1460–1463, biskup włocławski 1464–1474, arcybiskup
+                       gnieźnieński 1474–1480, zm. 1480 (<hi rend="i">PSB</hi> X, s. 364–367; Sułkowska-Kurasiowa, <title>Dokumenty</title>,
+                       s. 253–254).</note>
+               </person>
+               <person xml:id="WincentyGiżycki">
+                   <persName>Wincenty Giżycki z Giżyc</persName>
+                   <note>Zapewne Wincenty Giżycki z Giżyc h. Gozdawa, brat biskupa płockiego Pawła, marszałek
+                       dworu księcia Bolesława IV 1447, kasztelan wiski 1465, zm. przed 1468 (<hi rend="i">PSB</hi> VIII, s. 26–27;
+                       Wolff, <title>Studia</title>, s. 285; Piętka, <title>Mazowiecka elita</title>, s. 64–66; ks. W. Graczyk, <title>Paweł Giżycki biskup
+                       płocki 1439–1463</title>, Płock 1999, s. 53–54).</note>
+               </person>
+               <person xml:id="SędziwójzLężenic">
+                   <persName>Sędziwój z Lężenic</persName>
+                   <note>h. Nałęcz, syn Jana Głowacza wojewody mazowieckiego, brat kasztelana
+                       warszawskiego Dobrogosta z Nowego Dworu, podkomorzy sandomierski 1451–1460, starosta
+                       inowrocławski 1458 (wg J. Piętki inowłodzki), wojewoda sieradzki 1460–1466 (<hi rend="i">PSB</hi> XXXVI,
+                       s. 403–404; <hi rend="i">U</hi> IV/1; <hi rend="i">U</hi> II/1; Piętka, <title>Mazowiecka elita</title>, s. 101).</note>
+               </person>
+               <person xml:id="StanisławBoruta">
+                   <persName>Stanisław Boruta z Falent, Modły i Raszyna</persName>
+                   <note>h. Grzymała, chorąży warszawski 1434–1461,
+                       kanclerz księcia mazowieckiego Bolesława 1449 (Wolff, <title>Studia</title>, s. 291; Boniecki II, s. 61; K. Tymieniecki, <title>Procesy twórcze formowania się społeczeństwa polskiego w wiekach średnich</title>, Warszawa
+                       1921, s. 202).</note>
+               </person>
+               <person xml:id="MarcinzRękawczyna">
+                   <persName>Marcin z Rękawczyna</persName>
+                   <note>Być może jest to występujący od 1459 r. Marcin z Rękawczyna syn Andrzeja Wydżgi zwanego
+                       Wigandem z Rękawczyna w ziemi płockiej i Ostrowa w ziemi bełskiej, wojewody płockiego
+                       1441–1444 (<title>Zbiór dokumentów Płocka</title>, t. 1, s. 128; <hi rend="i">SHGPł.</hi> 3, s. 257).</note>
+               </person>
+               <person xml:id="JurekKesinger">
+                   <persName>Jurek Kesinger</persName>
+                   <note>syn Klausa mieszczanina krak., brat Winka i Waltera (Waltka) wielkorządcy
+                       krak. 1460–1471, dzierżawca Marchocic 1447, sołtys w Bronowicach Niemieckich i właściciel
+                       folwarku tamże od 1464, żonaty z Małgorzatą córką Hanusza Hoze (Ptaśnik, <title>Studia</title> 2, s. 32;
+                       Rajman, <title>Kesingerowie</title>, s. 441).</note>
+               </person>
+               <person xml:id="Andrzej">
+                   <persName>Andrzej</persName>
+                   <note>pisarz Serafina, występuje jeszcze w 1443 r., gdy przekładał w sądzie grodzkim krak.
+                       termin procesu Serafina z księciem smoleńskim Mitką i świadkował w sprawach żupnika w sądzie konsystorskim (GK 8, s. 333, 335; Off. Crac. 8, s. 484).</note>
+               </person>
+               <person xml:id="MikołajZawrzykraj">
+                   <persName>Mikołaj Zawrzykraj</persName>
+                   <note>mieszczanin 1432 i rajca wielicki 1433, podżupek bocheński 1435–1436,
+                       1440, wielicki 1445–1446, najbliższy współpracownik Serafina i jego brata Jakuba, wielokrotny
+                       poręczyciel ich pożyczek. Żadne ze znanych źródeł nie określa go mianem ojca Serafina, najpewniej więc był to jego stryj. Od 1443 r., chociaż nie przyjął prawa miejskiego, pisał się z Krakowa, dokąd przeniósł się po zakończeniu w 1446 r. działalności w żupie. Żył jeszcze w 1452 r.
+                       (<hi rend="i">AKH</hi> VIII, s. 159; <hi rend="i">SPPP</hi> II, nr 2431; GK 9, s. 615; <title>Crac. art. Suppl. 1441–1450</title>, wg indeksu;
+                       Off. Crac. 8, s. 28; 9, s. 327).</note>
+               </person>
+               <person xml:id="PiotrGawrzyjał">
+                   <persName>Piotr Gawrzyjał</persName>
+                   <note>(Gabriel) mieszczanin i rajca bocheński 1443, któremu Mikołaj Zawrzykraj
+                       winien był pewne sumy pieniędzy. 15 grudnia 1444 r. żona Gawrzyjała Helena, nie mogąc odzyskać długu ani wwiązać się w jakiekolwiek dobra Zawrzykraja, uzyskała w sądzie starościńskim nakaz jego uwięzienia, do czego starosta delegował woźnego Piotra Sitkę. Sprawa
+                       zadłużenia Zawrzykraja wobec Gawrzyjała ciągnęła się do końca roku 1445 (<hi rend="i">SPPP</hi> II, nr 3167;
+                       GK 8, s. 1114; 9, s. 375–376, 455).
+                   </note>
+               </person>
+               <person xml:id="MarekzBolesławca">
+                   <persName>Marek z Bolesławca</persName>
+                   <note>burgrabia zamku przemyskiego 1441–1448.</note>
+               </person>
+               <person xml:id="LaczekzSosnowic">
+                   <persName>Laczek z Sosnowic</persName>
+                   <note>Może Laczek z Sosnowic, a potem Zebrzydowic niedaleko Barwałdu h. Radwan, występujący
+                       w latach 1428–1450. Jego żoną była Katarzyna córka Andrzeja z Rafałowic. Laczek wielokrotnie
+                       poręczał pożyczki Serafina. W 1442 r. sprzedał mu swoją część Zebrzydowic wraz z prawem
+                       patronatu kościoła, zaś w 1444 r. wziął od niego w zastaw Barwałd i las Ochodza, wykupione
+                       przez Serafina rok później (<hi rend="i">SPPP</hi> II, nr 2170, 2454; ZK 12, s. 213–214; 150, s. 211, 233; 151,
+                       s. 14; GK 7, s. 884; 9, s. 318).</note>
+               </person>
+               <person xml:id="Herad">
+                   <persName>Herad</persName>
+                   <note>(Herard, Gerard), szafarz wielicki, może tożsamy z mieszczaninem krak. Herardem.
+                       W 1432 r. niejaki Herard syn Herarda z Krakowa zapisał się na Uniwersytet Krakowski, zaś
+                       w 1446 r. Serafin był zachodźcą wdowy Katarzyny z Krakowa pozywanej przez Stanisława
+                       Herarda z Krakowa z tytułu 2½ grz. długu (<title>Metryka Uniw. Krak.</title> I, s. 160; Off. Crac. 6,
+                       s. 1082).</note>
+               </person>
+               <person xml:id="Nikiel">
+                   <persName>Nikiel</persName>
+                   <note>niezidentyfikowany oficjalista żupny.</note>
+               </person>
+               <person xml:id="Motyka">
+                   <persName>Motyka</persName>
+                   <note>oficjalista żupny lub solarz, niezidentyfikowany wobec występowania w tym czasie
+                       wielu osób o tym przezwisku, wśród nich solarzy Motyczków (zob. <title>Księgi przyjęć</title>, wg indeksu).
+                       Występuje jeszcze w roku 1452, zob. list nr 29.</note>
+               </person>
+               <person xml:id="Klingisor">
+                   <persName>Klingisor</persName>
+                   <note>(Klingsor), niezidentyfikowany mieszczanin krak. z rodziny piekarzy i rzeźników,
+                       którzy mieszkali m.in. przy ul. Stolarskiej i Sławkowskiej. Występuje jeszcze w roku 1452, zob.
+                       list nr 32 (<hi rend="i">KmK</hi> II, s. 132; <title>Księgi przyjęć</title>, wg indeksu; Scab. Crac. 6, s. 31; 7, s. 30).</note>
+               </person>
+               <person xml:id="MikołajczyliNikiel">
+                   <persName>Mikołaj, czyli Nikiel</persName>
+                   <note>h. Półkozic z Młodocina Większego w powiecie radomskim, podstarości
+                       krak. 1447–1450, 1453–1457 (Fedorowicz, <title>Dostojnicy</title>, s. 122–123).</note>
+               </person>
+               <person xml:id="JanUliński">
+                   <persName>Janie Ulińskim z Ossowej, Brzączowic i Wieliczki</persName>
+                   <note>Najpewniej mowa o Janie Ulińskim z Ossowej, Brzączowic i Wieliczki, z rozrodzonej rodziny
+                       Ulińskich h. Ulina, żonatym z Dorotą, szwagierką Pawła ważnika wielickiego, która w 1469 r.
+                       wystąpiła jako wdowa po Ulińskim z Wieliczki (<hi rend="i">SHGKr.</hi> I, s. 227).</note>
+               </person>
+               <person xml:id="Mężyk">
+                   <persName>Mężyk</persName>
+                   <note>sługa Serafina i Mikołaja Zawrzykraja, występuje w latach 1443–1452 (Off. Crac. 8,
+                       s. 440; zob. także listy nr 25, 27, 30, 33).</note>
+               </person>
+               <person xml:id="PiotrWilam">
+                   <persName>Piotr Wilam</persName>
+                   <note>Zapewne Piotr Wilam syn Wilama h. Trzy Trąby, dziedziczny wójt bocheński występujący
+                       w latach 1449–1475, brat późniejszych wójtów Jana Wilama 1452–1493 i Stanisława Wilama
+                       1471–1473 (<hi rend="i">SHGKr.</hi> I, s. 159).</note>
+               </person>
+               <person xml:id="DobiesławzPałuszyc">
+                   <persName>Dobiesław (Dobek) z Pałuszyc</persName>
+                   <note>Zapewne Dobiesław (Dobek) z Pałuszyc h. Róża, który w 1445 r. kilkakrotnie pozywał Stanisława ze Złotej i Jana Ligęzę jako poręczycieli Serafina i jego brata Jakuba w nieokreślonej
+                       sprawie, najpewniej dotyczącej niezwróconej pożyczki (GK 9, s. 259, 333, 403). W efekcie
+                       wygranej sprawy Dobek musiał uzyskać wwiązanie w dobra poręczycieli i w któryś z szybów
+                       w żupie bocheńskiej, z którego wydobywał sól w celu odzyskania długu. Możliwe jednak, że
+                       chodzi o Dobiesława ze Szczekocin (zob. list nr 37, przypis 5), ewentualnie o <persName ref="#DobiesławKmita">Dobiesława Kmitę</persName>
+                       z Wiśnicza.</note>
+               </person>
+               <person xml:id="AndrzejTęczyński">
+                   <persName>Andrzej Tęczyński</persName>
+                   <note>h. Topór, syn Andrzeja, kanonik krak., marszałek nadworny 1439, starosta chełmiński 1455–1456, protoplasta rodu Rabsztyńskich. Od 1441 r. poręczyciel licznych
+                       pożyczek Serafina, który w 1444 r. był mu winien już 3000 fl. (Kurtyka, <title>Tęczyńscy</title>, s. 473–475
+                       i tabl. II).</note>
+               </person>
+               <person xml:id="JakubKoleski">
+                   <persName>Jakub Koleski</persName>
+                   <note>Może tożsamy z Jakubem Koleskim (Colyessky) sługą Serafina w 1443 r.</note>
+               </person>
+               <person xml:id="DobiesławKmita">
+                   <persName>Dobiesław Kmita z Wiśnicza</persName>
+                   <note>h. Szreniawa, kasztelan biecki 1458–1459, wojnicki 1460–1463,
+                       lubelski 1464–1474, wojewoda lubelski 1474–1478, sandomierski 1478, zm. 1478 (<hi rend="i">PSB</hi> XIII,
+                       s. 87–88; <hi rend="i">U</hi> IV/1).</note>
+               </person>
            </listPerson>
            <listOrg>
               <org>
-                 <orgName xml:id="BraciaMichałaZBuczacza">Bracia Michała</orgName>
+                  <orgName xml:id="BraciaMichałaZBuczacza">Bracia Michała</orgName>
                  <desc>Teodoryk przodek Buczackich, starosta kamieniecki i podolski 1431–1434,
                     1442–1454, starosta (tenutariusz) czerwonogrodzki od 1436, kasztelan
                     kamieniecki 1442–1455, zm. 1455; Michał Mużyło starosta (tenutariusz)
                     śniatyński i kołomyjski 1436–1470, kasztelan kamieniecki 1460–1466, wojewoda
-                    podolski 1466–1470, zm. 1470 (<hi rend="i">U</hi> III/3; <hi rend="i">PS</hi>B
-                    III, s. 85). </desc>
+                    podolski 1466–1470, zm. 1470 (<hi rend="i">U</hi> III/3; <hi rend="i">PSB</hi>
+                    III, s. 85).</desc>
+                  <orgName xml:id="KrystyniMikołaj">Krystyn i Mikołaj</orgName>
+                 <desc>niezidentyfikowani oficjaliści żupni.</desc>
+                  <orgName xml:id="JaniPełkaKobylscy">Jan i Pełka Kobylscy</orgName>
+                 <desc>Bracia Jan i Pełka Kobylscy h. Kościesza, z Kobylan na Mazowszu. Po podziale dóbr w 1444 r.
+                      Jan otrzymał Falęcice i Grabie w powiecie czerskim, a Pełka Lutkową Wolę w ziemi warszawskiej (Boniecki X, s. 257).</desc>
+                  <persName ref="#MS"/>
               </org>
            </listOrg>
         </particDesc>
         <settingDesc>
            <listPlace>
+               <place xml:id="Paszyna">
+                   <placeName>Paszyna lub Poszyna</placeName>
+                   <note>wspomniana po raz pierwszy w 1365 r., miała charakter dworku myśliwskiego króla na terenie Puszczy Niepołomickiej opodal Niepołomic (<hi rend="i">Puszyna sive Niepolomice</hi>).
+                       W 1420 r. wyłożono ze skarbu pewną sumę <hi rend="i">pro edificacione tentorii alias ocol in Posina, venacione
+                       regali circa Niepolomice</hi> (zob. <hi rend="i">SHGKr.</hi> I, s. 241, 713; F. Sikora, <title>Dzieje podrzędztwa i starostwa
+                       niepołomickiego w średniowieczu</title> (cz. 1), Teki Krak. 8, 1998, s. 127). Wydawca listu błędnie
+                       objaśnił to miejsce jako wieś Paszczyna w powiecie pilzneńskim.
+                   </note>
+               </place>
+               <place xml:id="Sienno">
+                   <placeName>Sienno</placeName>
+                   <note>wieś, a od 1441 r. miasto w powiecie radomskim, 31 km na pn. od Opatowa (<title>Miasta
+                       polskie</title> I, s. 539).</note>
+               </place>
+               <place xml:id="Solec">
+                   <placeName>Solec</placeName>
+                   <note>(dzisiaj wieś Solec Sandomierski), zamek król. w powiecie radomskim wraz z miastem
+                       i przynależnymi doń wsiami, które w 1432 r. król Władysław Jagiełło zezwolił wykupić za
+                       1200 grz. z zastawu od Zaklików z Międzygórza Janowi Głowaczowi (<hi rend="i">ZDM</hi> VII, nr 2096).
+                       Odtąd był on w tenucie Oleśnickich.</note>
+               </place>
+               <place xml:id="Stupnica">
+                   <placeName>Stupnica</placeName>
+                   <note>(dzisiaj w Republice Ukrainy), miejscowość 23 km na wsch. od Starego Sambora.</note>
+               </place>
+               <place xml:id="Sól">
+                   <placeName>Sól</placeName>
+                   <note>(dzisiaj Stara Sil’ w Republice Ukrainy), wieś a potem miasto w starostwie samborskim,
+                       7 km na pn.-zach. od Starego Sambora. Miasto wraz z przedmieściem rozwinęło się wokół źródła solnego i stało się ośrodkiem żupy tzw. solskiej, która wchodziła w skład ekonomii żupnej
+                       przemyskiej (zob. Bukowski, <title>Objęcie w dzierżawę</title>, s. 111).</note>
+               </place>
+               <place xml:id="Czyżów">
+                   <placeName>Czyżów</placeName>
+                   <note>wieś parafialna i zamek w powiecie sandomierskim, 5 km na pn. od Zawichostu, siedziba rodziny Półkoziców Czyżowskich.</note>
+               </place>
+               <place xml:id="StarySambor">
+                   <placeName>Stary Sambor</placeName>
+                   <note>(dzisiaj Staryj Sambir w Republice Ukrainy), miasto w ziemi przemyskiej,
+                       ośrodek starostwa, wówczas w tenucie Odrowążów Sprowskich, 44 km na pd.-wsch. od Przemyśla.</note>
+               </place>
+               <place xml:id="Mogiła">
+                   <placeName>Mogiła</placeName>
+                   <note>wieś i klasztor cystersów (przeniesiony tutaj w 1226 r. z Kacic przez biskupa krak.
+                       Iwona Odrowąża); w 1951 r. włączona do Krakowa, 9 km na wsch. od centrum miasta.</note>
+               </place>
+               <place xml:id="Bochnia">
+                   <placeName>Bochnia</placeName>
+                   <note>miasto</note>
+               </place>
+               <place xml:id="Brzeg">
+                   <placeName>Brzeg</placeName>
+                   <note>miasto nad Odrą na Śląsku, ok. 40 km na pn.-zach. od Opola, stolica księstwa Piastów
+                       brzeskich, które w 1329 r. zostało shołdowane Czechom. Ośrodek handlowy na szlaku tranzytowym ołowiu i miedzi (<title>Miasta polskie</title> II, s. 159–161).
+                   </note>
+               </place>
+               <place xml:id="Pilzno">
+                   <placeName>Pilzno</placeName>
+                   <note>miasto król. w ziemi sandomierskiej, na lewym brzegu Wisłoka, 12 km na pd.-zach.
+                       od Dębicy, siedziba powiatu i ważny ośrodek handlowy na skrzyżowaniu szlaków na pd. na
+                       Węgry i na wsch. na Ruś (<title>Miasta polskie</title> II, s. 374–375).</note>
+               </place>
+               <place xml:id="PuszczaNiepołomicka">
+                   <placeName>Puszcza Niepołomicka</placeName>
+                   <note>(do połowy XIV w. zwana Lasem Kłajskim, potem urobiono nową
+                       nazwę od nazwy wsi król. Niepołomice), kompleks lasów król. w zach. części Kotliny Sandomierskiej. Ich zachowany do dzisiaj fragment o powierzchni ok. 120 km2
+                       rozciąga się od
+                       Niepołomic po dolną Rabę.</note>
+               </place>
+               <place xml:id="Niepołomice">
+                   <placeName>Niepołomice</placeName>
+                   <note>wieś i zamek (dzisiaj miasto) na skraju Puszczy Niepołomickiej w składzie król.
+                       dóbr wielkorządowych, ośrodek podrzędztwa, 12 km na pn.-wsch. od Wieliczki. Wspomniane
+                       zostały po raz pierwszy w 1349 r. W latach 1350–1358 Kazimierz Wielki zbudował tam murowany kościół parafialny i drewniany zameczek myśliwski, który został później przebudowany
+                       przez Władysława Jagiełłę na murowany. Od 1438 r., po wyłączeniu z wielkorządów krak.,
+                       Niepołomice były siedzibą starostwa niegrodowego oddawanego w tenutę (<title>Miasta polskie</title> I,
+                       s. 653–654).</note>
+               </place>
+               <place xml:id="UścieSolne">
+                   <placeName>Uście Solne</placeName>
+                   <note>miasto (dzisiaj wieś) w składzie król. dóbr wielkorządowych, przy starej drodze
+                       solnej z Bochni w kierunku Opatowca i Nowego Korczyna, ośrodek podrzędztwa ujsko-wojnickiego, 24 km na pn. od Bochni. Miasto posiadało komorę celną, była tam też rezydencja król.
+                       Po wyłączeniu na początku XV w. z wielkorządów krak. Uście stało się ośrodkiem starostwa
+                       niegrodowego, które oddawano w tenutę (<title>Miasta polskie</title> I, s. 674).</note>
+               </place>
+               <place xml:id="Wiślica">
+                   <placeName>Wiślica</placeName>
+                   <note>miasto (dzisiaj wieś) nad Nidą, w ziemi sandomierskiej z zamkiem król. i murami
+                       miejskimi wzniesionymi przez Kazimierza Wielkiego, 14 km na pd. od Buska. Od XI/XII w.
+                       siedziba kasztelanii, od XIV w. stolica powiatu, od XV w. siedziba starostwa niegrodowego.
+                       Miasto od XIV w. posiadało przywilej składu i cła od soli (<title>Miasta polskie</title> I, s. 552).</note>
+               </place>
+               <place xml:id="Nieszawa">
+                   <placeName>Nieszawa</placeName>
+                   <note>miasto na terenie Kujaw, na lewym, polskim brzegu Wisły, naprzeciwko Torunia,
+                       założone w 1425 r. u stóp zamku w Dybowie, i skutecznie konkurujące handlowo z Toruniem.
+                       Po inkorporacji Torunia do Polski w 1454 r. król zobowiązał się zlikwidować Nieszawę, która
+                       w latach 1460–1462 została zburzona, a jej mieszkańcy przeniesieni ok. 40 km w górę Wisły na Kujawy brzeskie, na teren wsi Roskydalino, gdzie założono Nową Nieszawę, zwaną też Nowym
+                       Dybowem (<title>Historia Torunia 1</title>, s. 250, 260; 2, cz. 1, s. 14, 36, 38, 43–44).</note>
+               </place>
+               <place xml:id="Rybnik">
+                   <placeName>Rybnik</placeName>
+                   <note>miasto na Śląsku, wówczas stolica księstwa rybnicko-karniowskiego, 22 km na wsch.
+                       od Raciborza.</note>
+               </place>
+               <place xml:id="Krosno">
+                   <placeName>Krosno</placeName>
+                   <note>miasto król. nad Wisłokiem, w ziemi sanockiej, 42 km na zach. od Sanoka (<title>Miasta
+                       polskie II</title>, s. 362–364; <hi rend="i">SHGSan.</hi> II/1, s. 71–95).</note>
+               </place>
+               <place xml:id="Płock">
+                   <placeName>Płock</placeName>
+                   <note> zamek i miasto na Mazowszu, na prawym brzegu Wisły, stolica księstwa płockiego
+                       1374–1495 (<title>Miasta polskie II</title>, s. 498–500).</note>
+               </place>
+               <place xml:id="Bydgoszcz">
+                   <placeName>Bydgoszcz</placeName>
+                   <note>miasto na Kujawach w województwie inowrocławskim, nad rzeką Brdą, 10 km na
+                       zach. od jej ujścia do Wisły. W latach 1331–1343 przejściowo w posiadaniu Zakonu Krzyżackiego. Od początku XV w. ważny ośrodek handlu wiślanego. W okresie wielkiej wojny z Zakonem
+                       w 1409 r. zdobyte i spalone przez Krzyżaków, w tym samym roku odzyskane przez Władysława
+                       Jagiełłę. Po wojnie trzynastoletniej (1454–1466) nastąpił intensywny rozwój gospodarczy miasta
+                       (<title>Miasta polskie I</title>, s. 307–311).</note>
+               </place>
+               <place xml:id="Gdańsk">
+                   <placeName>Gdańsk</placeName>
+                   <note>miasto nad Zatoką Gdańską, przy ujściu Martwej Wisły do Bałtyku, członek związku
+                       miast nadbałtyckich zwanego Hanzą. W latach 1308–1454 w rękach Zakonu Krzyżackiego, od
+                       1440 r. jeden z najaktywniejszych członków antykrzyżackiego Związku Pruskiego. W 1454 r.
+                       aktem inkorporacji króla Kazimierza Jagiellończyka przyłączone do Królestwa Polskiego (<title>Miasta
+                       polskie I</title>, s. 363–373).</note>
+               </place>
+               <place xml:id="Toruń">
+                   <placeName>Toruń</placeName>
+                   <note>miasto i zamek na prawym brzegu Wisły w ziemi chełmińskiej, założone przez Krzyżaków, członek Hanzy, od 1440 r. na czele Związku Pruskiego. W 1454 r. aktem inkorporacji
+                       przyłączone do Królestwa Polskiego (<title>Miasta polskie I</title>, s. 345–349).</note>
+               </place>
+               <place xml:id="Kuchary">
+                   <placeName>Kuchary</placeName>
+                   <note>wieś król. przynależna do dóbr Koszyce, 7 km na pn.-wsch. od Brzeska (<hi rend="i">SHGKr.</hi> III,
+                       s. 333).</note>
+               </place>
+               <place xml:id="Koszyce">
+                   <placeName>Koszyce</placeName>
+                   <note>miasto król. nad Szreniawą w powiecie proszowskim, 23 km na pn. od Brzeska. Od
+                       1408 r. niemal do końca XV w. w tenucie Tęczyńskich. W latach 1440–1448 tenutariuszką
+                       Koszyc była wdowa po Janie Koli z Dalejowa Jadwiga, której pierwszym mężem był Nawój
+                       z Tęczyna i Morawicy. Na tej tenucie Jadwiga miała najpewniej zapis oprawy posagu i wiana
+                       dokonany przez pierwszego męża (<hi rend="i">SHGKr.</hi> III, s. 26, 333).</note>
+               </place>
+               <place xml:id="Rakowice">
+                   <placeName>Rakowice</placeName>
+                   <note>wieś król. w parafii Św. Mikołaja w Krakowie, w 1928 r. włączona do miasta.</note>
+               </place>
               <place xml:id="Przemyśl">
                  <placeName>Przemyśl</placeName>
                  <note>miasto król. i zamek nad Sanem w województwie ruskim, stolica ziemi i
@@ -170,6 +1094,39 @@
                  <note>Gródek, później Gródek Jagielloński (dzisiaj Gorodok w Republice Ukrainy),
                     miasto powiatowe w ziemi lwowskiej, 26 km na zachód od Lwowa</note>
               </place>
+               <place xml:id="Báttaszék">
+                   <placeName>Báttaszék</placeName>
+                   <note>miasteczko w pd. Węgrzech, na pn.-wsch. od Pécs)</note>
+               </place>
+               <place xml:id="Ostrzyhom">
+                   <placeName>Ostrzyhom</placeName>
+                   <note>(Esztergom) miasto i port nad Dunajem w pn. Węgrzech wraz z zamkiem o strategicznym znaczeniu, ok. 35 km na pn.-zach. od stolicy Węgier Budy, wg tradycji miejsce koronacji
+                       pierwszego króla Węgier Stefana, siedziba jednego z dwóch arcybiskupstw.</note>
+               </place>
+               <place xml:id="Buda">
+                   <placeName>Buda</placeName>
+                   <note>miasto położone na prawym brzegu Dunaju, stolica Węgier i siedziba królów; w 1872 r.
+                       połączona z leżącym na lewym brzegu Pesztem w jedno miasto.</note>
+               </place>
+               <place xml:id="Pécs">
+                   <placeName>Pécs</placeName>
+                   <note>(Qiunqueeclesie, Pięciokościoły, rzymskie Sopianae), miasto w pd. Węgrzech przy granicy z Chorwacją, siedziba biskupstwa i stolica komitatu Baranya, jeden z ośrodków opozycji
+                       antyjagiellońskiej.</note>
+               </place>
+               <place xml:id="Slawonia">
+                   <placeName>Slawonia</placeName>
+                   <note>(Sklawonia, Slavonija) kraina we wsch. Chorwacji, w międzyrzeczu Drawy i Sawy, wówczas w pd. Węgrzech, 
+                       gdzie dominowała orientacja prohabsburska. Banat ten został ostatecznie spacyfikowany w 
+                       efekcie zimowo-wiosennej ofensywy króla Władysława w 1441 r.</note>
+               </place>
+               <place xml:id="Cilia">
+                   <placeName>Cilia</placeName>
+                   <note>(Celeia, pol. Cylia; dziś Celje w Słowenii), miejscowość 60 km na pn.-wsch. od Lublany.</note>
+               </place>
+               <place xml:id="Kraków">
+                   <placeName>Kraków</placeName>
+                   <note/>
+               </place>
            </listPlace>
         </settingDesc>
      </profileDesc>
