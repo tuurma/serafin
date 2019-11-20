@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Piotr z Pilchowic do Mikołaja Serafina, Bochnia, 14 lutego 1445</title>
+                <title>Piotr z Pilchowic do Mikołaja Serafina, <placeName ref="#Stupnica">Las za Stupnicą</placeName>, <date when="1445-02-14">14 lutego 1445</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#PiotrzPilchowic">Piotr z Pilchowic</persName>
                     <placeName ref="#Stupnica">Las za Stupnicą</placeName>
-                    <date when="1445-02-14" when-custom="14 lutego 1445">14 lutego 1445</date>
+                    <date when="1445-02-14">14 lutego 1445</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -94,7 +95,7 @@
                                 </expan> de s z opp a, licet adhuc non dedit, et quam citto resciero, <expan>M<ex>agnificencie</ex>
                                 </expan> <expan>V<ex>estre</ex>
                                 </expan> scribere non tardabo.</seg>
-                            <seg xml:id="s.1.2.21">Datum in silwa post <placeName ref="#Stupnica">Stupnycza</placeName>, die dominico, ipso die <date when="1445-02-14" when-custom="14 lutego 1445">sancti Valentini, anno Domini Mo cccco xxxxo quinto</date>.</seg>
+                            <seg xml:id="s.1.2.21">Datum in <placeName ref="#Stupnica">silwa post Stupnycza</placeName>, die dominico, ipso die <date when="1445-02-14">sancti Valentini, anno Domini Mo cccco xxxxo quinto</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -113,12 +114,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">isto nadpisane.</note>
                         <note n="b" type="transcription" target="#ab">est nadpisane.</note>
@@ -156,7 +151,7 @@
                             <seg xml:id="t.1.2.18">Dlatego zatroszczcie się o to, jeżeli chcecie mieć wszystko na czas, bowiem niczego mi nie będzie brakowało, jeżeli przyślecie pieniądze. Najmę wtedy sługi i nie zwolnię robotników.</seg>
                             <seg xml:id="t.1.2.19">Poza tym na wszystko jestem gotów, cokolwiek mi zlecicie.</seg>
                             <seg xml:id="t.1.2.20">Wiedzcie również, że pan <persName ref="#PiotrOdrowąż">starosta</persName> gniewał się na mnie z powodu pana <persName ref="#Grad">Grada</persName>, ponieważ mu nie zapłacono. Powiedział, że chce, aby mu dano sól z szopy, jednakowoż do tej pory nie dał. Jak tylko się czegoś dowiem, nie omieszkam napisać Waszej Wielmożności.</seg>
-                            <seg xml:id="t.1.2.21">Dan w lesie za <placeName ref="#Stupnica">Stupnicą</placeName>, w niedzielę <date when="1445-02-14" when-custom="14 lutego 1445">św. Walentego, roku Pańskiego 1445.</date>
+                            <seg xml:id="t.1.2.21">Dan w <placeName ref="#Stupnica">lesie za Stupnicą</placeName>, w niedzielę <date when="1445-02-14">św. Walentego, roku Pańskiego 1445.</date>
                             </seg>
                         </p>
                         <signed xml:id="t.1.3">

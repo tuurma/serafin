@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title> Jakub z Dąbrówki do Mikołaja Serafina, <placeName ref="#Kraków">Kraków</placeName>, <date when="1441-04-07">[7 kwietnia
+                <title>Jakub z Dąbrówki do Mikołaja Serafina, <placeName ref="#Kraków">Kraków</placeName>, <date when="1441-04-07" when-custom="7 kwietnia 1441">[7 kwietnia
                     1441]</date>
                 </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat
@@ -48,7 +48,8 @@
                 <correspAction type="sent">
                     <persName ref="#JakubZawrzykraj">Jakub z Dąbrówki</persName>
                     <placeName ref="#Kraków">Kraków</placeName>
-                    <date when="1441-04-07">[7 kwietnia 1441]</date>
+                    <date when="1441-04-07" when-custom="7 kwietnia 1441">[7 kwietnia
+                        1441]</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -65,7 +66,7 @@
                     <div xml:id="s.1">
                         <opener xml:id="s.1.1">
                             <seg xml:id="s.1.1.1">
-                                <lb/> Strennuo domino <persName ref="MikołajSerafin">Nicolao
+                                <lb/> Strennuo domino <persName ref="#MikołajSerafin">Nicolao
                                     Seraphin</persName>
                                 <lb/> gladifero Cracouiensi, salis utriusque <lb/> zuppario, domino
                                 et fratri carissimo.</seg>
@@ -82,7 +83,7 @@
                                 fideiussit.</seg>
                             <seg xml:id="s.1.2.3">Ecciam Dominacio Vestra michi comisit, ut deberem
                                 debita soluere, videlicet domino <persName ref="#JanRokosz">Rokosch</persName> vicecapitaneo Cracouiensi et <persName ref="#Paweł">Passek</persName>
-                                <anchor xml:id="a1"/>, quibus solucionem nequeo habere, qui me
+                                <anchor xml:id="a1"/>, quibus <persName ref="#MS">solucionem</persName> nequeo habere, qui me
                                 multum <sic>gravent</sic> et amonent, et Deus est michi testis, quod
                                 nullomodo possum acquire<unclear>re</unclear> pecunias inter
                                 mercatores.</seg>
@@ -143,8 +144,9 @@
                             <seg xml:id="s.1.2.15">Item scire Vestram Dominacionem cupio, non
                                 latere, quia dominus <persName ref="#PiotrSzafraniec">Schaffranecz</persName> viam universe carnis ingressus
                                 est.</seg>
-                            <seg xml:id="s.1.2.16">Datum Cracouie, feria sexta
-                                    <supplied>ante</supplied> dominicam Ramispalmarum.</seg>
+                            <seg xml:id="s.1.2.16">Datum <placeName ref="#Kraków">Cracouie</placeName>, <date when="1441-04-07">feria sexta
+                                    <supplied>ante</supplied> dominicam Ramispalmarum.</date>
+                            </seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -162,12 +164,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">po fideiubere skreślone iuxta
                             quo.</note>
@@ -265,8 +261,9 @@
                             <seg xml:id="t.1.2.15">Ponadto pragnę, aby Wasza Dostojność wiedział
                                 raczej, niż nie wiedział, że pan <persName ref="#PiotrSzafraniec">Szafraniec</persName> wkroczył na ostatnią drogę wszelkiego
                                 stworzenia.</seg>
-                            <seg xml:id="t.1.2.16">Dan w Krakowie, w piątek przed Niedzielą
-                                Palmową.</seg>
+                            <seg xml:id="t.1.2.16">Dan w <placeName ref="#Kraków">Krakowie</placeName>, w <date when="1441-04-07">piątek przed Niedzielą
+                                Palmową.</date>
+                            </seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

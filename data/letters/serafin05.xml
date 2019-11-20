@@ -5,7 +5,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Piotr Grazer do Mikołaja Serafina, <placeName ref="#Toruń">Toruń</placeName>, <date when="1441-07-16">[16 lipca 1441]</date>
+                <title>Piotr Grazer do Mikołaja Serafina, <placeName ref="#Toruń">Toruń</placeName>, <date when="1441-07-16">16 lipca 1441</date>
                 </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
@@ -45,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#PiotrGrazer">Piotr Grazer</persName>
                     <placeName ref="#Toruń">Toruń</placeName>
-                    <date when="1441-07-16">[16 lipca 1441]</date>
+                    <date when="1441-07-16">16 lipca 1441</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -91,8 +91,11 @@
                             <seg xml:id="s.1.2.15">Preterea eandem pecuniam dirigatis et presentare dignemini hospite mee in <expan>Thor<ex>unia</ex>
                                 </expan> <persName ref="#AnnaGoldbergowa">Anne Goldbergyne</persName>, ob quam causam vero vobis mitto nunccium presentem.</seg>
                             <seg xml:id="s.1.2.16">Exhibeatis vos in simili, prout cupitis amiciciam et fauorem meam preseruari.</seg>
-                            <seg xml:id="s.1.2.17"> Datum <expan>Thor<ex>unie</ex>
-                                </expan>, dominica die proxima post Dimisionis Apostolorum, anno etc. XLI .</seg>
+                            <seg xml:id="s.1.2.17"> Datum <placeName ref="#Toruń">
+                                    <expan>Thor<ex>unie</ex>
+                                    </expan>
+                                </placeName>, <date when="1441-07-16">dominica die proxima post Dimisionis Apostolorum, anno etc. XLIo.</date>
+                            </seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -108,12 +111,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">po ipsi skreślone non.</note>
                         <note n="b" type="transcription" target="#ab">po non skreślone mutabitis.</note>
@@ -147,7 +144,8 @@
                             <seg xml:id="t.1.2.14">Nie dopuszczam możliwości, żebyście nie wysłali mi tych pieniędzy i nie uwolnili mnie od długu w Toruniu (co oby się nie stało), bowiem wynikłaby z tego dla mnie wielka hańba i niemała strata, i czegoś takiego w żaden sposób nie mógłbym zmilczeć.</seg>
                             <seg xml:id="t.1.2.15">Wyślijcie więc i zechciejcie oddać te pieniądze mojej gospodyni w Toruniu <persName ref="#AnnaGoldbergowa">Annie Goldbergowej</persName>, po to właśnie wyprawiam do was tego posłańca.</seg>
                             <seg xml:id="t.1.2.16">Okażcie, że pragniecie zachować moją przyjaźń i życzliwość.</seg>
-                            <seg xml:id="t.1.2.17">Dan w Toruniu, w niedzielę po Rozesłaniu Apostołów, roku etc. 41.</seg>
+                            <seg xml:id="t.1.2.17">Dan w <placeName ref="#Toruń">Toruniu</placeName>, w <date when="1441-07-16">niedzielę po Rozesłaniu Apostołów, roku etc. 41.</date>
+                            </seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

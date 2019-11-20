@@ -5,8 +5,11 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Piotr Szczerba do Mikołaja Serafina, Bochnia, 30 sierpnia [1442]</title>
-                <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
+                <title>Mikołaj Serafin do Piotra i innych oficjalistów żupnych, <placeName ref="#Bochnia">Bochnia</placeName>, <date when="1450-09-19">19 września 1450
+                        lub 18 września 1451</date>
+                </title>
+                <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat
+                    1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
                 <editor>Tomasz Płóciennik</editor>
@@ -28,13 +31,16 @@
                 <msDesc type="fair-copy">
                     <msIdentifier>
                         <institution>B. Ossol.</institution>
-                        <idno>rkps 165, k. 148 (192)</idno>
+                        <idno>rkps 165, k. 162 (206)</idno>
                     </msIdentifier>
                     <msContents>
-                        <p>recto: tekst listu; verso: ciąg dalszy tekstu, podpis, adres, ślady po pieczęci.</p>
+                        <p>recto: tekst listu, podpis, dopisek, na górnym marginesie dwa znaki o
+                            niejasnym znaczeniu. </p>
                     </msContents>
                     <physDesc>
-                        <p>215 × 287 mm; ślady zawilgocenia w dolnej części karty</p>
+                        <p>215 × 287 mm; ślady zawilgocenia w dolnej części karty214 × 160 mm;
+                            koncept(?); dolna część karty oderwana, być może w związku z tym brak
+                            adresu i śladów pieczęci.</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -42,10 +48,9 @@
         <profileDesc>
             <correspDesc>
                 <correspAction type="sent">
-                    <persName ref="#PiotrCikowski">Piotr Cikowski</persName>
-                    <persName ref="#JanRokosz">Jan Rokosz</persName>
-                    <placeName ref="#Kraków">Kraków</placeName>
-                    <date when="1445-09-28" when-custom="28 września 1445"/>
+                    <persName ref="#MS">Mikołaj Serafin</persName>
+                    <placeName ref="#Bochnia">Bochnia</placeName>
+                    <date when="1450-09-19">19 września 1450 lub 18 września 1451</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -62,88 +67,64 @@
                     <div xml:id="s.1">
                         <opener xml:id="s.1.1">
                             <seg xml:id="s.1.1.1">
-                                <lb/>1</seg>
+                                <lb/>
+                            </seg>
                         </opener>
                         <p xml:id="s.1.2">
                             <seg xml:id="s.1.2.1">
-                                <lb/>2</seg>
-                            <seg xml:id="s.1.2.2">2</seg>
-                            <seg xml:id="s.1.2.3">2</seg>
-                            <seg xml:id="s.1.2.4">2</seg>
-                            <seg xml:id="s.1.2.5">2</seg>
-                            <seg xml:id="s.1.2.6">2</seg> 
-                            <seg xml:id="s.1.2.7">2</seg>
-                            <seg xml:id="s.1.2.8">2</seg>
-                            <seg xml:id="s.1.2.9">2</seg>
-                            <seg xml:id="s.1.2.10">2</seg>
-                            <seg xml:id="s.1.2.11">2</seg>
-                            <seg xml:id="s.1.2.12">2</seg>
-                            <seg xml:id="s.1.2.13">2</seg>
-                            <seg xml:id="s.1.2.14">2</seg>
-                            <seg xml:id="s.1.2.15">2</seg>
-                            <seg xml:id="s.1.2.16">2</seg>
-                            <seg xml:id="s.1.2.17">2</seg>
-                            <seg xml:id="s.1.2.18">2</seg>
-                            <seg xml:id="s.1.2.19">2</seg>
-                            <seg xml:id="s.1.2.20">2</seg>
-                            <seg xml:id="s.1.2.21">2</seg>
-                            <seg xml:id="s.1.2.22">2</seg>
-                            <seg xml:id="s.1.2.23">2</seg>
-                            <seg xml:id="s.1.2.24">2</seg>
-                            <seg xml:id="s.1.2.25">2</seg>
-                            <seg xml:id="s.1.2.26">2</seg>
-                            <seg xml:id="s.1.2.27">2</seg>
-                            <seg xml:id="s.1.2.28">2</seg>
-                            <seg xml:id="s.1.2.29">2</seg>
-                            <seg xml:id="s.1.2.30">2</seg>
-                            <seg xml:id="s.1.2.31">2</seg>
-                            <seg xml:id="s.1.2.32">2</seg>
-                            <seg xml:id="s.1.2.33">2</seg>
-                            <seg xml:id="s.1.2.34">2</seg>
-                            <seg xml:id="s.1.2.35">2</seg>
-                            <seg xml:id="s.1.2.36">2</seg>
-                            <seg xml:id="s.1.2.37">2</seg>
+                                <lb/>Nobiles dilecti.</seg>
+                            <seg xml:id="s.1.2.2">Exspectaui aduentum <persName ref="#Kulig">Culig</persName> , miror, quod hucusque non <lb/> venit.</seg>
+                            <seg xml:id="s.1.2.3">Nisi veniat, mittatis ipsum ada nos in <placeName ref="#Niepołomice">Nyepolomicze</placeName> , quia <lb/> ibi
+                                faciemus nocturnum, et cras fiemus in Weliczka ad prandium Domino
+                                auxiliante.<lb/>
+                            </seg>
+                            <seg xml:id="s.1.2.4">Ecce non recordabat per <persName ref="#Mężyk">Mazik</persName> intimare, quod dominus rex wlt, ut
+                                        <expan>S<ex>ue</ex>
+                                </expan>
+                                <expan>S<ex>erenitati</ex>
+                                </expan> multa expedirem, provt ex ista
+                                litera videbitis, quam seruate.</seg>
+                            <seg xml:id="s.1.2.5">
+                                <unclear>Ideo</unclear> necesse est, ut fiant
+                                peccunie.</seg>
+                            <seg xml:id="s.1.2.6">Petatis igitur ex parte nostri <persName ref="#Maciej">baccalarium</persName> , domine Mag<gap/>-
+                                    ne<anchor xml:id="a1"/> , qui vobiscum
+                                    re<supplied>cepi</supplied>t florenos, vt pro expediendis istis
+                                rebus r<supplied>e</supplied>maneat nobis ex ista septimana viginti
+                                    <sic>florenos</sic>, si plus non potest, sed si poterit plus,
+                                bonum esset.</seg>
+                            <seg xml:id="s.1.2.7">Apponatis igitur vos, domine <persName ref="#PiotrItalik">Petre</persName> , in isto diligenciam, ne
+                                recederet <expan>Crac<ex>ouia</ex>
+                                </expan> hodie cum florenis.</seg>
+                            <seg xml:id="s.1.2.8">Mittatis statim ad Mazikonem, vt pellicia, provt
+                                sic dominus rex scribit, faciat parare in bono modo et l a n k a m
+                                et redas eciam, provt comisi, et quid agitur ibi, per Culig hodie ad
+                                Nyepolomicze intimetis.</seg>
+                            <seg xml:id="s.1.2.9">Dicatis <persName ref="#Paweł">Paulo</persName>
+                                pensatori, quod cras propter ipsius factum veniam, provt conclusum
+                                cum <persName ref="#Franczek">Franczkone</persName> .</seg>
+                            <seg xml:id="s.1.2.10">Datum in <placeName ref="#Bochnia">Bohna</placeName>, <date when="1450-09-19">sabbato
+                                    post Sancte Crucis</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
-                                <lb/>2</seg>
+                                <lb/>
+                                <persName ref="#MS">Zupparius</persName> propria</seg>
                         </signed>
                         <postscript xml:id="s.1.4">
                             <p xml:id="s.1.4.1">
-                                <lb/>1</p>
+                                <lb/>Intimetis, vtrum dominus castellanus Becensis
+                                est Cracouie, si scitis.</p>
+                            <p xml:id="s.1.4.2">Videatis pro c r y a kow k y et pro
+                                    <sic>parsicis</sic> et t a r no s ly w y pro domina nostra
+                                consorte ponere ad medonem.</p>
                         </postscript>
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
-                        <note n="a" type="transcription" target="#aa">1</note>
-                        <note n="b" type="transcription" target="#ab">1</note>
-                        <note n="c" type="transcription" target="#ac">1</note>
-                        <note n="d" type="transcription" target="#ad">1</note>
-                        <note n="e" type="transcription" target="#ae">1</note>
-                        <note n="f" type="transcription" target="#af">1</note>
-                        <note n="g" type="transcription" target="#ag">1</note>
-                        <note n="h" type="transcription" target="#ah">1</note>
-                        <note n="i" type="transcription" target="#ai">1</note>
-                        <note n="j" type="transcription" target="#aj">1</note>
-                        <note n="k" type="transcription" target="#ak">1</note>
-                        <note n="l" type="transcription" target="#al">1</note>
-                        <note n="m" type="transcription" target="#am">1</note>
-                        <note n="n" type="transcription" target="#an">1</note>
-                        <note n="o" type="transcription" target="#ao">1</note>
-                        <note n="1" target="#a1">1</note>
-                        <note n="2" target="#a2">1</note>
-                        <note n="3" target="#a3">1</note>
-                        <note n="4" target="#a4">1</note>
-                        <note n="5" target="#a5">1</note>
-                        <note n="6" target="#a6">1</note>
-                        <note n="7" target="#a7">1</note>
+                        <note n="a" type="transcription" target="#aa">po ad skreślone n.</note>
+                        <note n="1" target="#a1">Niezidentyfikowany.</note>
                     </div>
                 </back>
             </text>
@@ -152,55 +133,49 @@
                     <div xml:id="t.1">
                         <opener xml:id="t.1.1">
                             <seg xml:id="t.1.1.1">
-                                <lb/>1</seg>
+                                <lb/>
+                            </seg>
                         </opener>
                         <p xml:id="t.1.2">
                             <seg xml:id="t.1.2.1">
-                                <lb/>1</seg>
-                            <seg xml:id="t.1.2.2">1</seg>
-                            <seg xml:id="t.1.2.3">1</seg>
-                            <seg xml:id="t.1.2.4">1</seg>
-                            <seg xml:id="t.1.2.5">1</seg>
-                            <seg xml:id="t.1.2.6">1</seg>
-                            <seg xml:id="t.1.2.7">1</seg>
-                            <seg xml:id="t.1.2.8">1</seg>
-                            <seg xml:id="t.1.2.9">1</seg>
-                            <seg xml:id="t.1.2.10">1</seg>
-                            <seg xml:id="t.1.2.11">1</seg>
-                            <seg xml:id="t.1.2.12">1</seg>
-                            <seg xml:id="t.1.2.13">1</seg>
-                            <seg xml:id="t.1.2.14">1</seg>
-                            <seg xml:id="t.1.2.15">1</seg>
-                            <seg xml:id="t.1.2.16">1</seg>
-                            <seg xml:id="t.1.2.17">1</seg>
-                            <seg xml:id="t.1.2.18">1</seg>
-                            <seg xml:id="t.1.2.19">1</seg>
-                            <seg xml:id="t.1.2.20">1</seg>
-                            <seg xml:id="t.1.2.21">1</seg>
-                            <seg xml:id="t.1.2.22">1</seg>
-                            <seg xml:id="t.1.2.23">1</seg>
-                            <seg xml:id="t.1.2.24">1</seg>
-                            <seg xml:id="t.1.2.25">1</seg>
-                            <seg xml:id="t.1.2.26">1</seg>
-                            <seg xml:id="t.1.2.27">1</seg>
-                            <seg xml:id="t.1.2.28">1</seg>
-                            <seg xml:id="t.1.2.29">1</seg>
-                            <seg xml:id="t.1.2.30">1</seg>
-                            <seg xml:id="t.1.2.31">1</seg>
-                            <seg xml:id="t.1.2.32">1</seg>
-                            <seg xml:id="t.1.2.33">1</seg>
-                            <seg xml:id="t.1.2.34">1</seg>
-                            <seg xml:id="t.1.2.35">1</seg>
-                            <seg xml:id="t.1.2.36">1</seg>
-                            <seg xml:id="t.1.2.37">1</seg>
+                                <lb/>Umiłowani szlachetni Panowie.</seg>
+                            <seg xml:id="t.1.2.2">Oczekiwałem przybycia <persName ref="#Kulig">Kuliga</persName>. Dziwię się, że do tej pory nie
+                                przybył.</seg>
+                            <seg xml:id="t.1.2.3">Gdyby miał nie przybyć, poślijcie go do nas do
+                                    <placeName ref="#Niepołomice">Niepołomic</placeName>, ponieważ
+                                tam mamy nocleg, jutro zaś z Bożą pomocą będziemy na obiedzie w
+                                Wieliczce.</seg>
+                            <seg xml:id="t.1.2.4">Oto nie pamiętał, aby zawiadomić przez <persName ref="#Mężyk">Mężyka</persName>, iż pan król chce, abym dużo
+                                wypłacił Jego Najjaśniejszej Wysokości. Dowiecie się o tym z listu,
+                                który zachowajcie.</seg>
+                            <seg xml:id="t.1.2.5">Dlatego potrzeba pieniędzy.</seg>
+                            <seg xml:id="t.1.2.6">Poproście więc w naszym imieniu, panie
+                                Mag<gap/>ne, bakałarza, który z wami odebrał floreny, aby pozostało
+                                nam 20 na opłacenie spraw, jeżeli nie może być więcej. Gdyby jednak
+                                było więcej, byłoby dobrze.</seg>
+                            <seg xml:id="t.1.2.7">Wy zaś, panie <persName ref="#PiotrItalik">Piotrze</persName>, dołóżcie starań, aby
+                                    <supplied>bakałarz</supplied> nie wyjechał dziś z florenami z
+                                Krakowa.</seg>
+                            <seg xml:id="t.1.2.8">Poślijcie natychmiast do Mężyka, aby, stosownie do
+                                tego, co pisze tu pan król, kazał przygotować w odpowiedni sposób
+                                futra i bieliznę, a także wozy, tak jak poleciłem. Dajcie dzisiaj
+                                znać do Niepołomic przez Kuliga, co się tam dzieje.</seg>
+                            <seg xml:id="t.1.2.9">Powiedzcie <persName ref="#Paweł">Pawłowi</persName> ważnikowi, że jutro przybędę w jego sprawie,
+                                tak jak to zostało ustalone z <persName ref="#Franczek">Franczkiem</persName>.</seg>
+                            <seg xml:id="t.1.2.10">Dan w <placeName ref="#Bochnia">Bochni</placeName>, <date when="1450-09-19">w sobotę po Podwyższeniu Krzyża Świętego</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">
-                                <lb/>2</seg>
+                                <lb/>
+                                <persName ref="#MS">Żupnik</persName> własnoręcznie
+                            </seg>
                         </signed>
                         <postscript xml:id="t.1.4">
                             <p xml:id="t.1.4.1">
-                                <lb/>1</p>
+                                <lb/>Dajcie znać, czy pan kasztelan biecki jest w Krakowie, o ile wiecie.</p>
+                            <p xml:id="t.1.4.2">
+                                <lb/>Baczcie, by włożyć do miodu krakówki, brzoskwinie i tarnośliwy dla naszej pani
+                                małżonki.</p>
                         </postscript>
                     </div>
                 </body>

@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Jan z Czyżowa do Mikołaja Lasockiego, Czyżów, 5 maja 1444</title>
+                <title>Jan z Czyżowa do Mikołaja Lasockiego, <placeName ref="#Czyżów">Czyżów</placeName>, <date when="1444-05-05">5 maja 1444</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#JanCzyżowski">Jan z Czyżowa</persName>
                     <placeName ref="#Czyżów">Czyżów</placeName>
-                    <date when="1444-05-05" when-custom="5 maja 1444"/>
+                    <date when="1444-05-05">5 maja 1444</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -75,7 +76,7 @@
                                 </expan> non admittent faciendam, q<ex>uonia</ex>m huiusmodi inscripcionibus in posterum<anchor xml:id="aa"/> quis credere queat ambigimus.</seg>
                             <seg xml:id="s.1.2.5">Gratissimam complacenciam nobis in eo ostendenda<supplied>m</supplied>
                                 <anchor xml:id="ab"/>, quam omnium bono vobis volumus reminisci.</seg>
-                            <seg xml:id="s.1.2.6">Datum in <placeName ref="Czyżów">Czyszow</placeName>, feria tercia, ipso die sancti Gothardi, anno Domini millesimo cccco xliiiio.</seg>
+                            <seg xml:id="s.1.2.6">Datum in <placeName ref="Czyżów">Czyszow</placeName>, <date when="1444-05-05">feria tercia, ipso die sancti Gothardi, anno Domini millesimo cccco xliiiio</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -90,12 +91,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">in posterum rkps: imposterum.</note>
                         <note n="b" type="transcription" target="#ab">po ostendenda<supplied>m</supplied> brak orzeczenia (np. exspectamus).</note>
@@ -116,7 +111,7 @@
                             <seg xml:id="t.1.2.3">Wydaje się to bowiem obracać przeciw naszym zapisom i działać na szkodę wielu poddanych Królestwa Polskiego, wobec których żupnik ma zobowiązania. Nie mogliśmy wręcz dać wiary tego rodzaju pogłoskom.</seg>
                             <seg xml:id="t.1.2.4">Ponieważ zaś znamy was jako osobę, która zawsze działała na rzecz sprawiedliwości, prosimy przeto Waszą Wielebność, abyście, przez wzgląd na Boga najwyższego, sprawiedliwość i naszą przyjaźń, zechcieli wstawić się u Królewskiego Majestatu w sprawie pana żupnika, aby utrzymano jego prawa do dzierżawienia żup w spokoju i bez przeszkód. Żaden bowiem z panów Królestwa Polskiego nie dopuści do takiej niesprawiedliwości, ponieważ <supplied>w przeciwnym wypadku</supplied> — jak się wydaje — nikt w przyszłości nie zechce wierzyć tego rodzaju zapisom.</seg>
                             <seg xml:id="t.1.2.5">Chcemy przypomnieć wam, że dla dobra wszystkich winniście okazać nam w tej sprawie waszą łaskawą życzliwość.</seg>
-                            <seg xml:id="t.1.2.6">Dan w <placeName ref="Czyżów">Czyżowie</placeName>, we wtorek w dniu św. Gotarda, roku Pańskiego 1444.</seg>                    
+                            <seg xml:id="t.1.2.6">Dan w <placeName ref="Czyżów">Czyżowie</placeName>, <date when="1444-05-05">we wtorek w dniu św. Gotarda, roku Pańskiego 1444</date>.</seg>                    
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

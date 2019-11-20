@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Jakub z Sienna do Mikołaja Serafina, Sienno, 21 czerwca 1445</title>
+                <title>Jakub z Sienna do Mikołaja Serafina, <placeName ref="#Sienno">Sienno</placeName>, <date when="1445-06-21">21 czerwca 1445</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#JakubSienieński">Jakub z Sienna</persName>
                     <placeName ref="#Sienno">Sienno</placeName>
-                    <date when="1445-06-21" when-custom="21 czerwca 1445"/>
+                    <date when="1445-06-21">21 czerwca 1445</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -86,7 +87,7 @@
                             <seg xml:id="s.1.2.15">Hec sunt, que ordino te inscio, vt scias vbique locorum me tui memoriam habere et tuarum curarum participem esse.</seg>
                             <seg xml:id="s.1.2.16">Valete et nowa, si que sunt, intimate, vel si velletis huc pro vno certo die descendere ad nos, bonum foret<anchor xml:id="ao"/>.</seg>
                             <seg xml:id="s.1.2.17">Sed antequam ad pallatinum descenderetis, prius ad me veniretis in <placeName ref="#Sienno">Senno</placeName>, demum ad ipsum in Solecz pariter transiremus super is rebus tractaturi.</seg>
-                            <seg xml:id="s.1.2.18">Datum in Senno, feria secunda in <date when="1445-06-21">vigilia sanctorum Decem Milia Militum, anno etc. xl quinto</date>.</seg>
+                            <seg xml:id="s.1.2.18">Datum in <placeName ref="#Sienno">Senno</placeName>, feria secunda in <date when="1445-06-21">vigilia sanctorum Decem Milia Militum, anno etc. xl quinto</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -101,12 +102,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">po ad skreślone anu.</note>
                         <note n="b" type="transcription" target="#ab">tunnas nadpisane.</note>
@@ -154,7 +149,7 @@
                             <seg xml:id="t.1.2.15">Takie są sprawy, które ustalam bez ciebie, abyś wiedział, że gdziekolwiek jestem, mam cię w pamięci i uczestniczę w twoich troskach.</seg>
                             <seg xml:id="t.1.2.16">Bądźcie zdrowi i zawiadomcie o nowych sprawach, jeżeli wynikły. Byłoby też dobrze, gdybyście zechcieli któregoś dnia zjechać tu do nas.</seg>
                             <seg xml:id="t.1.2.17">Zanim udacie się do pana wojewody, przybądźcie najpierw do mnie do <placeName ref="#Sienno">Sienna</placeName>, potem zaś razem pojedziemy do niego do Solca rozmawiać o tych sprawach.</seg>
-                            <seg xml:id="t.1.2.18">Dan w Siennie, w poniedziałek w <date when="1445-06-21">wigilię św. Dziesięciu Tysięcy Rycerzy, roku etc. 45</date>.</seg>
+                            <seg xml:id="t.1.2.18">Dan w <placeName ref="#Sienno">Siennie</placeName>, w poniedziałek w <date when="1445-06-21">wigilię św. Dziesięciu Tysięcy Rycerzy, roku etc. 45</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

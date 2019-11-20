@@ -5,8 +5,10 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Piotr Szczerba do Mikołaja Serafina, Bochnia, 30 sierpnia [1442]</title>
-                <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
+                <title>Jan z Czyżowa do Mikołaja Serafina, <placeName ref="#Ruda">Ruda</placeName>, <date when="1447-11-11">11 listopada 1447</date>
+                </title>
+                <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat
+                    1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
                 <editor>Tomasz Płóciennik</editor>
@@ -28,13 +30,13 @@
                 <msDesc type="fair-copy">
                     <msIdentifier>
                         <institution>B. Ossol.</institution>
-                        <idno>rkps 165, k. 148 (192)</idno>
+                        <idno>rkps 165, k. 157 (201)</idno>
                     </msIdentifier>
                     <msContents>
-                        <p>recto: tekst listu; verso: ciąg dalszy tekstu, podpis, adres, ślady po pieczęci.</p>
+                        <p> recto: tekst listu, podpis; verso: adres, ślady po pieczęci.</p>
                     </msContents>
                     <physDesc>
-                        <p>215 × 287 mm; ślady zawilgocenia w dolnej części karty</p>
+                        <p>215 × 158 mm; stan zachowania bardzo dobry</p>
                     </physDesc>
                 </msDesc>
             </sourceDesc>
@@ -42,10 +44,9 @@
         <profileDesc>
             <correspDesc>
                 <correspAction type="sent">
-                    <persName ref="#PiotrCikowski">Piotr Cikowski</persName>
-                    <persName ref="#JanRokosz">Jan Rokosz</persName>
-                    <placeName ref="#Kraków">Kraków</placeName>
-                    <date when="1445-09-28" when-custom="28 września 1445"/>
+                    <persName ref="#JanCzyżowski">Jan z Czyżowa</persName>
+                    <placeName ref="#Ruda">Ruda</placeName>
+                    <date when="1447-11-11">11 listopada 1447</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -62,88 +63,62 @@
                     <div xml:id="s.1">
                         <opener xml:id="s.1.1">
                             <seg xml:id="s.1.1.1">
-                                <lb/>1</seg>
+                                <lb/>Generoso domino <persName ref="#MS">Nicolao
+                                    Seraphin</persName>, salis <lb/> vtriusque zuppario, amico nobis
+                                dilecto.</seg>
                         </opener>
                         <p xml:id="s.1.2">
                             <seg xml:id="s.1.2.1">
-                                <lb/>2</seg>
-                            <seg xml:id="s.1.2.2">2</seg>
-                            <seg xml:id="s.1.2.3">2</seg>
-                            <seg xml:id="s.1.2.4">2</seg>
-                            <seg xml:id="s.1.2.5">2</seg>
-                            <seg xml:id="s.1.2.6">2</seg> 
-                            <seg xml:id="s.1.2.7">2</seg>
-                            <seg xml:id="s.1.2.8">2</seg>
-                            <seg xml:id="s.1.2.9">2</seg>
-                            <seg xml:id="s.1.2.10">2</seg>
-                            <seg xml:id="s.1.2.11">2</seg>
-                            <seg xml:id="s.1.2.12">2</seg>
-                            <seg xml:id="s.1.2.13">2</seg>
-                            <seg xml:id="s.1.2.14">2</seg>
-                            <seg xml:id="s.1.2.15">2</seg>
-                            <seg xml:id="s.1.2.16">2</seg>
-                            <seg xml:id="s.1.2.17">2</seg>
-                            <seg xml:id="s.1.2.18">2</seg>
-                            <seg xml:id="s.1.2.19">2</seg>
-                            <seg xml:id="s.1.2.20">2</seg>
-                            <seg xml:id="s.1.2.21">2</seg>
-                            <seg xml:id="s.1.2.22">2</seg>
-                            <seg xml:id="s.1.2.23">2</seg>
-                            <seg xml:id="s.1.2.24">2</seg>
-                            <seg xml:id="s.1.2.25">2</seg>
-                            <seg xml:id="s.1.2.26">2</seg>
-                            <seg xml:id="s.1.2.27">2</seg>
-                            <seg xml:id="s.1.2.28">2</seg>
-                            <seg xml:id="s.1.2.29">2</seg>
-                            <seg xml:id="s.1.2.30">2</seg>
-                            <seg xml:id="s.1.2.31">2</seg>
-                            <seg xml:id="s.1.2.32">2</seg>
-                            <seg xml:id="s.1.2.33">2</seg>
-                            <seg xml:id="s.1.2.34">2</seg>
-                            <seg xml:id="s.1.2.35">2</seg>
-                            <seg xml:id="s.1.2.36">2</seg>
-                            <seg xml:id="s.1.2.37">2</seg>
+                                <lb/>Generose domine, amice noster dilecte.</seg>
+                            <seg xml:id="s.1.2.2">Habuimus scripta domini <persName ref="#WojciechMichowski">Alberti Michowsky</persName> castellani
+                                <lb/> Zauichosciensis, in quibus scribit nobis nos amonendo, quomodo
+                                secundum condictacionem cum ipso factam <lb/> sibi intromissionem in
+                                zuppam Premisliensem hucusque non dedistis<anchor xml:id="a1"/>.</seg>
+                            <seg xml:id="s.1.2.3">Ideo rogamus Vestram Amiciciam, quatinus, <lb/>
+                                iuxta illa condictata inter vos facta, intromissionem in zuppam
+                                prefatam eidem domino Michowsky dare velitis sine dilacione, omnia
+                                sibi adimplentes conclusa.</seg>
+                            <seg xml:id="s.1.2.4"> Consulimus autem vobis, quatinus sine presencia
+                                nostri ipsam zuppam nulli homini arrendare admittatis, ymmo nec ad
+                                arrendam consentire velitis, sed dum ad festum <date when="1447-12-06" when-custom="6 XII">sancti Nicolai
+                                    proximum</date> in illis partibus feliciter constituemur, tunc
+                                illud, quod pro bono vestro nobis visum fuerit, nostra consilia
+                                desuper vobis porrigemus opportuna.</seg>
+                            <seg xml:id="s.1.2.5">Et quia familiares nostri in zuppa prefata
+                                degentes non ex parte nostri, sed ex parte vestri sunt constituti,
+                                et vestra facultate suffulti, ideo tam nostris, quam vestris
+                                familiaribus per literam vestram committere velitis, vt sine quauis
+                                opposicione ipsam zuppam prefatam etc. iuxta condictacionem factam
+                                domino Michowsky condescendant sine mora.</seg>
+                            <seg xml:id="s.1.2.6">Datum in <placeName ref="#Ruda">Ruda</placeName>, <date when="1447-11-11">sabbato, ipso die sancti Martini, anno
+                                    Domini Mo cccco xl septimo</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
-                                <lb/>2</seg>
+                                <lb/>
+                                <persName ref="#JanCzyżowski">Iohannes de
+                                    Czyszow</persName> castellanus <lb/> et capitaneus
+                                Cracouiensis</seg>
                         </signed>
                         <postscript xml:id="s.1.4">
                             <p xml:id="s.1.4.1">
-                                <lb/>1</p>
+                                <lb/>
+                            </p>
                         </postscript>
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
-                        <note n="a" type="transcription" target="#aa">1</note>
-                        <note n="b" type="transcription" target="#ab">1</note>
-                        <note n="c" type="transcription" target="#ac">1</note>
-                        <note n="d" type="transcription" target="#ad">1</note>
-                        <note n="e" type="transcription" target="#ae">1</note>
-                        <note n="f" type="transcription" target="#af">1</note>
-                        <note n="g" type="transcription" target="#ag">1</note>
-                        <note n="h" type="transcription" target="#ah">1</note>
-                        <note n="i" type="transcription" target="#ai">1</note>
-                        <note n="j" type="transcription" target="#aj">1</note>
-                        <note n="k" type="transcription" target="#ak">1</note>
-                        <note n="l" type="transcription" target="#al">1</note>
-                        <note n="m" type="transcription" target="#am">1</note>
-                        <note n="n" type="transcription" target="#an">1</note>
-                        <note n="o" type="transcription" target="#ao">1</note>
-                        <note n="1" target="#a1">1</note>
-                        <note n="2" target="#a2">1</note>
-                        <note n="3" target="#a3">1</note>
-                        <note n="4" target="#a4">1</note>
-                        <note n="5" target="#a5">1</note>
-                        <note n="6" target="#a6">1</note>
-                        <note n="7" target="#a7">1</note>
+                        <note n="1" target="#a1">Umowa dotycząca wwiązania Michowskiego w żupę
+                            przemyską celem spłaty długu Serafina nie jest znana. Natomiast 6 lutego
+                            1447 r. w obecności kasztelana i starosty krak. Czyżowskiego dłużnik i
+                            wierzyciel zawarli umowę, że Michowski będzie pobierał z żupy wielickiej
+                            20 fl. węg. i 8 bałwanów oświęcimskich tygodniowo aż do spłaty 750 grz.
+                            długu, sam też będzie mógł sprzedawać sól w Wieliczce i Krakowie.
+                            Realizacja tego układu przebiegała z trudem, o czym świadczą pozwy
+                            kasztelana przeciwko Serafinowi z października t.r. Kolejna umowa
+                            dotyczała prawdopodobnie wwiązania w żupę przemyską, jak świadczy
+                            informacja w niniejszym liście (GK 9, s. 917–918; 10, s. 196).</note>
                     </div>
                 </back>
             </text>
@@ -152,55 +127,41 @@
                     <div xml:id="t.1">
                         <opener xml:id="t.1.1">
                             <seg xml:id="t.1.1.1">
-                                <lb/>1</seg>
+                                <lb/>Szlachetnemu panu <persName ref="#MS">Mikołajowi Serafinowi</persName> żupnikowi obojga salin,
+                                naszemu umiłowanemu przyjacielowi.</seg>
                         </opener>
                         <p xml:id="t.1.2">
                             <seg xml:id="t.1.2.1">
-                                <lb/>1</seg>
-                            <seg xml:id="t.1.2.2">1</seg>
-                            <seg xml:id="t.1.2.3">1</seg>
-                            <seg xml:id="t.1.2.4">1</seg>
-                            <seg xml:id="t.1.2.5">1</seg>
-                            <seg xml:id="t.1.2.6">1</seg>
-                            <seg xml:id="t.1.2.7">1</seg>
-                            <seg xml:id="t.1.2.8">1</seg>
-                            <seg xml:id="t.1.2.9">1</seg>
-                            <seg xml:id="t.1.2.10">1</seg>
-                            <seg xml:id="t.1.2.11">1</seg>
-                            <seg xml:id="t.1.2.12">1</seg>
-                            <seg xml:id="t.1.2.13">1</seg>
-                            <seg xml:id="t.1.2.14">1</seg>
-                            <seg xml:id="t.1.2.15">1</seg>
-                            <seg xml:id="t.1.2.16">1</seg>
-                            <seg xml:id="t.1.2.17">1</seg>
-                            <seg xml:id="t.1.2.18">1</seg>
-                            <seg xml:id="t.1.2.19">1</seg>
-                            <seg xml:id="t.1.2.20">1</seg>
-                            <seg xml:id="t.1.2.21">1</seg>
-                            <seg xml:id="t.1.2.22">1</seg>
-                            <seg xml:id="t.1.2.23">1</seg>
-                            <seg xml:id="t.1.2.24">1</seg>
-                            <seg xml:id="t.1.2.25">1</seg>
-                            <seg xml:id="t.1.2.26">1</seg>
-                            <seg xml:id="t.1.2.27">1</seg>
-                            <seg xml:id="t.1.2.28">1</seg>
-                            <seg xml:id="t.1.2.29">1</seg>
-                            <seg xml:id="t.1.2.30">1</seg>
-                            <seg xml:id="t.1.2.31">1</seg>
-                            <seg xml:id="t.1.2.32">1</seg>
-                            <seg xml:id="t.1.2.33">1</seg>
-                            <seg xml:id="t.1.2.34">1</seg>
-                            <seg xml:id="t.1.2.35">1</seg>
-                            <seg xml:id="t.1.2.36">1</seg>
-                            <seg xml:id="t.1.2.37">1</seg>
+                                <lb/>Szlachetny panie, nasz umiłowany
+                                przyjacielu.</seg>
+                            <seg xml:id="t.1.2.2">Dostaliśmy list pana <persName ref="#WojciechMichowski">Wojciecha Michowskiego</persName>
+                                kasztelana zawichojskiego, w którym upomina nas, pisząc, że dotąd
+                                nie daliście mu, stosownie do zawartej z nim umowy, wwiązania w żupę
+                                przemyską.</seg>
+                            <seg xml:id="t.1.2.3">Przeto prosimy Waszą Życzliwość, abyście
+                                zechcieli, wedle umowy zawartej między wami, dać bezzwłocznie
+                                wwiązanie we wspomnianą żupę temuż panu Michowskiemu i wypełnić
+                                względem niego wszystko, co ustaliliście.</seg>
+                            <seg xml:id="t.1.2.4">Radzimy też wam, abyście pod naszą nieobecność nie
+                                oddawali nikomu tej żupy w dzierżawę, ani nie umawiali się w tej
+                                sprawie, lecz gdy na <date when="1447-12-06" when-custom="6 XII">dzień św. Mikołaja</date> szczęśliwie staniemy w tych stronach,
+                                wówczas przedstawimy wam, co wydaje się nam dla was dobre, i
+                                udzielimy wam stosownych rad.</seg>
+                            <seg xml:id="t.1.2.5">A ponieważ
+                                nasi słudzy zostali do tej żupy wprowadzeni nie przez nas, ale przez was, i wy
+                                się o nich troszczycie, zechciejcie przeto polecić listownie sługom tak naszym,
+                                jak waszym, aby bez jakiegokolwiek sprzeciwu i bez zwłoki odstąpili panu Michowskiemu wspomnianą żupę etc. według zawartej umowy.</seg>
+                            <seg xml:id="t.1.2.6">Dan w <placeName ref="#Ruda">Rudzie</placeName>Rudzie, <date when="1447-11-11">w sobotę w dniu św. Marcina, roku Pańskiego 1447</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">
-                                <lb/>2</seg>
+                                <lb/>
+                                <persName ref="#JanCzyżowski">Jan z Czyżowa</persName> kasztelan i starosta krakowski</seg>
                         </signed>
                         <postscript xml:id="t.1.4">
                             <p xml:id="t.1.4.1">
-                                <lb/>1</p>
+                                <lb/>
+                            </p>
                         </postscript>
                     </div>
                 </body>

@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Stanisław pleban do Mikołaja Serafina, Bochnia, 27 października [1446 lub 1457]</title>
+                <title>Stanisław pleban do Mikołaja Serafina, <placeName ref="#Bochnia">Bochnia</placeName>, <date when="1446-10-27" when-custom="1446 lub 1457">27 października [1446 lub 1457]</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     
                     <placeName ref="#Bochnia">Bochnia</placeName>
-                    <date when="1446-10-27" when-custom="27 października 1446 lub 1457"/>
+                    <date when="1446-10-27" when-custom="1446 lub 1457">27 października [1446 lub 1457]</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -81,7 +82,7 @@
                             <seg xml:id="s.1.2.14">Et sic, habitis multis gracis, ipsam michi miserunt, et cum remissa fuit in gazas et deposita aput me, postmodum venientes illi vectores tempore serotino pecierunt me, dicentes: „Pro vobis unum vas et pro nobis aliud.”</seg>
                             <seg xml:id="s.1.2.15">Quod et feci.</seg>
                             <seg xml:id="s.1.2.16">Est ideo, hoc ipsum vasculum Generositati Vestre <sic>mitti</sic> per vectorem Bochnensem nomine <persName ref="#Wojtek">Albertum</persName>, quia scio et memoror ma<supplied>n</supplied>datum Dominacionis, ut ceruisiam donatiuam non reciperem.</seg>
-                            <seg xml:id="s.1.2.17">Datum in Bochna, feria quinta in <date when="1446-10-27">vigi<supplied>li</supplied>a beatorum Appostolorum Symonis et Ivde etc.</date>
+                            <seg xml:id="s.1.2.17">Datum in <placeName ref="#Bochnia">Bochna</placeName>, <date when="1446-10-27">feria quinta in vigi<supplied>li</supplied>a beatorum Appostolorum Symonis et Ivde etc.</date>
                             </seg>
                         </p>
                         <signed xml:id="s.1.3">
@@ -96,12 +97,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">po enodaui skreślone quomodo.</note>
                         <note n="b" type="transcription" target="#ab">subveniant poprawione z subeu.</note>
@@ -140,7 +135,7 @@
                             <seg xml:id="t.1.2.14">I tak, podziękowawszy wielce, przysłali mi je. A gdy odesłano je do warzelni i złożono u mnie, wozacy, przyszedłszy potem wieczorem, prosili mnie, mówiąc: „Dla was jedna beczka, a dla nas druga”.</seg>
                             <seg xml:id="t.1.2.15">Tak też uczyniłem.</seg>
                             <seg xml:id="t.1.2.16">Oto dlaczego tę właśnie beczułkę przesłałem Waszej Szlachetności przez wozaka bocheńskiego <persName ref="#Wojtek">Wojtka</persName>, pamiętam bowiem polecenie Waszej Dostojności, abym nie przyjmował piwa w darze.</seg>
-                            <seg xml:id="t.1.2.17">Dan w Bochni, w czwartek w <date when="1446-10-27">wigilię śś. Apostołów Szymona i Judy etc.</date>
+                            <seg xml:id="t.1.2.17">Dan w <placeName ref="#Bochnia">Bochni</placeName>Bochni, <date when="1446-10-27">w czwartek w wigilię śś. Apostołów Szymona i Judy etc.</date>
                             </seg>
                         </p>
                         <signed xml:id="t.1.3">

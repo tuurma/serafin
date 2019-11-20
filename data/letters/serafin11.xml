@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Mikołaj Suchorabski do Mikołaja Serafina, Kraków, [1443-1445]</title>
+                <title>Mikołaj Suchorabski do Mikołaja Serafina, <placeName ref="#Kraków">Kraków</placeName>, <date when-custom="1443-1445">[1443-1445]</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#MikołajSuchorabski">Mikołaj Suchorabski</persName>
                     <placeName ref="#Kraków">Kraków</placeName>
-                    <date when-custom="1443-1445"/>
+                    <date when-custom="1443-1445">[1443-1445]</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -81,7 +82,7 @@
                             <seg xml:id="s.1.2.14">Ille frater de <placeName ref="#Mogiła">Mogila</placeName> heri in recessum Dominacionis Vestre portauit XVI perdices, quatuor capones et unum agnellum.</seg>
                             <seg xml:id="s.1.2.15">Dominus <persName ref="#GrotekzJankowic">Grotek</persName> multum habuit Dominacioni Vestre pro bono, quod ad ipsum destinastis, et coram multis dixit: „Iam video, quod dominus castellanus et multi, cum quibus dominus zupparius habet facere, veritatem loquitur, quod verax est in verbo suo, sed frater suus dominus Iacobus multum promittit<anchor xml:id="ad"/>”.</seg>
                             <seg xml:id="s.1.2.16">Alia Vestre Dominacioni<anchor xml:id="ae"/> Schesczenecz dicet, et ego veniens die crastina alia.</seg>
-                            <seg xml:id="s.1.2.17">Datum Cracouie, dominico.</seg>
+                            <seg xml:id="s.1.2.17">Datum <placeName ref="#Kraków">Cracouie</placeName>, dominico.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -96,12 +97,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">9½: znak konwencjonalny.</note>
                         <note n="b" type="transcription" target="#ab">sub poprawione z super.</note>
@@ -137,7 +132,7 @@
                             <seg xml:id="t.1.2.14">Ów brat z <placeName ref="#Mogiła">Mogiły</placeName> przywiózł wczoraj na powrót Waszej Dostojności 16 kuropatw, 4 kapłony i jedno jagnię.</seg>
                             <seg xml:id="t.1.2.15">Pan <persName ref="#GrotekzJankowic">Grotek</persName> bardzo był wdzięczny Waszej Dostojności, że posłaliście do niego, i rzekł publicznie: „Widzę teraz, że pan kasztelan i wielu innych, z którymi pan żupnik ma do czynienia, mówią prawdę, że można polegać na słowie 〈żupnika〉, lecz jego brat pan Jakub za wiele przyrzeka”.</seg>
                             <seg xml:id="t.1.2.16">O innych rzeczach powie Waszej Dostojności Siestrzeniec, a ja, przybywszy jutro, o jeszcze innych.</seg>
-                            <seg xml:id="t.1.2.17">Dan w Krakowie, w niedzielę.</seg>
+                            <seg xml:id="t.1.2.17">Dan w <placeName ref="#Kraków">Krakowie</placeName>, w niedzielę.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

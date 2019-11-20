@@ -5,7 +5,9 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Jan Parawicini do Mikołaja Serafina, Przemyśl, [16 kwietnia 1437]</title>
+                <title>Jan Parawicini do Mikołaja Serafina, <placeName ref="#Przemyśl">Przemyśl</placeName>, <date when="1437-04-16">[16 kwietnia
+                    1437]</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat
                     1437-1459</title>
                 <editor>Anna Skolimowska</editor>
@@ -149,8 +151,9 @@
                             <seg xml:id="s.1.2.17">Dum nisi Deus aquam ordinauerit m<gap quantity="2" unit="chars"/>i intimetis michi, si uelletis habere
                                 ad festum Michael, ut ego <gap quantity="3" unit="words"/> ad
                                 rypam.</seg>
-                            <seg xml:id="s.1.2.18">Datum <placeName ref="#Przemyśl">Premislie</placeName>, feria tercia proxima ante
-                                    festu<supplied>m G</supplied>eorgii.</seg>
+                            <seg xml:id="s.1.2.18">Datum <placeName ref="#Przemyśl">Premislie</placeName>, <date when="1437-04-16">feria tercia proxima ante
+                                        festu<supplied>m</supplied>
+                                    <supplied>G</supplied>eorgii</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -318,8 +321,8 @@
                             <seg xml:id="t.1.2.17">Gdy tylko Bóg ześle wodę <gap/>, zawiadomcie
                                 mnie, czy chcecie mieć <unclear>sól</unclear> na św. Michała, żebym
                                     <supplied>mógł zgromadzić ją</supplied> na brzegu.</seg>
-                            <seg xml:id="t.1.2.18">Dan w <placeName ref="#Przemyśl">Przemyślu</placeName>, we wtorek przed świętem św.
-                                Jerzego.</seg>
+                            <seg xml:id="t.1.2.18">Dan w <placeName ref="#Przemyśl">Przemyślu</placeName>, we <date when="1437-04-16">wtorek przed świętem św.
+                                Jerzego</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

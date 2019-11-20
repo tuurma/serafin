@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Mikołaj Zyszno do Mikołaja Serafina, Płock, 5 grudnia [1441]</title>
+                <title>Mikołaj Zyszno do Mikołaja Serafina, <placeName ref="#Płock">Płock</placeName>, <date when="1441-12-05" when-custom="1441">5 grudnia [1441]</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#MikołajZyszno">Mikołaj Zyszno</persName>
                     <placeName ref="#Płock">Płock</placeName>
-                    <date when="1441-12-05">5 grudnia 1441</date>
+                    <date when="1441-12-05" when-custom="1441">5 grudnia [1441]</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -86,7 +87,8 @@
                             <seg xml:id="s.1.2.17">Sed tamen, domine graciose, sciatis, quia habui pro peccunis meis super aliquibus tunnis salis mandata et pro istis dictos equos comparaui, solum de vestris duas tunnas recepi et statim ad <sic>ragistrum</sic> in presencia <persName ref="#MikołajSzczytnicki">Nicolai Sczithniczsky˙</persName> scripsi, dum recepi et quantum<anchor xml:id="aa"/>.</seg>
                             <seg xml:id="s.1.2.18">Item sciatis, quia pro domino Wyerzink adhuc nichil dedimus, sed tamen iam quidcumque Deus dabit, totum pro ipso seruabimus, et nouiter eciam bene incipimus sal emere etc.</seg>
                             <seg xml:id="s.1.2.19">Et alia dominus Nicolaus Sczithnisczi vobis bene dicet, que nobis ocurrerunt istis temporibus etc.</seg>
-                            <seg xml:id="s.1.2.20">Datum in <placeName ref="#Płock">Ploczco</placeName>, in vigilia sancti Nicolai, anno etc.</seg>
+                            <seg xml:id="s.1.2.20">Datum in <placeName ref="#Płock">Ploczco</placeName>, in <date when="1441-12-05">vigilia sancti Nicolai, anno etc.</date>
+                            </seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -101,12 +103,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">quantum poprawione z <unclear>etc.</unclear>
                         </note>
@@ -143,7 +139,8 @@
                             <seg xml:id="t.1.2.17">Lecz jednak, łaskawy panie, wiedzcie, że miałem własne pieniądze zlecone na kilku beczkach i za nie kupiłem te konie, z waszych wziąłem tylko 2 beczki i natychmiast wpisałem do rejestru w obecności <persName ref="#MikołajSzczytnicki">Mikołaja Szczytnickiego</persName>, kiedy i ile wziąłem.</seg>
                             <seg xml:id="t.1.2.18">Wiedzcie także, że do tej pory nie daliśmy nic dla pana Wierzynka, lecz jednak zachowamy dla niego, czegokolwiek tylko Bóg przysporzy. Ostatnio również zaczęliśmy dobrze kupować sól etc.</seg>
                             <seg xml:id="t.1.2.19">O innych rzeczach, które się nam ostatnio przydarzyły, należycie opowie wam pan Mikołaj Szczytnicki etc.</seg>
-                            <seg xml:id="t.1.2.20">Dan w <placeName ref="#Płock">Płocku</placeName>, w wigilię św. Mikołaja, roku etc.</seg>
+                            <seg xml:id="t.1.2.20">Dan w <placeName ref="#Płock">Płocku</placeName>, w <date when="1441-12-05">wigilię św. Mikołaja, roku etc.</date>
+                            </seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">

@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>NN do Mikołaja Serafina, Kraków, 10 listopada 1445</title>
+                <title>NN do Mikołaja Serafina, <placeName ref="#Kraków">Kraków</placeName>, <date when="1445-11-10">10 listopada 1445</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -42,9 +43,8 @@
         <profileDesc>
             <correspDesc>
                 <correspAction type="sent">
-                    
                     <placeName ref="#Kraków">Kraków</placeName>
-                    <date when="1445-11-10" when-custom="10 listopada 1445"/>
+                    <date when="1445-11-10">10 listopada 1445</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -110,7 +110,7 @@
                             <seg xml:id="s.1.2.33">Peto instantissime, habeatis prelocutorem<anchor xml:id="ak"/> bonum, bene aliquas res protegat et defendet.</seg>
                             <seg xml:id="s.1.2.34">Domino Deo comitto Dominacionem Vestram, peto, habeatis me vobis recomissum et dominis famosis<anchor xml:id="a7"/>, superque omnibus et singulis me velitis habere informatum.</seg>
                             <seg xml:id="s.1.2.35">Hodie que agentur in terminis castrensibus, illa per <persName ref="#Klingisor">Clingizar</persName> describam.</seg>
-                            <seg xml:id="s.1.2.36">Datum Cracouie, feria quarta, in <date when="1445-11-10">vigilia sancti Martini, anno Domini mo cccco xlv</date>.</seg>
+                            <seg xml:id="s.1.2.36">Datum <placeName ref="#Kraków">Cracouie</placeName>, <date when="1445-11-10">feria quarta, in vigilia sancti Martini, anno Domini mo cccco xlv</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1"/>
@@ -123,12 +123,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">po compatitur skreślone sibi.</note>
                         <note n="b" type="transcription" target="#ab">investacionibus lub invastacionibus może zamiast infestacionibus.</note>
@@ -195,7 +189,7 @@
                             <seg xml:id="t.1.2.33">Proszę najgorliwiej, postarajcie się o dobrego pełnomocnika, niech dobrze strzeże i broni pewnych spraw.</seg>
                             <seg xml:id="t.1.2.34">Polecam Waszą Dostojność Panu Bogu, proszę, miejcie mnie za poleconego sobie i sławetnym panom i o wszystkich rzeczach oraz każdej z osobna zechciejcie mnie poinformować.</seg>
                             <seg xml:id="t.1.2.35">Co się dziś wydarzy w sądzie grodzkim, opiszę przez <persName ref="#Klingisor">Klingisora</persName>.</seg>
-                            <seg xml:id="t.1.2.36">Dan w Krakowie, w środę, w <date when="1445-11-10">wigilię św. Marcina, roku Pańskiego 1445</date>.</seg>
+                            <seg xml:id="t.1.2.36">Dan w <placeName ref="#Kraków">Krakowie</placeName>, <date when="1445-11-10">w środę, w wigilię św. Marcina, roku Pańskiego 1445</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1"/>

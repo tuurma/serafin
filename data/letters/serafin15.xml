@@ -5,7 +5,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Jan z Czyżowa do Mikołaja Serafina, Kraków, 31 października 1444</title>
+                <title>Jan z Czyżowa do Mikołaja Serafina, <placeName ref="#Kraków">Kraków</placeName>, <date when="1444-10-31" when-custom="1444">31 października [1444]</date>
+                </title>
                 <title type="s">Korespondencja żupnika krakowskiego Mikołaja Serafina z lat 1437-1459</title>
                 <editor>Anna Skolimowska</editor>
                 <editor>Waldemar Bukowski</editor>
@@ -44,7 +45,7 @@
                 <correspAction type="sent">
                     <persName ref="#JanCzyżowski">Jan z Czyżowa</persName>
                     <placeName ref="#Kraków">Kraków</placeName>
-                    <date when="1444-10-31" when-custom="31 października 1444"/>
+                    <date when="1444-10-31" when-custom="1444">31 października [1444]</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -83,7 +84,7 @@
                             <seg xml:id="s.1.2.12">Vestram cum ipsis <expan>faciend<ex>um</ex>
                                 </expan> aliqualem composicionem, quam vos non curatis facere, nec attemptare<anchor xml:id="ab"/>, et per consequens non curans non curabitur.</seg>
                             <seg xml:id="s.1.2.13">Vigilate adhuc, si wltis, ad diem crastinam terminus superest.</seg>
-                            <seg xml:id="s.1.2.14">Datum Cracouie, sabbato in <date when="1444-10-31" when-custom="31 X">vigilia Omnium Sanctorum</date>.</seg>
+                            <seg xml:id="s.1.2.14">Datum <placeName ref="#Kraków">Cracouie</placeName>, sabbato in <date when="1444-10-31">vigilia Omnium Sanctorum</date>.</seg>
                         </p>
                         <signed xml:id="s.1.3">
                             <seg xml:id="s.1.3.1">
@@ -99,12 +100,6 @@
                     </div>
                 </body>
                 <back>
-                    <listPerson>
-                        <person xml:id="MS">
-                            <persName>Mikołaj Serafin</persName>
-                            <note>foo bar</note>
-                        </person>
-                    </listPerson>
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">Nescimus poprawione z Nescio.</note>
                         <note n="b" type="transcription" target="#ab">attemptare rkps: <expan>attempta<ex>r</ex>i</expan>.</note>
@@ -133,7 +128,7 @@
                             <seg xml:id="t.1.2.11">Wierzyciele, którzy usiłują zająć na stałe wasz dom, na naszą prośbę odłożyli tę sprawę do jutra.</seg>
                             <seg xml:id="t.1.2.12">Powinniście zawrzeć z nimi jakąś ugodę, lecz nie staracie się o to, nawet nie podjęliście próby. Jak sobie pościelesz, tak się wyśpisz.</seg>
                             <seg xml:id="t.1.2.13">Termin upływa w dniu jutrzejszym, zatroszczcie się o to, jeśli chcecie, do tego czasu.</seg>
-                            <seg xml:id="t.1.2.14">Dan w Krakowie, w sobotę w <date when="1444-10-31" when-custom="31 X">wigilię Wszystkich Świętych</date>.</seg>
+                            <seg xml:id="t.1.2.14">Dan w <placeName ref="#Kraków">Krakowie</placeName>, w sobotę w <date when="1444-10-31">wigilię Wszystkich Świętych</date>.</seg>
                         </p>
                         <signed xml:id="t.1.3">
                             <seg xml:id="t.1.3.1">
