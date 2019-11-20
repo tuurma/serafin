@@ -42,6 +42,10 @@ declare %private function nav:dispatch($config as map(*), $function as xs:string
             ()
 };
 
+declare function nav:get-root($root as xs:string?, $options as map(*)?) {
+    tei-nav:get-root($root, $options)
+};
+
 declare function nav:get-header($config as map(*), $node as element()) {
     nav:dispatch($config, "get-header", [$config, $node])
 };
@@ -54,12 +58,16 @@ declare function nav:get-section($config as map(*), $doc as node()) {
     nav:dispatch($config, "get-section", [$config, $doc])
 };
 
-declare function nav:get-document-title($config as map(*), $root as element()) {
-    nav:dispatch($config, "get-document-title", [$config, $root])
+declare function nav:get-metadata($root as element(), $field as xs:string) {
+    nav:get-metadata(map { "type": nav:document-type($root) }, $root, $field)
 };
 
-declare function nav:get-document-metadata($config as map(*), $root as element()) {
-    nav:dispatch($config, "get-document-metadata", [$config, $root])
+declare function nav:get-metadata($config as map(*), $root as element(), $field as xs:string) {
+    nav:dispatch($config, "get-metadata", [$config, $root, $field])
+};
+
+declare function nav:get-document-title($config as map(*), $root as element()) {
+    nav:dispatch($config, "get-document-title", [$config, $root])
 };
 
 declare function nav:get-subsections($config as map(*), $root as node()) {
@@ -68,6 +76,17 @@ declare function nav:get-subsections($config as map(*), $root as node()) {
 
 declare function nav:get-section-heading($config as map(*), $section as node()) {
     nav:dispatch($config, "get-section-heading", [$config, $section])
+};
+
+declare function nav:get-first-page-start($config as map(*), $data as node()) {
+    nav:dispatch($config, "get-first-page-start", [$config, $data])
+};
+
+declare function nav:sort($sortBy as xs:string, $items as element()*) {
+    if (empty($items)) then
+        ()
+    else
+        nav:dispatch(map { "type": nav:document-type(head($items)) }, "sort", [$sortBy, $items])
 };
 
 declare function nav:get-content($config as map(*), $div as element()) {
@@ -88,17 +107,15 @@ declare function nav:get-previous-div($config as map(*), $div as element()) {
 
 declare function nav:output-footnotes($footnotes as element()*) {
     <div class="footnotes">
-        <ol>
-        {
-            for $note in $footnotes
-            order by number($note/@value)
-            return
-                $note
-        }
-        </ol>
+    {
+        for $note in $footnotes
+        order by number($note/@value)
+        return
+            $note
+    }
     </div>
 };
 
 declare function nav:index($config as map(*), $root) {
-    nav:dispatch($config, "index", [$root])
+    nav:dispatch($config, "index", [$config, $root])
 };

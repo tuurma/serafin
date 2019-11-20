@@ -5,11 +5,13 @@
             <!-- language selector -->
             <pb-lang name="lang" label="Language" data-template="pages:current-language">
                 <paper-item>en</paper-item>
+                <paper-item>es</paper-item>
                 <paper-item>de</paper-item>
                 <paper-item>fr</paper-item>
                 <paper-item>gr</paper-item>
                 <paper-item>it</paper-item>
                 <paper-item>pl</paper-item>
+                <paper-item>nl</paper-item>
             </pb-lang>
             <pb-collapse>
                 <h3 slot="collapse-trigger">
@@ -57,11 +59,6 @@
                         <paper-item>
                             <pb-ajax subscribe="transcription" emit="transcription" url="${app}/modules/lib/regenerate.xql" dialog="messageDialog" data-template="pages:parse-params">
                                 <i18n:text key="recompile"/>
-                            </pb-ajax>
-                        </paper-item>
-                        <paper-item>
-                            <pb-ajax subscribe="transcription" emit="transcription" url="${app}/modules/index.xql" dialog="messageDialog" data-template="pages:parse-params">
-                                <i18n:text key="metadata-update"/>
                             </pb-ajax>
                         </paper-item>
                         <paper-item>

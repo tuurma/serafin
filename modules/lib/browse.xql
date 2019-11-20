@@ -15,7 +15,7 @@
  :  You should have received a copy of the GNU General Public License
  :  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  :)
-xquery version "3.0";
+xquery version "3.1";
 
 module namespace app="http://www.tei-c.org/tei-simple/templates";
 
@@ -25,7 +25,7 @@ import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "pages.
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "../pm-config.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "../navigation.xql";
-import module namespace console="http://exist-db.org/xquery/console" at "java:org.exist.console.xquery.ConsoleModule";
+import module namespace query="http://www.tei-c.org/tei-simple/query" at "../query.xql";
 
 declare namespace expath="http://expath.org/ns/pkg";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
@@ -51,55 +51,19 @@ function app:check-login($node as node(), $model as map(*)) {
             templates:process($node/*[1], $model)
 };
 
-declare function app:current-user($node as node(), $model as map(*)) {
-    let $user := request:get-attribute($config:login-domain || ".user")
-    let $loggedIn := exists($user)
-    return
-        element { node-name($node) } {
-            $node/@*,
-            if ($loggedIn) then
-                attribute logged-in { "logged-in" }
-            else
-                (),
-            attribute user { $user },
-            attribute groups {
-                if ($user) then
-                    '[' || string-join(sm:get-user-groups($user) ! ('"' || . || '"'), ',') || ']'
-                else
-                    '[]'
-            },
-            templates:process($node/node(), $model)
-        }
-};
-
 declare
     %templates:wrap
 function app:sort($items as element()*, $sortBy as xs:string?) {
-    console:log("sort by " || $sortBy),
-    switch ($sortBy)
-        case "title" return
-            for $item in
-                if (count($config:data-exclude) = 1) then
-                    $items[not(matches(util:collection-name(.), $config:data-exclude))]
-                else
-                    $items
-            let $titleFromIndex := ft:get-field(document-uri(root($item)), "title")
-            let $title :=
-                if (exists($titleFromIndex)) then
-                    $titleFromIndex
-                else
-                    let $header := root($item)//tei:teiHeader
-                    let $title := ($header//tei:msDesc/tei:head, $header//tei:titleStmt/tei:title)[1]
-                    return
-                        replace(string-join($title//text(), " "), "^\s*(.*)$", "$1", "m")
-            order by $title
-            return
-                $item
-        default return
-            if (count($config:data-exclude) = 1) then
-                $items[not(matches(util:collection-name(.), $config:data-exclude))]
-            else
-                $items
+    let $items :=
+        if (exists($config:data-exclude)) then
+            $items except $config:data-exclude
+        else
+            $items
+    return
+        if ($sortBy) then
+            nav:sort($sortBy, $items)
+        else
+            $items
 };
 
 
@@ -111,38 +75,68 @@ declare
     %templates:default("sort", "title")
 function app:list-works($node as node(), $model as map(*), $filter as xs:string?, $root as xs:string,
     $browse as xs:string?, $odd as xs:string?, $sort as xs:string) {
-    let $odd := ($odd, session:get-attribute("odd"))[1]
+    let $params := app:params2map()
+    let $odd := ($odd, session:get-attribute($config:session-prefix || ".odd"))[1]
     let $oddAvailable := $odd and doc-available($config:odd-root || "/" || $odd)
     let $odd := if ($oddAvailable) then $odd else $config:default-odd
-    let $cached := session:get-attribute("simple.works")
+    let $cached := session:get-attribute($config:session-prefix || ".works")
     let $filtered :=
-        if (exists($filter)) then
-            let $ordered :=
-                for $rootCol in $config:data-root
-                for $item in
-                    ft:search($rootCol || "/" || $root, $browse || ":" || $filter, ("author", "title"))/search
-                let $author := $item/field[@name = "author"]
-                order by $author[1], $author[2], $author[3]
-                return
-                    $item
-            for $doc in $ordered
-            return
-                doc($doc/@uri)/*
-        else if (exists($cached) and $filter != "") then
+        if (app:use-cache($params, $cached)) then
             $cached
+        else if (exists($filter)) then
+            query:query-metadata($browse, $filter, $sort)
         else
-            $config:data-root ! collection(. || "/" || $root)/*
+            let $options := app:options($sort)
+            return
+                nav:get-root($root, $options)
     let $sorted := app:sort($filtered, $sort)
     return (
-        session:set-attribute("simple.works", $sorted),
-        session:set-attribute("browse", $browse),
-        session:set-attribute("filter", $filter),
-        session:set-attribute("odd", $odd),
+        session:set-attribute($config:session-prefix || ".timestamp", current-dateTime()),
+        session:set-attribute($config:session-prefix || '.hits', $filtered),
+        session:set-attribute($config:session-prefix || '.params', $params),
+        session:set-attribute($config:session-prefix || ".works", $sorted),
+        session:set-attribute($config:session-prefix || ".odd", $odd),
         map {
             "all" : $sorted,
             "mode": "browse"
         }
     )
+};
+
+declare %private function app:params2map() {
+    map:merge(
+        for $param in request:get-parameter-names()[not(. = ("start", "per-page"))]
+        return
+            map:entry($param, request:get-parameter($param, ()))
+    )
+};
+
+declare function app:use-cache($params as map(*), $cached) {
+    let $cachedParams := session:get-attribute($config:session-prefix || ".params")
+    let $timestamp := session:get-attribute($config:session-prefix || ".timestamp")
+    return
+        if (exists($cached) and exists($cachedParams) and deep-equal($params, $cachedParams) and exists($timestamp)) then
+            empty(xmldb:find-last-modified-since(collection($config:data-root), $timestamp))
+        else
+            false()
+};
+
+
+declare function app:options($sortBy as xs:string) {
+    map {
+        "facets":
+            map:merge((
+                for $param in request:get-parameter-names()[starts-with(., 'facet-')]
+                let $dimension := substring-after($param, 'facet-')
+                return
+                    map {
+                        $dimension: request:get-parameter($param, ())
+                    }
+            )),
+        "fields": $sortBy,
+        "leading-wildcard": "yes",
+        "filter-rewrite": "yes"
+    }
 };
 
 declare
@@ -164,7 +158,7 @@ function app:browse($node as node(), $model as map(*), $start as xs:int, $per-pa
             templates:process($node/*[@class="empty"], $model)
         else
             subsequence($model?all, $start, $per-page) !
-                templates:process($node/*[not(@class="empty")], map:new(
+                templates:process($node/*[not(@class="empty")], map:merge(
                     ($model, map {
                         "work": .,
                         "config": tpu:parse-pi(root(.), ()),
@@ -411,9 +405,12 @@ declare function app:dispatch-action($node as node(), $model as map(*), $action 
                     <p>Removed {count($docs)} documents.</p>
                     {
                         for $path in $docs
-                        let $doc := pages:get-document($path)
+                        let $doc := pages:get-document(xmldb:decode($path))
                         return
-                            xmldb:remove(util:collection-name($doc), util:document-name($doc))
+                            if ($doc) then
+                                xmldb:remove(util:collection-name($doc), util:document-name($doc))
+                            else
+                                <p>Failed to remove document {$path}</p>
                     }
                 </div>
         case "delete-odd" return

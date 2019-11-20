@@ -32,8 +32,6 @@ import module namespace templates="http://exist-db.org/xquery/templates";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "../config.xqm";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "../pm-config.xql";
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
-import module namespace search="http://www.tei-c.org/tei-simple/search" at "search.xql";
-import module namespace console="http://exist-db.org/xquery/console" at "java:org.exist.console.xquery.ConsoleModule";
 
 declare variable $pages:app-root := request:get-context-path() || substring-after($config:app-root, "/db");
 
@@ -86,18 +84,6 @@ declare function pages:pb-view($node as node(), $model as map(*), $root as xs:st
         $node/@*,
         $node/*
     }
-};
-
-declare function pages:pb-select-template($node as node(), $model as map(*), $template as xs:string?) {
-    <pb-select-template template="{$template}">
-    {
-        $node/@*,
-        for $html in collection($config:app-root || "/templates/pages")/*
-        let $description := $html//meta[@name="description"]/@content/string()
-        return
-            <paper-item value="{util:document-name($html)}">{($description, util:document-name($html))[1]}</paper-item>
-        }
-    </pb-select-template>
 };
 
 
@@ -167,7 +153,9 @@ declare function pages:load-xml($view as xs:string?, $root as xs:string?, $doc a
 };
 
 declare function pages:load-xml($data as node()*, $view as xs:string?, $root as xs:string?, $doc as xs:string) {
-    let $config := tpu:parse-pi(root($data[1]), $view)
+    let $config :=
+        (: parse processing instructions and remember original context :)
+        map:merge((tpu:parse-pi(root($data[1]), $view), map { "context": $data }))
     return
         map {
             "config": $config,
@@ -184,12 +172,7 @@ declare function pages:load-xml($data as node()*, $view as xs:string?, $root as 
                         if ($root) then
                             util:node-by-id($data, $root)
                         else
-                            let $div := ($data//tei:pb)[1]
-                            return
-                                if ($div) then
-                                    $div
-                                else
-                                    $data/tei:TEI//tei:body
+                            nav:get-first-page-start($config, $data)
                     case "single" return
                         if ($root) then
                             util:node-by-id($data, $root)
@@ -274,7 +257,7 @@ declare
 function pages:view($node as node(), $model as map(*), $action as xs:string) {
     let $view := pages:determine-view($model?config?view, $model?data)
     let $data :=
-        if ($action = "search" and exists(session:get-attribute("apps.simple.query"))) then
+        if ($action = "search" and exists(session:get-attribute($config:session-prefix || ".query"))) then
             query:expand($model?config, $model?data)
         else
             $model?data
@@ -305,8 +288,8 @@ declare function pages:process-content($xml as node()*, $root as node()*, $confi
         <div class="{$config:css-content-class} {$class}">
         {
             $body,
-            if ($html//li[@class="footnote"]) then
-                nav:output-footnotes($html//li[@class = "footnote"])
+            if ($html//*[@class="footnote"]) then
+                nav:output-footnotes($html//*[@class = "footnote"])
             else
                 ()
             ,
@@ -319,7 +302,9 @@ declare function pages:clean-footnotes($nodes as node()*) {
     for $node in $nodes
     return
         typeswitch($node)
-            case element(li) return
+            case element(paper-tooltip) return
+		()
+            case element() return
                 if ($node/@class = "footnote") then
                     ()
                 else
@@ -327,13 +312,6 @@ declare function pages:clean-footnotes($nodes as node()*) {
                         $node/@*,
                         pages:clean-footnotes($node/node())
                     }
-            case element(paper-tooltip) return
-		()
-            case element() return
-                element { node-name($node) } {
-                    $node/@*,
-                    pages:clean-footnotes($node/node())
-                }
             default return
                 $node
 };
@@ -429,32 +407,6 @@ declare function pages:get-content($config as map(*), $div as element()) {
     nav:get-content($config, $div)
 };
 
-declare function pages:breadcrumbs($node as node(), $model as map(*)) {
-    let $parent := ($model?data/self::tei:body, $model?data/ancestor-or-self::tei:div[1])[1]
-    let $parent-id := config:get-identifier($parent)
-
-    let $current-view:=
-        if($model?config?view != $config:default-view) then "&amp;view=" || $model?config?view else ()
-
-    let $current-odd:=
-        if($model?config?odd != $config:odd) then "&amp;odd=" || $model?config?odd else ()
-
-    return
-        <ol class="headings breadcrumb">
-            <li><a href="{$parent-id}">{nav:get-document-title($model?config, $model('data')/ancestor-or-self::tei:TEI)}</a></li>
-                {
-                    for $parentDiv in       $model?data/ancestor-or-self::tei:div[tei:head]
-                        let $id := util:node-id(
-                            if ($model?config?view = "page") then $parentDiv/preceding::tei:pb[1] else $parentDiv
-                        )
-                        return
-                            <li>
-                                <a href="{$parent-id}?root={$id}{$current-view}{$current-odd}">{$parentDiv/tei:head/string()}</a>
-                            </li>
-                }
-        </ol>
-};
-
 declare
     %templates:wrap
 function pages:navigation-title($node as node(), $model as map(*)) {
@@ -489,7 +441,7 @@ declare function pages:navigation-link($node as node(), $model as map(*), $direc
                     data-doc="{$doc}">{$node/@class, $node/node()}</a>
 };
 
-declare function pages:app-root($node as node(), $model as map(*)) {
+declare function pages:pb-page($node as node(), $model as map(*), $template as xs:string?) {
     let $model := map:merge(
         (
             $model,
@@ -499,7 +451,8 @@ declare function pages:app-root($node as node(), $model as map(*)) {
     return
         element { node-name($node) } {
             $node/@*,
-            attribute data-app { request:get-context-path() || substring-after($config:app-root, "/db") },
+            attribute app-root { request:get-context-path() || substring-after($config:app-root, "/db") },
+            attribute template { $template },
             templates:process($node/*, $model)
         }
 };
@@ -574,7 +527,7 @@ declare function pages:parse-params($node as node(), $model as map(*)) {
                                     let $found := [
                                         request:get-parameter($paramName, $default),
                                         $model($paramName),
-                                        session:get-attribute("apps.simple." || $paramName)
+                                        session:get-attribute($config:session-prefix || "." || $paramName)
                                     ]
                                     return
                                         array:fold-right($found, (), function($in, $value) {

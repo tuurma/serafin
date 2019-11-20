@@ -23,6 +23,14 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 
+declare function nav:get-root($root as xs:string?, $options as map(*)?) {
+    $config:data-default ! (
+        for $doc in collection(. || "/" || $root)//tei:text[ft:query(., "file:*", $options)]
+        return
+            $doc/ancestor::tei:TEI
+    )
+};
+
 declare function nav:get-header($config as map(*), $node as element()) {
     $node/tei:teiHeader
 };
@@ -40,7 +48,7 @@ declare function nav:get-section($config as map(*), $doc) {
             if ($div) then
                 $div
             else
-                let $group := root($doc)/tei:TEI/tei:text/tei:group/tei:text/(tei:front|tei:body|tei:back)
+                let $group := root($doc)/tei:TEI/tei:text/tei:group/tei:text
                 return
                     if ($group) then
                         $group[1]
@@ -49,18 +57,52 @@ declare function nav:get-section($config as map(*), $doc) {
 };
 
 declare function nav:get-document-title($config as map(*), $root as element()) {
-    let $main-title := $root/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type = 'main']/string()
-    return
-        if ($main-title) then $main-title else $root/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1]/string()
+    nav:get-metadata($config, $root, "title")
 };
 
-declare function nav:get-document-metadata($config as map(*), $root as element()) {
-    map {
-        "title": nav:get-document-title($config, $root),
-        "author": $root/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/string(),
-        "language": ($root/@xml:lang/string(), $root/tei:teiHeader/@xml:lang/string(), "en")[1]
-    }
+declare function nav:get-metadata($config as map(*), $root as element(), $field as xs:string) {
+    switch ($field)
+        case "title" return
+            let $header := $root/tei:teiHeader
+            return
+            (
+                $header//tei:msDesc/tei:head, $header//tei:titleStmt/tei:title[@type = 'main'],
+                $header//tei:titleStmt/tei:title
+            )[1]
+        case "author" return (
+            $root/tei:teiHeader//tei:titleStmt/tei:author,
+            $root/tei:teiHeader//tei:correspDesc/tei:correspAction/tei:persName
+        )
+        case "language" return
+            ($root/@xml:lang/string(), $root/tei:teiHeader/@xml:lang/string(), "en")[1]
+        case "date" return (
+            $root/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
+            $root/tei:teiHeader/tei:publicationStmt/tei:date
+        )[1]
+        case "license" return
+            $root/tei:teiHeader/tei:fileDesc/tei:publicationStmt//tei:licence/@target/string()
+        default return
+            ()
 };
+
+declare function nav:sort($sortBy as xs:string, $items as element()*) {
+    switch ($sortBy)
+        case "date" return
+            sort($items, (), ft:field(?, "date", "xs:date"))
+        default return
+            sort($items, (), ft:field(?, $sortBy))
+};
+
+
+declare function nav:get-first-page-start($config as map(*), $data as element()) {
+    let $pb := ($data//tei:pb)[1]
+    return
+        if ($pb) then
+            $pb
+        else
+            $data/tei:TEI//tei:text
+};
+
 
 declare function nav:get-content($config as map(*), $div as element()) {
     typeswitch ($div)
@@ -73,7 +115,7 @@ declare function nav:get-content($config as map(*), $div as element()) {
                     if ($nextPage) then
                         ($div/ancestor::* intersect $nextPage/ancestor::*)[last()]
                     else
-                        ($div/ancestor::tei:div, $div/ancestor::tei:body)[1]
+                        ($div/ancestor::tei:div, $div/ancestor::tei:text)[1]
                 )
             return
                 $chunk
@@ -115,13 +157,19 @@ declare function nav:get-section-heading($config as map(*), $section as node()) 
 };
 
 declare function nav:get-next($config as map(*), $div as element(), $view as xs:string) {
-    switch ($view)
-        case "page" return
-            $div/following::tei:pb[1]
-        case "body" return
-            ($div/following-sibling::*, $div/../following-sibling::*)[1]
-        default return
-            nav:get-next($config, $div)
+    let $next :=
+        switch ($view)
+            case "page" return
+                $div/following::tei:pb[1]
+            case "body" return
+                ($div/following-sibling::*, $div/../following-sibling::*)[1]
+            default return
+                nav:get-next($config, $div)
+    return
+        if (empty($config?context) or $config?context instance of document-node() or $next/ancestor::*[. is $config?context]) then
+            $next
+        else
+            ()
 };
 
 
@@ -136,13 +184,19 @@ declare function nav:get-next($config as map(*), $div as element()) {
 };
 
 declare function nav:get-previous($config as map(*), $div as element(), $view as xs:string) {
-    switch ($view)
-        case "page" return
-            $div/preceding::tei:pb[1]
-        case "body" return
-            ($div/preceding-sibling::*, $div/../preceding-sibling::*)[1]
-        default return
-            nav:get-previous-div($config, $div)
+    let $previous :=
+        switch ($view)
+            case "page" return
+                $div/preceding::tei:pb[1]
+            case "body" return
+                ($div/preceding-sibling::*, $div/../preceding-sibling::*)[1]
+            default return
+                nav:get-previous-div($config, $div)
+    return
+        if ($config?context instance of document-node() or $previous/ancestor::*[. is $config?context]) then
+            $previous
+        else
+            ()
 };
 
 
@@ -171,17 +225,32 @@ declare %private function nav:get-previous-recursive($config as map(*), $div as 
             $div
 };
 
-declare function nav:milestone-chunk($ms1 as element(), $ms2 as element()?, $node as node()*) as node()*
+declare function nav:milestone-chunk($ms1 as element(), $ms2 as element()?, $node as node()*) as node()* {
+    let $descendantCheck :=
+        if ($ms1 instance of element(tei:pb) and (empty($ms2) or $ms2 instance of element(tei:pb))) then
+            function($node, $ms1, $ms2) {
+                $node/descendant::tei:pb intersect ($ms1, $ms2)
+            }
+        else
+            function($node, $ms1, $ms2) {
+                some $n in $node/descendant::* satisfies ($n is $ms1 or $n is $ms2)
+            }
+    return
+        nav:milestone-chunk($ms1, $ms2, $node, $descendantCheck)
+};
+
+declare function nav:milestone-chunk($ms1 as element(), $ms2 as element()?, $node as node()*,
+    $descendantCheck as function(*)) as node()*
 {
     typeswitch ($node)
         case element() return
             if ($node is $ms1) then
                 util:expand($node, "add-exist-id=all")
-            else if ( some $n in $node/descendant::* satisfies ($n is $ms1 or $n is $ms2) ) then
+            else if ( $descendantCheck($node, $ms1, $ms2) ) then
                 element { node-name($node) } {
                     $node/@*,
                     for $i in ( $node/node() )
-                    return nav:milestone-chunk($ms1, $ms2, $i)
+                    return nav:milestone-chunk($ms1, $ms2, $i, $descendantCheck)
                 }
             else if ($node >> $ms1 and (empty($ms2) or $node << $ms2)) then
                 util:expand($node, "add-exist-id=all")
@@ -194,23 +263,20 @@ declare function nav:milestone-chunk($ms1 as element(), $ms2 as element()?, $nod
             else ()
 };
 
-declare function nav:index($root) {
-    let $header := root($root)//tei:teiHeader
-    let $titleStmt := ($header//tei:msDesc/tei:head, $header//tei:titleStmt/tei:title)[1]
-    return
-        <doc>
-            {
-                for $title in $titleStmt/tei:title
-                return
-                    <field name="title" store="yes">{replace(string-join($title//text(), " "), "^\s*(.*)$", "$1", "m")}</field>
-            }
-            {
-                for $author in $titleStmt/tei:author
-                let $normalized := replace($author/string(), "^([^,]*,[^,]*),?.*$", "$1")
-                return
-                    <field name="author" store="yes">{$normalized}</field>
-            }
-            <field name="year" store="yes">{root($root)//tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:edition/tei:date/text()}</field>
-            <field name="file" store="yes">{substring-before(util:document-name($root), ".xml")}</field>
-        </doc>
+declare function nav:index($config as map(*), $root) {
+    <doc>
+        {
+            for $title in nav:get-document-title($config, $root)
+            return
+                <field name="title" store="yes">{replace(string-join($title//text(), " "), "^\s*(.*)$", "$1", "m")}</field>
+        }
+        {
+            for $author in nav:get-metadata($config, $root, "author")
+            let $normalized := replace($author/string(), "^([^,]*,[^,]*),?.*$", "$1")
+            return
+                <field name="author" store="yes">{$normalized}</field>
+        }
+        <field name="year" store="yes">{nav:get-metadata($config, $root, 'date')}</field>
+        <field name="file" store="yes">{util:document-name($root)}</field>
+    </doc>
 };

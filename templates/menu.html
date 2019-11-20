@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <app-toolbar xmlns:i18n="http://exist-db.org/xquery/i18n" class="menubar">
-    <a href="$app/index.html">
-        <img src="resources/images/tei-publisher-logo-contrast-color.svg" class="logo"/>
+    <a href="$app/index.html" class="logo">
+        <img src="resources/images/tei-publisher-logo-contrast-color.svg"/>
     </a>
     <pb-media-query query="min-width: 1024px">
         <a href="$app/index.html">Start</a>
@@ -55,22 +55,18 @@
                         </pb-ajax>
                     </paper-item>
                     <paper-item>
-                        <pb-ajax subscribe="transcription" emit="transcription" url="${app}/modules/index.xql" dialog="messageDialog" data-template="pages:parse-params">
-                            <i18n:text key="metadata-update"/>
-                        </pb-ajax>
-                    </paper-item>
-                    <paper-item>
                         <pb-download data-template="pages:edit-odd-link" src="document1">
                             <i18n:text key="edit-odd"/>
+                        </pb-download>
+                    </paper-item>
+                    <paper-item>
+                        <pb-download url="modules/lib/app-download.xql">
+                            <i18n:text key="xar-download"/>
                         </pb-download>
                     </paper-item>
                 </paper-listbox>
             </paper-menu-button>
         </pb-restricted>
-
-        <a href="http://gitlab.exist-db.org/tei-publisher/" title="View code on Gitlab">
-            <img src="resources/images/wm_no_bg.svg" height="20"/>
-        </a>
     </pb-media-query>
 
     <!-- Search input -->
@@ -79,14 +75,16 @@
        <!-- language selector -->
        <pb-lang name="lang" label="Language" data-template="pages:current-language">
            <paper-item>en</paper-item>
+           <paper-item>es</paper-item>
            <paper-item>de</paper-item>
            <paper-item>fr</paper-item>
            <paper-item>gr</paper-item>
            <paper-item>it</paper-item>
            <paper-item>pl</paper-item>
+           <paper-item>nl</paper-item>
        </pb-lang>
     </pb-media-query>
-    <pb-login id="login" login-label="i18n(login)" logout-label="i18n(logout)" group="tei" data-template="browse:current-user">
+    <pb-login id="login" login-label="i18n(login)" logout-label="i18n(logout)" group="tei">
     </pb-login>
     <paper-dialog id="downloadDialog">
         <h2>

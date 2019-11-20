@@ -23,6 +23,11 @@ declare namespace dbk="http://docbook.org/ns/docbook";
 
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 
+declare function nav:get-root($root as xs:string?, $options as map(*)?) {
+    $config:data-root !
+        collection(. || "/" || $root)//dbk:section[ft:query(., "file:*", $options)]/ancestor::dbk:article
+};
+
 declare function nav:get-header($config as map(*), $node as element()) {
     $node/dbk:info
 };
@@ -39,12 +44,30 @@ declare function nav:get-document-title($config as map(*), $root as element()) {
     $root/dbk:info/dbk:title/string()
 };
 
-declare function nav:get-document-metadata($config as map(*), $root as element()) {
-    map {
-        "title": nav:get-document-title($config, $root),
-        "author": $root/dbk:info/dbk:author/string(),
-        "language": ($root/@xml:lang/string(), "en")[1]
-    }
+declare function nav:get-metadata($config as map(*), $root as element(), $field as xs:string) {
+    switch ($field)
+        case "title" return
+            nav:get-document-title($config, $root)
+        case "author" return
+            $root/dbk:info/dbk:author/string()
+        case "date" return
+            $root/dbk:info/(dbk:pubdate|dbk:copyright/dbk:year|dbk:date)[1]
+        case "language" return
+            ($root/@xml:lang/string(), "en")[1]
+        default return
+            ()
+};
+
+declare function nav:sort($sortBy as xs:string, $items as element()*) {
+    switch ($sortBy)
+        case "date" return
+            sort($items, (), ft:field(?, "date", "xs:date"))
+        default return
+            sort($items, (), ft:field(?, $sortBy))
+};
+
+declare function nav:get-first-page-start($config as map(*), $data as element()) {
+    ()
 };
 
 declare function nav:get-content($config as map(*), $div as element()) {
@@ -81,7 +104,12 @@ declare function nav:get-section-heading($config as map(*), $section as node()) 
 };
 
 declare function nav:get-next($config as map(*), $div as element(), $view as xs:string) {
-    nav:get-next($config, $div)
+    let $next := nav:get-next($config, $div)
+    return
+        if (empty($config?context) or $config?context instance of document-node() or $next/ancestor::*[. is $config?context]) then
+            $next
+        else
+            ()
 };
 
 
@@ -96,7 +124,12 @@ declare function nav:get-next($config as map(*), $div as element()) {
 };
 
 declare function nav:get-previous($config as map(*), $div as element(), $view as xs:string) {
-    nav:get-previous-div($config, $div)
+    let $previous := nav:get-previous-div($config, $div)
+    return
+        if ($config?context instance of document-node() or $previous/ancestor::*[. is $config?context]) then
+            $previous
+        else
+            ()
 };
 
 declare function nav:get-previous-div($config as map(*), $div as element()) {
@@ -124,14 +157,22 @@ declare %private function nav:get-previous-recursive($config as map(*), $div as 
             $div
 };
 
-declare function nav:index($root) {
+declare function nav:index($config as map(*), $root) {
     let $header := root($root)/*/dbk:info
     return
         <doc>
             {
-                for $title in $header/dbk:title
+                for $title in nav:get-document-title($config, $root)
                 return
-                    <field name="title" store="yes">{replace(string-join($title//text(), " "), "^\s*(.*)$", "$1", "m")}</field>
+                    <field name="title" store="yes">{replace(string-join($title, " "), "^\s*(.*)$", "$1", "m")}</field>
             }
+            {
+                for $author in nav:get-metadata($config, $root, "author")
+                let $normalized := replace($author, "^([^,]*,[^,]*),?.*$", "$1")
+                return
+                    <field name="author" store="yes">{$normalized}</field>
+            }
+            <field name="year" store="yes">{nav:get-metadata($config, $root, 'date')}</field>
+            <field name="file" store="yes">{util:document-name($root)}</field>
         </doc>
 };

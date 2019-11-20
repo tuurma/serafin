@@ -27,7 +27,7 @@ import module namespace epub="http://www.tei-c.org/tei-simple/xquery/functions/e
 declare function model:transform($options as map(*), $input as node()*) {
         
     let $config :=
-        map:new(($options,
+        map:merge(($options,
             map {
                 "output": ["epub","web"],
                 "odd": "/db/apps/serafin/resources/odd/tei_simplePrint.odd",
@@ -48,6 +48,8 @@ declare function model:transform($options as map(*), $input as node()*) {
 declare function model:apply($config as map(*), $input as node()*) {
         let $parameters := 
         if (exists($config?parameters)) then $config?parameters else map {}
+        let $get := 
+        model:source($parameters, ?)
     return
     $input !         (
             let $node := 
@@ -117,13 +119,13 @@ declare function model:apply($config as map(*), $input as node()*) {
                         html:cell($config, ., ("tei-cell"), ., ())
                     case element(choice) return
                         if (sic and corr) then
-                            html:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1])
+                            epub:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1])
                         else
                             if (abbr and expan) then
-                                html:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1])
+                                epub:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1])
                             else
                                 if (orig and reg) then
-                                    html:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1])
+                                    epub:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1])
                                 else
                                     $config?apply($config, ./node())
                     case element(cit) return
@@ -144,7 +146,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             html:inline($config, ., ("tei-corr2"), .)
                     case element(date) return
                         if (@when) then
-                            html:alternate($config, ., ("tei-date3"), ., ., @when)
+                            epub:alternate($config, ., ("tei-date3"), ., ., @when)
                         else
                             if (text()) then
                                 html:inline($config, ., ("tei-date4"), .)
@@ -340,9 +342,9 @@ declare function model:apply($config as map(*), $input as node()*) {
                             html:inline($config, ., ("tei-ref1"), .)
                         else
                             if (not(text())) then
-                                html:link($config, ., ("tei-ref2"), @target, ())
+                                html:link($config, ., ("tei-ref2"), @target, @target, (), map {})
                             else
-                                html:link($config, ., ("tei-ref3"), ., ())
+                                html:link($config, ., ("tei-ref3"), ., @target, (), map {})
                     case element(reg) return
                         html:inline($config, ., ("tei-reg"), .)
                     case element(relatedItem) return
@@ -508,5 +510,15 @@ declare function model:apply-children($config as map(*), $node as element(), $co
                 default return
                     html:escapeChars(.)
         )
+};
+
+declare function model:source($parameters as map(*), $elem as element()) {
+        
+    let $id := $elem/@exist:id
+    return
+        if ($id and $parameters?root) then
+            util:node-by-id($parameters?root, $id)
+        else
+            $elem
 };
 

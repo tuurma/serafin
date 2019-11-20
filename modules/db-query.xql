@@ -23,49 +23,109 @@ declare namespace db="http://docbook.org/ns/docbook";
 
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation/docbook" at "navigation-dbk.xql";
-import module namespace console="http://exist-db.org/xquery/console" at "java:org.exist.console.xquery.ConsoleModule";
 
-declare variable $dbs:QUERY_OPTIONS :=
-    <options>
-        <leading-wildcard>yes</leading-wildcard>
-        <filter-rewrite>yes</filter-rewrite>
-    </options>;
+declare variable $dbs:QUERY_OPTIONS := map {
+    "leading-wildcard": "yes",
+    "filter-rewrite": "yes"
+};
 
-declare function dbs:query-default($fields as xs:string, $query as xs:string, $target-texts as xs:string*) {
+declare function dbs:query-default($fields as xs:string+, $query as xs:string, $target-texts as xs:string*) {
     if(string($query)) then
         for $field in $fields
         return
             switch ($field)
-                case "tei-head" return
+                case "head" return
                     if ($target-texts) then
                         for $text in $target-texts
                         return
-                            $config:data-root ! doc(. || "/" || $text)//db:title[ft:query(., $query, $dbs:QUERY_OPTIONS)]
+                            $config:data-root ! doc(. || "/" || $text)//db:title[ft:query(., $query, dbs:options())]
                     else
                         collection($config:data-root)//db:title[ft:query(., $query, $dbs:QUERY_OPTIONS)]
                 default return
-                    switch ($config:search-default)
-                        case "tei:div" return
-                            if ($target-texts) then
-                                for $text in $target-texts
-                                return
-                                    $config:data-root ! doc(. || "/" || $text)//db:section[ft:query(., $query, $dbs:QUERY_OPTIONS)][not(db:section)]
-                            else
-                                collection($config:data-root)//db:section[ft:query(., $query, $dbs:QUERY_OPTIONS)][not(db:section)]
-                        case "tei:body" return
-                            if ($target-texts) then
-                                for $text in $target-texts
-                                return
-                                    $config:data-root !
-                                        doc(. || "/" || $text)//db:article[ft:query(., $query, $dbs:QUERY_OPTIONS)]
-                            else
-                                collection($config:data-root)//db:article[ft:query(., $query, $dbs:QUERY_OPTIONS)]
-                        default return
-                            if ($target-texts) then
-                                util:eval("for $text in $target-texts return $config:data-root ! doc(. || '/' || $text)//db:article[ft:query(., $query, $dbs:QUERY_OPTIONS)]")
-                            else
-                                util:eval("collection($config:data-root)//" || $config:search-default || "[ft:query(., $query, $dbs:QUERY_OPTIONS)]")
+                    if ($target-texts) then
+                        for $text in $target-texts
+                        return
+                            $config:data-root ! doc(. || "/" || $text)//db:section[ft:query(., $query, dbs:options())] |
+                            $config:data-root ! doc(. || "/" || $text)//db:article[ft:query(., $query, dbs:options())]
+                    else
+                        collection($config:data-root)//db:section[ft:query(., $query, dbs:options())] |
+                        collection($config:data-root)//db:article[ft:query(., $query, dbs:options())]
     else ()
+};
+
+declare function dbs:options() {
+    map:merge((
+        $dbs:QUERY_OPTIONS,
+        map {
+            "facets":
+                map:merge((
+                    for $param in request:get-parameter-names()[starts-with(., 'facet-')]
+                    let $dimension := substring-after($param, 'facet-')
+                    return
+                        map {
+                            $dimension: request:get-parameter($param, ())
+                        }
+                ))
+        }
+    ))
+};
+
+declare function dbs:autocomplete($doc as xs:string?, $fields as xs:string+, $q as xs:string) {
+    for $field in $fields
+    return
+        switch ($field)
+            case "author" return
+                collection($config:data-root)/ft:index-keys-for-field("author", $q,
+                    function($key, $count) {
+                        $key
+                    }, 30)
+            case "file" return
+                collection($config:data-root)/ft:index-keys-for-field("file", $q,
+                    function($key, $count) {
+                        $key
+                    }, 30)
+            case "text" return
+                if ($doc) then (
+                    doc($config:data-root || "/" || $doc)/util:index-keys-by-qname(xs:QName("db:section"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index"),
+                    doc($config:data-root || "/" || $doc)/util:index-keys-by-qname(xs:QName("db:section"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index")
+                ) else (
+                    collection($config:data-root)/util:index-keys-by-qname(xs:QName("db:section"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index"),
+                    collection($config:data-root)/util:index-keys-by-qname(xs:QName("db:section"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index")
+                )
+            case "head" return
+                if ($doc) then
+                    doc($config:data-root || "/" || $doc)/util:index-keys-by-qname(xs:QName("db:title"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index")
+                else
+                    collection($config:data-root)/util:index-keys-by-qname(xs:QName("db:title"), $q,
+                        function($key, $count) {
+                            $key
+                        }, 30, "lucene-index")
+            default return
+                collection($config:data-root)/ft:index-keys-for-field("title", $q,
+                    function($key, $count) {
+                        $key
+                    }, 30)
+};
+
+declare function dbs:query-metadata($field as xs:string, $query as xs:string, $sort as xs:string) {
+    for $doc in collection($config:data-root)//db:section[ft:query(., $field || ":" || $query, map { "fields": $sort
+})]     return
+        root($doc)/*
 };
 
 declare function dbs:get-parent-section($node as node()) {
@@ -94,28 +154,29 @@ declare function dbs:get-breadcrumbs($config as map(*), $hit as element(), $pare
  : on it.
  :)
 declare function dbs:expand($data as element()) {
-    let $query := session:get-attribute("apps.simple.query")
+    let $query := session:get-attribute($config:session-prefix || ".query")
+    let $field := session:get-attribute($config:session-prefix || ".field")
     let $div := $data
+    let $result := dbs:query-default-view($div, $query, $field)
     let $expanded :=
-        util:expand(
-            (
-                dbs:query-default-view($div, $query),
-                $div[.//db:title[ft:query(., $query, $dbs:QUERY_OPTIONS)]]
-            ), "add-exist-id=all"
-        )
+        if (exists($result)) then
+            util:expand($result, "add-exist-id=all")
+        else
+            $div
     return
         $expanded
 };
 
 
-declare %private function dbs:query-default-view($context as element()*, $query as xs:string) {
-    switch ($config:search-default)
-        case "tei:div" return
-            $context[./descendant-or-self::db:section[ft:query(., $query, $dbs:QUERY_OPTIONS)]]
-        case "tei:body" return
-            $context[./descendant-or-self::db:article[ft:query(., $query, $dbs:QUERY_OPTIONS)]]
-        default return
-            util:eval("$context[./descendant-or-self::" || $config:search-default || "[ft:query(., $query, $dbs:QUERY_OPTIONS)]]")
+declare %private function dbs:query-default-view($context as element()*, $query as xs:string, $fields as xs:string+) {
+    for $field in $fields
+    return
+        switch ($field)
+            case "head" return
+                $context[./descendant-or-self::db:title[ft:query(., $query, $dbs:QUERY_OPTIONS)]]
+            default return
+                $context[./descendant-or-self::db:section[ft:query(., $query, $dbs:QUERY_OPTIONS)]] |
+                $context[./descendant-or-self::db:article[ft:query(., $query, $dbs:QUERY_OPTIONS)]]
 };
 
 declare function dbs:get-current($config as map(*), $div as element()?) {

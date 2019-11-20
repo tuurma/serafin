@@ -3,6 +3,7 @@ xquery version "3.0";
 import module namespace pmu="http://www.tei-c.org/tei-simple/xquery/util";
 import module namespace odd="http://www.tei-c.org/tei-simple/odd2odd";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "modules/config.xqm";
+import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "util.xql";
 
 declare namespace repo="http://exist-db.org/xquery/repo";
 
@@ -58,22 +59,23 @@ declare function local:create-data-collection() {
 
 
 declare function local:generate-code($collection as xs:string) {
-    for $odd in xmldb:get-child-resources($collection || "/resources/odd")[ends-with(., ".odd")]
-    let $count := count($odd)
-    let $oddName :=
-        switch ($count)
-            case 2 return distinct-values($odd[not(.=("tei_simplePrint.odd"))])
-            case 1 return $odd
-        default return  distinct-values($odd[not(.=("teipublisher.odd", "tei_simplePrint.odd"))])
-
-(: TODO: cleanup
-   for $source in $collection || "/resources/odd" || $oddName
-   for $source in xmldb:get-child-resources($collection || "/resources/odd")[ends-with(., ".odd")]:)
-
-    for $module in ("web", "print", "latex", "epub")
+    let $allOdds := xmldb:get-child-resources($collection || "/resources/odd")[ends-with(., ".odd")]
+    let $odds :=
+        if (count($allOdds) > 3) then
+            $allOdds[not(.=("teipublisher.odd", "tei_simplePrint.odd"))]
+        else
+            $allOdds
+    for $source in $odds
+    let $odd := doc($collection || "/resources/odd/" || $source)
+    let $pi := tpu:parse-pi($odd, (), $source)
+    for $module in
+        if ($pi?output) then
+            tokenize($pi?output)
+        else
+            ("web", "print", "latex", "epub")
     for $file in pmu:process-odd (
         (:    $odd as document-node():)
-        odd:get-compiled($collection || "/resources/odd" , $oddName),
+        odd:get-compiled($collection || "/resources/odd" , $source),
         (:    $output-root as xs:string    :)
         $collection || "/transform",
         (:    $mode as xs:string    :)
@@ -102,7 +104,9 @@ sm:chmod(xs:anyURI($target || "/modules/lib/get-epub.xql"), "rwsr-xr-x"),
 sm:chmod(xs:anyURI($target || "/modules/lib/components.xql"), "rwsr-xr-x"),
 sm:chmod(xs:anyURI($target || "/modules/lib/components-odd.xql"), "rwxr-Sr-x"),
 sm:chmod(xs:anyURI($target || "/modules/lib/regenerate.xql"), "rwsr-xr-x"),
-sm:chmod(xs:anyURI($target || "/modules/lib/upload.xql"), "rwsr-xr-x"),
+sm:chmod(xs:anyURI($target || "/modules/lib/app-download.xql"), "rwsr-xr-x"),
+sm:chmod(xs:anyURI($target || "/modules/lib/dts.xql"), "rwsr-xr-x"),
+(: sm:chmod(xs:anyURI($target || "/modules/lib/upload.xql"), "rwsr-xr-x"), :)
 
 (: LaTeX requires dba permissions to execute shell process :)
 sm:chmod(xs:anyURI($target || "/modules/lib/latex.xql"), "rwxr-Sr-x"),

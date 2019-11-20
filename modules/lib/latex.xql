@@ -18,8 +18,6 @@ declare option output:method "text";
 declare option output:html-version "5.0";
 declare option output:media-type "text/text";
 
-declare variable $local:WORKING_DIR := system:get-exist-home() || "/webapp";
-
 let $id := request:get-parameter("id", ())
 let $token := request:get-parameter("token", ())
 let $source := request:get-parameter("source", ())
@@ -32,18 +30,23 @@ return (
         let $id := replace($id, "^(.*)\..*", "$1")
         let $xml := pages:get-document($id)/*
         let $config := tpu:parse-pi(root($xml), ())
-        let $tex := string-join($pm-config:latex-transform($xml, map { "image-dir": config:get-repo-dir() || "/" ||
-            substring-after($config:data-root[1], $config:app-root) || "/" }, $config?odd))
+        let $options :=
+            map {
+                "root": $xml,
+                "image-dir": config:get-repo-dir() || "/" ||
+                    substring-after($config:data-root[1], $config:app-root) || "/"
+            }
+        let $tex := string-join($pm-config:latex-transform($xml, $options, $config?odd))
         let $file :=
             replace($id, "^.*?([^/]+)$", "$1") || format-dateTime(current-dateTime(), "-[Y0000][M00][D00]-[H00][m00]")
         return
             if ($source) then
                 $tex
             else
-                let $serialized := file:serialize-binary(util:string-to-binary($tex), $local:WORKING_DIR || "/" || $file || ".tex")
+                let $serialized := file:serialize-binary(util:string-to-binary($tex), $config:tex-temp-dir || "/" || $file || ".tex")
                 let $options :=
                     <option>
-                        <workingDir>{$local:WORKING_DIR}</workingDir>
+                        <workingDir>{$config:tex-temp-dir}</workingDir>
                     </option>
                 let $output :=
                     for $i in 1 to 3
@@ -53,7 +56,7 @@ return (
                         )
                 return
                     if ($output[last()]/@exitCode < 2) then
-                        let $pdf := file:read-binary($local:WORKING_DIR || "/" || $file || ".pdf")
+                        let $pdf := file:read-binary($config:tex-temp-dir || "/" || $file || ".pdf")
                         return
                             response:stream-binary($pdf, "media-type=application/pdf", $file || ".pdf")
                     else

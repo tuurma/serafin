@@ -4,8 +4,8 @@
         <fileDesc>
             <titleStmt>
                 <title>Serafin Letters
-                    
-                   
+
+
                  <desc>15th c. manuscript correspondence with parallel translation</desc>
                 </title>
             </titleStmt>
@@ -33,11 +33,11 @@
         </fileDesc>
         <encodingDesc>
             <tagsDecl>
-                <pb:behaviour ident="glossary" output="latex"> 
+                <pb:behaviour ident="glossary" output="latex">
                     <pb:param name="id" value="@xml:id"/>
                     <pb:param name="name"/>
                     <pb:param name="note"/>
-                    <pb:template>\newglossaryentry{[[id]]} { 
+                    <pb:template>\newglossaryentry{[[id]]} {
                         name=[[name]],
                         description={[[note]]}
                     }</pb:template>
@@ -58,8 +58,9 @@
             <param name="content" value=".//text[@type='source']/body"/>
             <param name="translation" value=".//text[@xml:lang='pl']"/>
             <param name="glossary" value="(teiHeader//particDesc/listPerson/person, teiHeader//settingDesc/listPlace/place)"/>
+            <param name="styles" value="$config('latex-styles')"/>
             <pb:template>\documentclass[10pt,a4paper,twoside]{article}
-                            
+
 \usepackage[latin,polish]{babel}
 \usepackage{reledmac}
 \usepackage{reledpar}
@@ -73,6 +74,8 @@
 \fancyhf{}
 \fancyhead[LO,RE]{\footnotesize\volume}
 \fancyhead[LE,RO]{\footnotesize\thepage}
+
+[[styles]]
 
 [[glossary]]
 
@@ -146,7 +149,7 @@
             font-weight: bold;
             </outputRendition>
         </model>
-                    <model behaviour="alternate">
+        <model behaviour="alternate">
             <param name="default" value="."/>
             <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
             <outputRendition>
@@ -188,7 +191,7 @@
         </model>
                     <model behaviour="alternate">
             <param name="default" value="."/>
-            <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
+            <param name="alternate" value="id(substring-after(@ref, '#'), root(.))"/>
             <outputRendition>
             color: #ef6c00;
             </outputRendition>
@@ -210,7 +213,7 @@
         </model>
                     <model behaviour="alternate">
             <param name="default" value="."/>
-            <param name="alternate" value="id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons'))"/>
+            <param name="alternate" value="id(substring-after(@ref, '#'), root(.))"/>
             <outputRendition>
             color: #2e7d32;
             </outputRendition>
@@ -280,7 +283,7 @@
                     <modelSequence output="web" predicate="$parameters?header='short'">
             <model behaviour="link">
                 <param name="content" value="title[1]"/>
-                <param name="link" value="$parameters?doc"/>
+                <param name="uri" value="$parameters?doc"/>
             </model>
             <model behaviour="block">
                 <param name="content" value="subsequence(title, 2)"/>
@@ -335,59 +338,6 @@
         </model>
                     <model behaviour="inline"/>
                 </elementSpec>
-        <elementSpec ident="unclear" mode="change">
-              <model behaviour="inline">
-                <outputRendition scope="before">content: '[';</outputRendition>
-                <outputRendition scope="after">content: '?]';</outputRendition>
-                <outputRendition>color: grey;</outputRendition>
-              </model>
-            </elementSpec>
-        <elementSpec ident="gap" mode="change">
-              <model predicate="desc" behaviour="inline">
-                <outputRendition>color: grey;</outputRendition>
-              </model>
-              <model predicate="@extent" behaviour="inline">
-                <param name="content" value="@extent"/>
-                <outputRendition scope="before">content: '[..';</outputRendition>
-                <outputRendition scope="after">content: '..]';</outputRendition>
-                <outputRendition>color: grey;</outputRendition>
-              </model>
-            <model predicate="@quantity" behaviour="alternate">
-                <param name="default" value="."/>
-                <param name="alternate" value="(@quantity, ' ', @unit)"/>
-                <outputRendition scope="before">content: '[...]';</outputRendition>
-                <outputRendition>color: grey;</outputRendition>
-              </model>
-              <model behaviour="inline">
-                <outputRendition scope="before">content: '[...]';</outputRendition>
-                <outputRendition>color: grey;</outputRendition>
-              </model>
-            </elementSpec>
-            <elementSpec ident="ex" mode="change">
-              <model behaviour="inline">
-                <outputRendition scope="before">content: '(';</outputRendition>
-
-                <outputRendition scope="after">content: ')';</outputRendition>
-            </model>
-            </elementSpec>
-            <elementSpec ident="sic" mode="change">
-              <model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/>
-              <model behaviour="inline">
-                <outputRendition scope="after">content: '(!)';</outputRendition>
-              </model>
-            </elementSpec>
-            <elementSpec ident="subst" mode="change">
-              <model behaviour="alternate">
-                <param name="default" value="add"/>
-                <param name="alternate" value="('substitution: ', del, ' ', del/@type)"/>
-              </model>
-            </elementSpec>
-            <elementSpec ident="del" mode="change">
-            <model predicate="parent::subst" behaviour="inline"/>
-              <model behaviour="inline">
-                <outputRendition> text-decoration: line-through;</outputRendition>
-              </model>
-            </elementSpec>
             </schemaSpec>
         </body>
     </text>

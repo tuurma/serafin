@@ -27,7 +27,7 @@ import module namespace html="http://www.tei-c.org/tei-simple/xquery/functions";
 declare function model:transform($options as map(*), $input as node()*) {
         
     let $config :=
-        map:new(($options,
+        map:merge(($options,
             map {
                 "output": ["web"],
                 "odd": "/db/apps/serafin/resources/odd/serafin.odd",
@@ -48,6 +48,8 @@ declare function model:transform($options as map(*), $input as node()*) {
 declare function model:apply($config as map(*), $input as node()*) {
         let $parameters := 
         if (exists($config?parameters)) then $config?parameters else map {}
+        let $get := 
+        model:source($parameters, ?)
     return
     $input !         (
             let $node := 
@@ -110,13 +112,13 @@ declare function model:apply($config as map(*), $input as node()*) {
                             html:inline($config, ., ("tei-formula2"), .)
                     case element(choice) return
                         if (sic and corr) then
-                            html:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1])
+                            html:alternate($config, ., ("tei-choice4"), ., corr[1], sic[1], map {})
                         else
                             if (abbr and expan) then
-                                html:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1])
+                                html:alternate($config, ., ("tei-choice5"), ., expan[1], abbr[1], map {})
                             else
                                 if (orig and reg) then
-                                    html:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1])
+                                    html:alternate($config, ., ("tei-choice6"), ., reg[1], orig[1], map {})
                                 else
                                     $config?apply($config, ./node())
                     case element(hi) return
@@ -139,10 +141,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(back) return
                         html:block($config, ., ("tei-back"), .)
                     case element(del) return
-                        if (parent::subst) then
-                            html:inline($config, ., ("tei-del1"), .)
-                        else
-                            html:inline($config, ., ("tei-del2"), .)
+                        html:inline($config, ., ("tei-del"), .)
                     case element(trailer) return
                         html:block($config, ., ("tei-trailer"), .)
                     case element(titlePart) return
@@ -154,7 +153,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(am) return
                         html:inline($config, ., ("tei-am"), .)
                     case element(subst) return
-                        html:alternate($config, ., ("tei-subst"), ., add, ('substitution: ', del, ' ', del/@type))
+                        html:inline($config, ., ("tei-subst"), .)
                     case element(roleDesc) return
                         html:block($config, ., ("tei-roleDesc"), .)
                     case element(orig) return
@@ -209,7 +208,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         html:block($config, ., ("tei-group"), .)
                     case element(licence) return
                         if (@target) then
-                            html:link($config, ., ("tei-licence1", "licence"), 'Licence', @target)
+                            html:link($config, ., ("tei-licence1", "licence"), 'Licence', @target, (), map {})
                         else
                             html:omit($config, ., ("tei-licence2"), .)
                     case element(editor) return
@@ -331,10 +330,10 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (not(@target)) then
                             html:inline($config, ., ("tei-ref1"), .)
                         else
-                            if (not(text())) then
-                                html:link($config, ., ("tei-ref2"), @target, ())
+                            if (not(node())) then
+                                html:link($config, ., ("tei-ref2"), @target, @target, (), map {})
                             else
-                                html:link($config, ., ("tei-ref3"), ., ())
+                                html:link($config, ., ("tei-ref3"), ., @target, (), map {})
                     case element(pubPlace) return
                         if (ancestor::teiHeader) then
                             (: Omit if located in teiHeader. :)
@@ -391,7 +390,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         html:block($config, ., ("tei-argument"), .)
                     case element(date) return
                         if (@when) then
-                            html:alternate($config, ., ("tei-date3"), ., ., format-date(xs:date(@when), '[D1o] [MNn] [Y]', (session:get-attribute('lang'), 'en')[1], (), ()))
+                            html:alternate($config, ., ("tei-date3"), ., ., format-date(xs:date(@when), '[D1o] [MNn] [Y]', (session:get-attribute('lang'), 'en')[1], (), ()), map {})
                         else
                             if (text()) then
                                 html:inline($config, ., ("tei-date4"), .)
@@ -460,7 +459,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                     case element(titleStmt) return
                         if ($parameters?header='short') then
                             (
-                                html:link($config, ., ("tei-titleStmt3"), title[1], $parameters?doc),
+                                html:link($config, ., ("tei-titleStmt3"), title[1], $parameters?doc, (), map {}),
                                 html:block($config, ., ("tei-titleStmt4"), subsequence(title, 2)),
                                 html:block($config, ., ("tei-titleStmt5"), author)
                             )
@@ -501,10 +500,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                             if (@extent) then
                                 html:inline($config, ., ("tei-gap2"), @extent)
                             else
-                                if (@quantity) then
-                                    html:alternate($config, ., ("tei-gap3"), ., ., (@quantity, ' ', @unit))
-                                else
-                                    html:inline($config, ., ("tei-gap4"), .)
+                                html:inline($config, ., ("tei-gap3"), .)
                     case element(quote) return
                         if (ancestor::p) then
                             (: If it is inside a paragraph then it is inline, otherwise it is block level :)
@@ -526,7 +522,7 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (parent::person) then
                             html:inline($config, ., ("tei-persName3"), .)
                         else
-                            html:alternate($config, ., ("tei-persName4"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
+                            html:alternate($config, ., ("tei-persName4"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')), map {})
                     case element(person) return
                         if (parent::listPerson) then
                             html:inline($config, ., ("tei-person2"), .)
@@ -536,12 +532,12 @@ declare function model:apply($config as map(*), $input as node()*) {
                         if (parent::place) then
                             html:inline($config, ., ("tei-placeName3"), .)
                         else
-                            html:alternate($config, ., ("tei-placeName4"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
+                            html:alternate($config, ., ("tei-placeName4"), ., ., id(substring-after(@ref, '#'), root(.)), map {})
                     case element(orgName) return
                         if (parent::org) then
                             html:inline($config, ., ("tei-orgName2"), .)
                         else
-                            html:alternate($config, ., ("tei-orgName3"), ., ., id(substring-after(@ref, '#'), collection('/db/apps/serafin/data/auxiliary')/id('persons')))
+                            html:alternate($config, ., ("tei-orgName3"), ., ., id(substring-after(@ref, '#'), root(.)), map {})
                     case element(correspAction) return
                         if (@type='sent') then
                             html:inline($config, ., ("tei-correspAction"), (placeName, ', ', date))
@@ -580,5 +576,15 @@ declare function model:apply-children($config as map(*), $node as element(), $co
                 default return
                     html:escapeChars(.)
         )
+};
+
+declare function model:source($parameters as map(*), $elem as element()) {
+        
+    let $id := $elem/@exist:id
+    return
+        if ($id and $parameters?root) then
+            util:node-by-id($parameters?root, $id)
+        else
+            $elem
 };
 

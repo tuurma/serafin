@@ -39,10 +39,10 @@ declare variable $config:default-view :="div";
  : The default HTML template used for viewing document content. This can be
  : overwritten by the teipublisher processing instruction inside a TEI document.
  :)
-declare variable $config:default-template := "view.html";
+declare variable $config:default-template :="view.html";
 
 (:
- : The element to search by default, either 'tei:div' or 'tei:body'.
+ : The element to search by default, either 'tei:div' or 'tei:text'.
  :)
 declare variable $config:search-default :="tei:div";
 
@@ -64,6 +64,30 @@ declare variable $config:pagination-depth := 10;
  : attempt to fill up the page.
  :)
 declare variable $config:pagination-fill := 5;
+
+(:
+ : Display configuration for facets to be shown in the sidebar. The facets themselves
+ : are configured in the index configuration, collection.xconf.
+ :)
+declare variable $config:facets := [
+    map {
+        "dimension": "language",
+        "heading": "Language",
+        "max": 5,
+        "hierarchical": false(),
+        "output": function($label) {
+            switch($label)
+                case "de" return "German"
+                case "es" return "Spanish"
+                case "la" return "Latin"
+                case "fr" return "French"
+                case "en" return "English"
+                case "cz" return "Czech"
+                case "it" return "Italian"
+                default return $label
+        }
+    }
+];
 
 (:
  : The function to be called to determine the next content chunk to display.
@@ -154,29 +178,37 @@ declare variable $config:tex-command := function($file) {
     ( "/usr/local/bin/pdflatex", "-interaction=nonstopmode", $file )
 };
 
+(:
+ : Temporary directory to write .tex output to. The LaTeX process will receive this
+ : as working director.
+ :)
+declare variable $config:tex-temp-dir :=
+    util:system-property("java.io.tmpdir");
+
 (:~
  : Configuration for epub files.
  :)
- declare variable $config:epub-config := function($root as element(), $langParameter as xs:string?) {
-     let $properties := tpu:parse-pi(root($root), ())
-     return
-         map {
-             "metadata": map {
-                 "title": $root/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/string(),
-                 "creator": $root/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/string(),
-                 "urn": util:uuid(),
-                 "language": ($langParameter, $root/@xml:lang/string(), $root/tei:teiHeader/@xml:lang/string(), "en")[1]
-             },
-             "odd": $properties?odd,
-             "output-root": $config:odd-root,
-             "fonts": [
-                 $config:app-root || "/resources/fonts/Junicode.ttf",
-                 $config:app-root || "/resources/fonts/Junicode-Bold.ttf",
-                 $config:app-root || "/resources/fonts/Junicode-BoldItalic.ttf",
-                 $config:app-root || "/resources/fonts/Junicode-Italic.ttf"
-             ]
-         }
- };
+declare variable $config:epub-config := function ($doc as document-node(), $langParameter as xs:string?) {
+    let $root := $doc/*
+    let $properties := tpu:parse-pi($doc, ())
+    return
+        map {
+            "metadata": map {
+                "title": nav:get-metadata($properties, $root, "title"),
+                "creator": string-join(nav:get-metadata($properties, $root, "author"), ", "),
+                "urn": util:uuid(),
+                "language": nav:get-metadata($properties, $root, "language")
+            },
+            "odd": $properties?odd,
+            "output-root": $config:odd-root,
+            "fonts": [
+                $config:app-root || "/resources/fonts/Junicode.ttf",
+                $config:app-root || "/resources/fonts/Junicode-Bold.ttf",
+                $config:app-root || "/resources/fonts/Junicode-BoldItalic.ttf",
+                $config:app-root || "/resources/fonts/Junicode-Italic.ttf"
+            ]
+        }
+};
 
 (:~
  : Root path where images to be included in the epub can be found.
@@ -203,11 +235,20 @@ declare variable $config:app-root :=
         substring-before($modulePath, "/modules")
 ;
 
-declare variable $config:data-root :=$config:app-root || "/data/letters";
+(:~
+ : The root of the collection hierarchy containing data.
+ :)
+declare variable $config:data-root :=$config:app-root || "/data";
 
-declare variable $config:auxiliary-root :=$config:app-root || "/data/auxiliary";
+(:~
+ : The root of the collection hierarchy whose files should be displayed
+ : on the entry page. Can be different from $config:data-root.
+ :)
+declare variable $config:data-default := $config:data-root;
 
-declare variable $config:data-exclude := ();
+declare variable $config:data-exclude :=
+    doc($config:data-root || "auxiliary/authorityLists.xml")/tei:TEI
+;
 
 declare variable $config:default-odd :="serafin.odd";
 
@@ -219,11 +260,63 @@ declare variable $config:output := "transform";
 
 declare variable $config:output-root := $config:app-root || "/" || $config:output;
 
+declare variable $config:default-odd-for-docx := $config:default-odd;
+
+declare variable $config:default-docx-pi := ``[odd="`{$config:default-odd-for-docx}`"]``;
+
 declare variable $config:module-config := doc($config:odd-root || "/configuration.xml")/*;
 
 declare variable $config:repo-descriptor := doc(concat($config:app-root, "/repo.xml"))/repo:meta;
 
 declare variable $config:expath-descriptor := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
+
+declare variable $config:session-prefix := $config:expath-descriptor/@abbrev/string();
+
+declare variable $config:dts-collections := map {
+    "id": "default",
+    "title": $config:expath-descriptor/expath:title/string(),
+    "memberCollections": (
+            map {
+                "id": "documents",
+                "title": "Document Collection",
+                "path": $config:data-default,
+                "members": function() {
+                    nav:get-root((), map {
+                        "leading-wildcard": "yes",
+                        "filter-rewrite": "yes"
+                    })
+                },
+                "metadata": function($doc as document-node()) {
+                    let $properties := tpu:parse-pi($doc, ())
+                    return
+                        map:merge((
+                            map:entry("title", nav:get-metadata($properties, $doc/*, "title")/string()),
+                            map {
+                                "dts:dublincore": map {
+                                    "dc:creator": string-join(nav:get-metadata($properties, $doc/*, "author"), "; "),
+                                    "dc:license": nav:get-metadata($properties, $doc/*, "license")
+                                }
+                            }
+                        ))
+                }
+            },
+            map {
+                "id": "odd",
+                "title": "ODD Collection",
+                "path": $config:odd-root,
+                "members": function() {
+                    collection($config:odd-root)/tei:TEI
+                },
+                "metadata": function($doc as document-node()) {
+                    map {
+                        "title": string-join($doc//tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[not(@type)], "; ")
+                    }
+                }
+            }
+    )
+};
+
+declare variable $config:dts-page-size := 10;
 
 (:~
  : Return an ID which may be used to look up a document. Change this if the xml:id

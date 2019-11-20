@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns:i18n="http://exist-db.org/xquery/i18n" data-template="pages:app-root">
+<html xmlns:i18n="http://exist-db.org/xquery/i18n">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
@@ -11,6 +11,7 @@
 
         <title data-template="config:app-title"/>
         <meta name="description" content="Blog"/>
+
         <link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
         <script src="components/bower_components/webcomponentsjs/webcomponents-loader.js"/>
@@ -112,12 +113,16 @@
                 .toc-toggle {
                     display: none;
                 }
+
+                pb-link {
+                    margin-left: 0;
+                }
             </style>
         </custom-style>
     </head>
 
-    <body unresolved="unresolved" data-template="i18n:translate" data-catalogues="resources/i18n">
-        <pb-page>
+    <body unresolved="unresolved" data-template="i18n:translate" data-template-catalogues="resources/i18n">
+        <pb-page data-template="pages:pb-page">
             <pb-document id="document1" data-template="pages:pb-document" odd="docbook"/>
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer slot="drawer" align="right">
@@ -135,8 +140,7 @@
                             <pb-collapse>
                                 <h3 slot="collapse-trigger">Articles</h3>
                                 <div slot="collapse-content">
-                                    <pb-load url="modules/blog.xql?doc=${doc}" auto="auto" container=".summary" emit="transcription" data-template="pages:parse-params"/>
-                                    <div class="summary"/>
+                                    <pb-load class="summary" url="modules/blog.xql?doc=${doc}" auto="auto" emit="transcription" data-template="pages:parse-params"/>
                                 </div>
                             </pb-collapse>
                             <pb-collapse>
@@ -206,11 +210,6 @@
                                             </pb-ajax>
                                         </paper-item>
                                         <paper-item>
-                                            <pb-ajax subscribe="transcription" emit="transcription" url="${app}/modules/index.xql" dialog="messageDialog" data-template="pages:parse-params">
-                                                <i18n:text key="metadata-update"/>
-                                            </pb-ajax>
-                                        </paper-item>
-                                        <paper-item>
                                             <pb-download data-template="pages:edit-odd-link" src="document1">
                                                 <i18n:text key="edit-odd"/>
                                             </pb-download>
@@ -237,12 +236,11 @@
                         <pb-media-query query="min-width: 1024px">
                             <aside>
                                 <h1>Blog</h1>
-                                <pb-load url="modules/blog.xql?doc=${doc}" auto="auto" container=".summary" emit="transcription" data-template="pages:parse-params"/>
-                                <div class="summary"/>
+                                <pb-load class="summary" url="modules/blog.xql?doc=${doc}" auto="auto" emit="transcription" data-template="pages:parse-params"/>
                             </aside>
                         </pb-media-query>
                         <div class="content">
-                            <pb-view id="view1" src="document1" data-template="pages:pb-view" view="single" subscribe="transcription" emit="transcription" history="history" append-footnotes="append-footnotes" odd="docbook"/>
+                            <pb-view id="view1" src="document1" view="single" subscribe="transcription" emit="transcription" append-footnotes="append-footnotes" odd="docbook"/>
                         </div>
                     </main>
                 </app-header-layout>

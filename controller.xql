@@ -21,6 +21,7 @@ declare function local:get-template($doc as xs:string) {
             $template
         else
             let $document := pages:get-document($doc)
+            where exists($document)
             let $config := tpu:parse-pi($document, request:get-parameter("view", ()))
             return
                 $config?template
@@ -94,6 +95,11 @@ else if (contains($exist:path, "/components")) then
         <forward url="{$exist:controller}/../tei-publisher/components/{substring-after($exist:path, '/components/')}"/>
     </dispatch>
 
+else if (contains($exist:path, "/webcomponents")) then
+    <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+        <forward url="{$exist:controller}/webcomponents/{substring-after($exist:path, '/webcomponents/')}"/>
+    </dispatch>
+
 else if ($logout or $login) then (
     login:set-user($config:login-domain, (), false()),
     (: redirect successful login attempts to the original page, but prevent redirection to non-local websites:)
@@ -113,6 +119,15 @@ else if ($logout or $login) then (
     <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
        <forward url="{$exist:controller}/data/{$exist:path}"/>
    </dispatch>
+
+else if (starts-with($exist:path, "/api/dts")) then
+   let $endpoint := tokenize(substring-after($exist:path, "/api/dts/"), "/")[last()]
+   return
+       <dispatch xmlns="http://exist.sourceforge.net/NS/exist">
+          <forward url="{$exist:controller}/modules/lib/dts.xql">
+              <add-parameter name="endpoint" value="{$endpoint}"/>
+          </forward>
+      </dispatch>
 
 else if (ends-with($exist:resource, ".html")) then (
     login:set-user($config:login-domain, (), false()),
@@ -201,7 +216,7 @@ else if (ends-with($exist:resource, ".html")) then (
                     <forward url="{$exist:controller}/modules/view.xql"/>
                 </error-handler>
             </dispatch>
-        else if (ends-with($exist:resource, ".xml")) then
+        else if (matches($exist:resource, ".xml$", "i")) then
             let $docPath := $path || $id
             let $template :=
                 if ($html) then $html else (local:get-template($docPath), $config:default-template)[1]

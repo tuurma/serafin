@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:i18n="http://exist-db.org/xquery/i18n">
+	<head>  
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+		<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
+		<link rel="shortcut icon" type="image/png" href="resources/images/favicon-16.png" sizes="16x16"/>
+		<link rel="shortcut icon" type="image/png" href="resources/images/favicon-24.png" sizes="24x24"/>
+		<link rel="shortcut icon" type="image/png" href="resources/images/favicon-32.png" sizes="32x32"/>
+		<link rel="shortcut icon" type="image/png" href="resources/images/favicon-64.png" sizes="64x64"/>
+		
+		<title data-template="config:app-title"/>
+		<meta name="description" content="Seitendarst_Dummy"/>
+		<meta name="pb-template" content="view.html"/>
+		
+		<link rel="stylesheet" type="text/css" href="resources/fonts/font.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
+		<script src="components/bower_components/webcomponentsjs/webcomponents-loader.js"/>
+		<link rel="import" href="components/dependencies-dev.html"/>
+		<style>
+            [unresolved] {
+                display:none;
+            }
+        </style>
+		<custom-style>
+			<style include="pb-common-styles">
+                
+
+                .toolbar {
+                    justify-content: space-between;
+                    background-color: #d1dae0;
+                }
+
+                @media (min-width: 769px) {
+                    .toolbar pb-navigation {
+                        display: none;
+                    }
+
+                    #view1 {
+                        max-width: 60vw;
+                    }
+                }
+
+                .content-body {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
+                }
+
+                .content-body pb-navigation {
+                    position: fixed;
+                    bottom: 45%;
+                    --paper-fab-background: #35424b;
+                    color: white;
+                }
+
+                .content-body pb-navigation[direction=backward] {
+                    left: 20px;
+                }
+
+                .content-body pb-navigation[direction=forward] {
+                    right: 20px;
+                }
+
+                @media (max-width: 769px) {
+                    .content-body pb-navigation {
+                        display: none;
+                    }
+                }
+                
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  grid-template-rows: 80px auto 80px;
+  background-color: LightGrey;
+  grid-gap: 5px;
+  padding: 5px;
+}
+.grid-container &gt; * {
+  background-color: White;
+}
+
+.item1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+ 
+}
+.item2 {
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+.item3 {
+    grid-column: 2;
+    grid-row: 2;
+
+   
+}
+.item4 {
+    grid-column: 3;
+    grid-row: 2;
+    
+}
+.item5 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    
+}
+
+            </style>
+		</custom-style>
+	</head>
+	
+	<body unresolved="unresolved" data-template="i18n:translate" data-catalogues="resources/i18n">
+		<pb-page data-template="pages:pb-page">
+			<pb-document id="document1" data-template="pages:pb-document"/>
+			<app-drawer-layout force-narrow="force-narrow">
+				<app-drawer data-template="templates:include" data-template-path="templates/drawer.html"/>
+				<app-header-layout>
+					<app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall" data-template="browse:fix-links">
+						<app-toolbar data-template="templates:include" data-template-path="templates/menu.html"/>
+						<app-toolbar data-template="templates:include" data-template-path="templates/toolbar.html"/>
+					</app-header>
+					
+					<pb-drawer toggle="tocToggle" class="tocDrawer" emit="toc" subscribe="transcription">
+						<div class="drawer-content">
+							<h3>
+								<i18n:text key="contents">Contents</i18n:text>
+							</h3>
+							<pb-load id="loadToc" url="templates/toc.html?target=transcription" src="document1" subscribe="toc" container="#toc" load-once="load-once">Loading ...</pb-load>
+							<div id="toc"/>
+						</div>
+					</pb-drawer>
+					<section class="breadcrumbs">
+						<pb-view id="title-view1" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single">
+							<pb-param name="header" value="short"/>
+						</pb-view>
+					</section>
+					<main class="content-body">
+						<pb-navigation direction="backward" unit="page" keyboard="left" emit="transcription" subscribe="transcription">
+							<paper-fab icon="icons:chevron-left"/>
+						</pb-navigation>
+						
+						
+						
+						<div class="grid-container">
+						
+                            <pb-view class="item1" id="topMargin" src="document1" subscribe="transcription" view="page">
+                                <pb-param name="view" value="top-notes"/>
+                            </pb-view>
+                            <pb-view class="item2" id="leftMargin" src="document1" subscribe="transcription" view="page">
+                                <pb-param name="view" value="left-additions"/>
+                            </pb-view>
+							<pb-view class="item3" id="view1" src="document1" history="history" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" view="page"/>
+
+<!-- two views below require adjusting as examples above -->
+							<pb-view class="item4" id="rightMargin" src="document1" xpath="//add[@rend='right']" history="history" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" view="single"/>
+							<pb-view class="item5" id="bottomMargin" src="document1" xpath="//note[@rend='bottom']" history="history" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription" view="single"/>
+						</div>
+						
+						
+						
+						
+						<pb-navigation direction="forward" unit="page" keyboard="right" emit="transcription" subscribe="transcription">
+							<paper-fab icon="icons:chevron-right"/>
+						</pb-navigation>
+					</main>
+				</app-header-layout>
+			</app-drawer-layout>
+		</pb-page>
+	</body>
+</html>
