@@ -48,7 +48,7 @@
                 <correspAction type="sent">
                     <persName ref="#JanParawicini">Jan Parawicini</persName>
                     <placeName ref="#Przemyśl">Przemyśl</placeName>
-                    <date when="1437-04-16">[16 kwietnia 1437]</date>
+                    <date when="1437-04-16">16 kwietnia 1437</date>
                 </correspAction>
             </correspDesc>
         </profileDesc>
@@ -81,8 +81,9 @@
                                 quo ego hic cum familia vestra et mea congratulamur.</seg>
                             <seg xml:id="s.1.2.3">Eciam scribitis, quomodo <lb/>estimaretis iam sal
                                 non <del>v<unclear quantity="1" unit="chars"/>
-                                    <anchor xml:id="aa"/>
-                                </del> invenisse circa <placeName ref="#Sandomierz">Sandomiriam</placeName>, sed remocius, et causa istius <lb/>
+                                </del>
+                                <anchor xml:id="aa"/> 
+                                invenisse circa <placeName ref="#Sandomierz">Sandomiriam</placeName>, sed remocius, et causa istius <lb/>
                                 equitastis circa Wislam<anchor xml:id="a1"/>.</seg>
                             <seg xml:id="s.1.2.4">Sciatis, quia sequenti die ante, dum debui mittere
                                 de <placeName ref="#Przemyśl">Premislia</placeName>, quatuor
@@ -94,9 +95,12 @@
                                 et sic stat in vno miliari a <placeName ref="#Przemyśl">Premislia</placeName> in bono loco circa fratrem domini
                                     decani<anchor xml:id="a2"/>, vbi non est timendum de aliquo
                                 dampno.</seg>
-                            <seg xml:id="s.1.2.6">Sed quam nisi Dominus Deus <del>
+                            <seg xml:id="s.1.2.6">Sed quam nisi Dominus Deus 
+                                <del>
                                     <unclear quantity="3" unit="chars"/>
-                                </del> aquam diluuii ordinauerit, infrafluitare non negligam et
+                                </del>
+                                <anchor xml:id="ab"/>
+                                aquam diluuii ordinauerit, infrafluitare non negligam et
                                 eciam <expan>N<ex>obilitatem</ex>
                                 </expan> Vestram auisare non obmittam.</seg>
                             <seg xml:id="s.1.2.7">Eciam de sale cupitis, ut plus cumularem ad
@@ -121,10 +125,11 @@
                                 ad <date when="1437-04-23" when-custom="23 IV">fesstum
                                     Georgii</date> in <placeName ref="#Mościska">Moscziska</placeName> causa istius cause et aliis, que <subst>
                                     <del type="overwritten">a</del>
-                                    <add>h</add>
+                                        <add>h</add>
+                                    <anchor xml:id="ad"/>
                                 </subst>ic aguntur.</seg>
                             <seg xml:id="s.1.2.11">Adhuc retineo Plichtam<anchor xml:id="a3"/>, quia
-                                eciam ciues in Moscz<unclear>i</unclear>ska difamauerunt literam
+                                eciam ciues in Moscz<supplied>i</supplied>ska difamauerunt literam
                                 regalem in presencia ministerialis cum cuius testimonio volumus
                                 coram dominis iure procedere <del>in</del> in convencione et cum
                                 multis militibus.</seg>
@@ -178,8 +183,11 @@
                     <div type="notes">
                         <note n="a" type="transcription" target="#aa">skreślone v i początek innej
                             litery</note>
+                        <note n="b" type="transcription" target="#ab">po Deus skreślone trzy
+                            litery</note>
                         <note n="c" type="transcription" target="#ac">1½: znak
                             konwencjonalny.</note>
+                        <note n="d" type="transcription" target="#ab"/>h poprawione z a
                         <note n="1" target="#a1">W Sandomierzu funkcjonował od co najmniej XIV w.
                             skład soli pochodzącej z żup krakowskich, a potem także z żup ruskich,
                             służącej do zaopatrywania najbliższej okolicy lub ekspediowanej w dół

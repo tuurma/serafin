@@ -33,28 +33,13 @@ declare function idx:get-metadata($root as element(), $field as xs:string) {
                     $header//tei:titleStmt/tei:title,
                     $root/dbk:info/dbk:title
                 ), " - ")
-            case "author" return (
-                $header//tei:correspDesc/tei:correspAction/tei:persName,
-                $header//tei:titleStmt/tei:author
-            )
             case "language" return
                 head((
-                    $root//tei:text[@type='source']/@xml:lang,
-                    $header//tei:langUsage/tei:language/@ident,
-                    $root/@xml:lang,
-                    $header/@xml:lang
+                    $root//tei:text[@type='source']/@xml:lang
                 ))
             case "date" return head((
-                $header//tei:correspDesc/tei:correspAction/tei:date/@when,
-                $header//tei:sourceDesc/(tei:bibl|tei:biblFull)/tei:publicationStmt/tei:date,
-                $header//tei:sourceDesc/(tei:bibl|tei:biblFull)/tei:date/@when,
-                $header//tei:fileDesc/tei:editionStmt/tei:edition/tei:date,
-                $header//tei:publicationStmt/tei:date
+                $header//tei:titleStmt/tei:title/tei:date/@when
             ))
-            case "genre" return (
-                idx:get-genre($header),
-                $root/dbk:info/dbk:keywordset[@vocab="#genre"]/dbk:keyword
-            )
             default return
                 ()
 };

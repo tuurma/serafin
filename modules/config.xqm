@@ -39,7 +39,7 @@ declare variable $config:default-view :="div";
  : The default HTML template used for viewing document content. This can be
  : overwritten by the teipublisher processing instruction inside a TEI document.
  :)
-declare variable $config:default-template :="view.html";
+declare variable $config:default-template :="translation.html";
 
 (:
  : The element to search by default, either 'tei:div' or 'tei:text'.
@@ -70,6 +70,12 @@ declare variable $config:pagination-fill := 5;
  : are configured in the index configuration, collection.xconf.
  :)
 declare variable $config:facets := [
+    map {
+        "dimension": "date",
+        "heading": "Date",
+        "max": 5,
+        "hierarchical": false()
+    },
     map {
         "dimension": "language",
         "heading": "Language",
@@ -247,7 +253,7 @@ declare variable $config:data-root :=$config:app-root || "/data";
 declare variable $config:data-default := $config:data-root;
 
 declare variable $config:data-exclude :=
-    doc($config:data-root || "auxiliary/authorityLists.xml")/tei:TEI
+    doc($config:data-root || "/auxiliary/authorityLists.xml")/tei:TEI
 ;
 
 declare variable $config:default-odd :="serafin.odd";

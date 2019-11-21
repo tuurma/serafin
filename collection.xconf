@@ -7,7 +7,6 @@
             <text match="/tei:TEI/tei:text">
                 <ignore qname="tei:div"/>
                 <field name="title" expression="nav:get-metadata(ancestor::tei:TEI, 'title')"/>
-                <field name="author" expression="nav:get-metadata(ancestor::tei:TEI, 'author')"/>
                 <field name="language" expression="nav:get-metadata(ancestor::tei:TEI, 'language')"/>
                 <field name="date" expression="nav:get-metadata(ancestor::tei:TEI, 'date')"/>
                 <field name="file" expression="util:document-name(.)"/>

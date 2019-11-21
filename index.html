@@ -221,6 +221,15 @@
                     padding-left: 1em;
                     vertical-align: middle;
                 }
+                
+                .logo img {
+                    width: auto;
+                    height: 140px;
+                }
+
+                app-toolbar.menubar {
+                    height: 140px;
+                }
             </style>
         </custom-style>
     </head>
@@ -249,7 +258,7 @@
                     <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall" data-template="browse:fix-links">
                         <app-toolbar class="menubar">
                             <a href="$app/index.html" class="logo">
-                                <img src="resources/images/tei-publisher-logo-contrast-color.svg"/>
+                                <img src="resources/images/saltmine2.jpg"/>
                             </a>
                             <pb-media-query query="(min-width: 1024px)">
                                 <a href="$app/index.html">Start</a>
@@ -307,15 +316,6 @@
                                     </pb-browse-docs>
                                 </div>
                             </paper-card>
-                            <aside>
-                                <pb-restricted login="login">
-                                    <paper-card class="upload" heading="i18n(upload)">
-                                        <div class="card-content">
-                                            <pb-upload id="upload" emit="docs" accept=".xml, .tei, .odd, .docx"/>
-                                        </div>
-                                    </paper-card>
-                                </pb-restricted>
-                            </aside>
                         </section>
                     </main>
 
